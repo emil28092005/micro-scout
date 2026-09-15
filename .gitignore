@@ -1,0 +1,28 @@
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+
+# Generated research and training artifacts
+data/
+datasets/
+checkpoints/
+runs/
+logs/
+wandb/
+*.safetensors
+*.gguf
+*.pt
+*.pth
+
+# Editor and OS files
+.idea/
+.DS_Store
