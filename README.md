@@ -2,7 +2,34 @@
 
 A small local code retrieval model and a tool for giving a larger coding model useful source context.
 
-Micro-scout indexes a repository, supports neural, lexical, and hybrid search, and returns **verified file paths, line ranges, and bounded source snippets**. Its MCP server keeps the model in memory between requests.
+Micro-scout returns **verified file paths, line ranges, and bounded source snippets**.
+The indexed MiniLM mode supports neural, lexical, and hybrid retrieval. An experimental
+MiniCPM5-1B mode searches current files with `grep` and `read`, without an index.
+Both modes expose MCP tools and can keep their models in memory between requests.
+
+## Index-free MiniCPM experiment
+
+The new `live` and `serve-live` commands let a local MiniCPM5-1B model choose
+read-only search actions. The harness validates paths, enforces budgets, and
+returns only source ranges it actually read. This is an experiment, not yet a
+replacement for a large coding model's own search.
+
+```bash
+uv sync --extra live --extra mcp
+ollama pull openbmb/minicpm5:q4_K_M
+uv run --no-sync python -m micro_scout.prepare_live
+uv run --no-sync micro-scout live /path/to/repository "Find where retries use exponential backoff"
+```
+
+The original model and **both locally trained QLoRA adapters found 0 of 30 target
+implementations** on a small Requests/Flask/Click development suite. A fixed
+keyword control found 2/30 in 0.23 s median; adapter medians were 19.40 s and
+32.88 s. This version has not demonstrated better search than grep or usefulness
+with a larger solver. Source verification and lower training loss are insufficient.
+The two training runs took about 20 and 22 minutes on a 4 GB RTX 3050 Laptop GPU.
+See the
+[setup, protocol, and evaluation](docs/LIVE_SEARCH.md) and
+[measured results](reports/minicpm5-v1/README.md).
 
 ## Version 0.1
 

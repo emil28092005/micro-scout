@@ -1,0 +1,749 @@
+{
+  "scope": "Diagnostic: target body covered by any successful read during search. Not final returned evidence; combined reads have a larger aggregate source budget.",
+  "variants": {
+    "ollama_q4": {
+      "tasks": 30,
+      "read_target_hits": 1,
+      "per_task": [
+        {
+          "id": "requests-01",
+          "read_target": false,
+          "successful_reads": 0,
+          "unique_read_lines": 0
+        },
+        {
+          "id": "requests-02",
+          "read_target": false,
+          "successful_reads": 0,
+          "unique_read_lines": 0
+        },
+        {
+          "id": "requests-03",
+          "read_target": false,
+          "successful_reads": 0,
+          "unique_read_lines": 0
+        },
+        {
+          "id": "requests-04",
+          "read_target": false,
+          "successful_reads": 0,
+          "unique_read_lines": 0
+        },
+        {
+          "id": "requests-05",
+          "read_target": false,
+          "successful_reads": 1,
+          "unique_read_lines": 17
+        },
+        {
+          "id": "requests-06",
+          "read_target": false,
+          "successful_reads": 1,
+          "unique_read_lines": 28
+        },
+        {
+          "id": "requests-07",
+          "read_target": false,
+          "successful_reads": 1,
+          "unique_read_lines": 120
+        },
+        {
+          "id": "requests-08",
+          "read_target": false,
+          "successful_reads": 0,
+          "unique_read_lines": 0
+        },
+        {
+          "id": "requests-09",
+          "read_target": false,
+          "successful_reads": 0,
+          "unique_read_lines": 0
+        },
+        {
+          "id": "requests-10",
+          "read_target": false,
+          "successful_reads": 1,
+          "unique_read_lines": 19
+        },
+        {
+          "id": "flask-01",
+          "read_target": false,
+          "successful_reads": 0,
+          "unique_read_lines": 0
+        },
+        {
+          "id": "flask-02",
+          "read_target": false,
+          "successful_reads": 0,
+          "unique_read_lines": 0
+        },
+        {
+          "id": "flask-03",
+          "read_target": false,
+          "successful_reads": 0,
+          "unique_read_lines": 0
+        },
+        {
+          "id": "flask-04",
+          "read_target": false,
+          "successful_reads": 1,
+          "unique_read_lines": 30
+        },
+        {
+          "id": "flask-05",
+          "read_target": false,
+          "successful_reads": 1,
+          "unique_read_lines": 61
+        },
+        {
+          "id": "flask-06",
+          "read_target": false,
+          "successful_reads": 1,
+          "unique_read_lines": 1
+        },
+        {
+          "id": "flask-07",
+          "read_target": false,
+          "successful_reads": 1,
+          "unique_read_lines": 29
+        },
+        {
+          "id": "flask-08",
+          "read_target": false,
+          "successful_reads": 0,
+          "unique_read_lines": 0
+        },
+        {
+          "id": "flask-09",
+          "read_target": false,
+          "successful_reads": 1,
+          "unique_read_lines": 8
+        },
+        {
+          "id": "flask-10",
+          "read_target": true,
+          "successful_reads": 1,
+          "unique_read_lines": 100
+        },
+        {
+          "id": "click-01",
+          "read_target": false,
+          "successful_reads": 0,
+          "unique_read_lines": 0
+        },
+        {
+          "id": "click-02",
+          "read_target": false,
+          "successful_reads": 2,
+          "unique_read_lines": 3
+        },
+        {
+          "id": "click-03",
+          "read_target": false,
+          "successful_reads": 3,
+          "unique_read_lines": 3
+        },
+        {
+          "id": "click-04",
+          "read_target": false,
+          "successful_reads": 0,
+          "unique_read_lines": 0
+        },
+        {
+          "id": "click-05",
+          "read_target": false,
+          "successful_reads": 1,
+          "unique_read_lines": 120
+        },
+        {
+          "id": "click-06",
+          "read_target": false,
+          "successful_reads": 1,
+          "unique_read_lines": 16
+        },
+        {
+          "id": "click-07",
+          "read_target": false,
+          "successful_reads": 1,
+          "unique_read_lines": 1
+        },
+        {
+          "id": "click-08",
+          "read_target": false,
+          "successful_reads": 1,
+          "unique_read_lines": 120
+        },
+        {
+          "id": "click-09",
+          "read_target": false,
+          "successful_reads": 1,
+          "unique_read_lines": 12
+        },
+        {
+          "id": "click-10",
+          "read_target": false,
+          "successful_reads": 1,
+          "unique_read_lines": 11
+        }
+      ]
+    },
+    "transformers_nf4": {
+      "tasks": 30,
+      "read_target_hits": 0,
+      "per_task": [
+        {
+          "id": "requests-01",
+          "read_target": false,
+          "successful_reads": 0,
+          "unique_read_lines": 0
+        },
+        {
+          "id": "requests-02",
+          "read_target": false,
+          "successful_reads": 0,
+          "unique_read_lines": 0
+        },
+        {
+          "id": "requests-03",
+          "read_target": false,
+          "successful_reads": 1,
+          "unique_read_lines": 1
+        },
+        {
+          "id": "requests-04",
+          "read_target": false,
+          "successful_reads": 0,
+          "unique_read_lines": 0
+        },
+        {
+          "id": "requests-05",
+          "read_target": false,
+          "successful_reads": 0,
+          "unique_read_lines": 0
+        },
+        {
+          "id": "requests-06",
+          "read_target": false,
+          "successful_reads": 1,
+          "unique_read_lines": 65
+        },
+        {
+          "id": "requests-07",
+          "read_target": false,
+          "successful_reads": 1,
+          "unique_read_lines": 2
+        },
+        {
+          "id": "requests-08",
+          "read_target": false,
+          "successful_reads": 0,
+          "unique_read_lines": 0
+        },
+        {
+          "id": "requests-09",
+          "read_target": false,
+          "successful_reads": 0,
+          "unique_read_lines": 0
+        },
+        {
+          "id": "requests-10",
+          "read_target": false,
+          "successful_reads": 3,
+          "unique_read_lines": 23
+        },
+        {
+          "id": "flask-01",
+          "read_target": false,
+          "successful_reads": 1,
+          "unique_read_lines": 1
+        },
+        {
+          "id": "flask-02",
+          "read_target": false,
+          "successful_reads": 0,
+          "unique_read_lines": 0
+        },
+        {
+          "id": "flask-03",
+          "read_target": false,
+          "successful_reads": 1,
+          "unique_read_lines": 77
+        },
+        {
+          "id": "flask-04",
+          "read_target": false,
+          "successful_reads": 0,
+          "unique_read_lines": 0
+        },
+        {
+          "id": "flask-05",
+          "read_target": false,
+          "successful_reads": 0,
+          "unique_read_lines": 0
+        },
+        {
+          "id": "flask-06",
+          "read_target": false,
+          "successful_reads": 1,
+          "unique_read_lines": 1
+        },
+        {
+          "id": "flask-07",
+          "read_target": false,
+          "successful_reads": 0,
+          "unique_read_lines": 0
+        },
+        {
+          "id": "flask-08",
+          "read_target": false,
+          "successful_reads": 0,
+          "unique_read_lines": 0
+        },
+        {
+          "id": "flask-09",
+          "read_target": false,
+          "successful_reads": 1,
+          "unique_read_lines": 15
+        },
+        {
+          "id": "flask-10",
+          "read_target": false,
+          "successful_reads": 0,
+          "unique_read_lines": 0
+        },
+        {
+          "id": "click-01",
+          "read_target": false,
+          "successful_reads": 0,
+          "unique_read_lines": 0
+        },
+        {
+          "id": "click-02",
+          "read_target": false,
+          "successful_reads": 0,
+          "unique_read_lines": 0
+        },
+        {
+          "id": "click-03",
+          "read_target": false,
+          "successful_reads": 1,
+          "unique_read_lines": 3
+        },
+        {
+          "id": "click-04",
+          "read_target": false,
+          "successful_reads": 0,
+          "unique_read_lines": 0
+        },
+        {
+          "id": "click-05",
+          "read_target": false,
+          "successful_reads": 4,
+          "unique_read_lines": 4
+        },
+        {
+          "id": "click-06",
+          "read_target": false,
+          "successful_reads": 1,
+          "unique_read_lines": 1
+        },
+        {
+          "id": "click-07",
+          "read_target": false,
+          "successful_reads": 1,
+          "unique_read_lines": 6
+        },
+        {
+          "id": "click-08",
+          "read_target": false,
+          "successful_reads": 1,
+          "unique_read_lines": 4
+        },
+        {
+          "id": "click-09",
+          "read_target": false,
+          "successful_reads": 1,
+          "unique_read_lines": 1
+        },
+        {
+          "id": "click-10",
+          "read_target": false,
+          "successful_reads": 0,
+          "unique_read_lines": 0
+        }
+      ]
+    },
+    "adapter_v1": {
+      "tasks": 30,
+      "read_target_hits": 0,
+      "per_task": [
+        {
+          "id": "requests-01",
+          "read_target": false,
+          "successful_reads": 1,
+          "unique_read_lines": 40
+        },
+        {
+          "id": "requests-02",
+          "read_target": false,
+          "successful_reads": 1,
+          "unique_read_lines": 35
+        },
+        {
+          "id": "requests-03",
+          "read_target": false,
+          "successful_reads": 1,
+          "unique_read_lines": 1
+        },
+        {
+          "id": "requests-04",
+          "read_target": false,
+          "successful_reads": 1,
+          "unique_read_lines": 84
+        },
+        {
+          "id": "requests-05",
+          "read_target": false,
+          "successful_reads": 0,
+          "unique_read_lines": 0
+        },
+        {
+          "id": "requests-06",
+          "read_target": false,
+          "successful_reads": 1,
+          "unique_read_lines": 66
+        },
+        {
+          "id": "requests-07",
+          "read_target": false,
+          "successful_reads": 1,
+          "unique_read_lines": 78
+        },
+        {
+          "id": "requests-08",
+          "read_target": false,
+          "successful_reads": 1,
+          "unique_read_lines": 1
+        },
+        {
+          "id": "requests-09",
+          "read_target": false,
+          "successful_reads": 0,
+          "unique_read_lines": 0
+        },
+        {
+          "id": "requests-10",
+          "read_target": false,
+          "successful_reads": 1,
+          "unique_read_lines": 2
+        },
+        {
+          "id": "flask-01",
+          "read_target": false,
+          "successful_reads": 1,
+          "unique_read_lines": 118
+        },
+        {
+          "id": "flask-02",
+          "read_target": false,
+          "successful_reads": 1,
+          "unique_read_lines": 23
+        },
+        {
+          "id": "flask-03",
+          "read_target": false,
+          "successful_reads": 1,
+          "unique_read_lines": 33
+        },
+        {
+          "id": "flask-04",
+          "read_target": false,
+          "successful_reads": 1,
+          "unique_read_lines": 37
+        },
+        {
+          "id": "flask-05",
+          "read_target": false,
+          "successful_reads": 1,
+          "unique_read_lines": 53
+        },
+        {
+          "id": "flask-06",
+          "read_target": false,
+          "successful_reads": 1,
+          "unique_read_lines": 17
+        },
+        {
+          "id": "flask-07",
+          "read_target": false,
+          "successful_reads": 1,
+          "unique_read_lines": 37
+        },
+        {
+          "id": "flask-08",
+          "read_target": false,
+          "successful_reads": 1,
+          "unique_read_lines": 31
+        },
+        {
+          "id": "flask-09",
+          "read_target": false,
+          "successful_reads": 1,
+          "unique_read_lines": 21
+        },
+        {
+          "id": "flask-10",
+          "read_target": false,
+          "successful_reads": 0,
+          "unique_read_lines": 0
+        },
+        {
+          "id": "click-01",
+          "read_target": false,
+          "successful_reads": 1,
+          "unique_read_lines": 111
+        },
+        {
+          "id": "click-02",
+          "read_target": false,
+          "successful_reads": 1,
+          "unique_read_lines": 89
+        },
+        {
+          "id": "click-03",
+          "read_target": false,
+          "successful_reads": 1,
+          "unique_read_lines": 21
+        },
+        {
+          "id": "click-04",
+          "read_target": false,
+          "successful_reads": 1,
+          "unique_read_lines": 3
+        },
+        {
+          "id": "click-05",
+          "read_target": false,
+          "successful_reads": 1,
+          "unique_read_lines": 75
+        },
+        {
+          "id": "click-06",
+          "read_target": false,
+          "successful_reads": 1,
+          "unique_read_lines": 87
+        },
+        {
+          "id": "click-07",
+          "read_target": false,
+          "successful_reads": 1,
+          "unique_read_lines": 56
+        },
+        {
+          "id": "click-08",
+          "read_target": false,
+          "successful_reads": 1,
+          "unique_read_lines": 14
+        },
+        {
+          "id": "click-09",
+          "read_target": false,
+          "successful_reads": 1,
+          "unique_read_lines": 21
+        },
+        {
+          "id": "click-10",
+          "read_target": false,
+          "successful_reads": 1,
+          "unique_read_lines": 48
+        }
+      ]
+    },
+    "adapter_v2": {
+      "tasks": 30,
+      "read_target_hits": 1,
+      "per_task": [
+        {
+          "id": "requests-01",
+          "read_target": false,
+          "successful_reads": 0,
+          "unique_read_lines": 0
+        },
+        {
+          "id": "requests-02",
+          "read_target": false,
+          "successful_reads": 1,
+          "unique_read_lines": 81
+        },
+        {
+          "id": "requests-03",
+          "read_target": false,
+          "successful_reads": 1,
+          "unique_read_lines": 101
+        },
+        {
+          "id": "requests-04",
+          "read_target": false,
+          "successful_reads": 0,
+          "unique_read_lines": 0
+        },
+        {
+          "id": "requests-05",
+          "read_target": false,
+          "successful_reads": 0,
+          "unique_read_lines": 0
+        },
+        {
+          "id": "requests-06",
+          "read_target": true,
+          "successful_reads": 1,
+          "unique_read_lines": 90
+        },
+        {
+          "id": "requests-07",
+          "read_target": false,
+          "successful_reads": 0,
+          "unique_read_lines": 0
+        },
+        {
+          "id": "requests-08",
+          "read_target": false,
+          "successful_reads": 1,
+          "unique_read_lines": 101
+        },
+        {
+          "id": "requests-09",
+          "read_target": false,
+          "successful_reads": 0,
+          "unique_read_lines": 0
+        },
+        {
+          "id": "requests-10",
+          "read_target": false,
+          "successful_reads": 0,
+          "unique_read_lines": 0
+        },
+        {
+          "id": "flask-01",
+          "read_target": false,
+          "successful_reads": 0,
+          "unique_read_lines": 0
+        },
+        {
+          "id": "flask-02",
+          "read_target": false,
+          "successful_reads": 0,
+          "unique_read_lines": 0
+        },
+        {
+          "id": "flask-03",
+          "read_target": false,
+          "successful_reads": 0,
+          "unique_read_lines": 0
+        },
+        {
+          "id": "flask-04",
+          "read_target": false,
+          "successful_reads": 0,
+          "unique_read_lines": 0
+        },
+        {
+          "id": "flask-05",
+          "read_target": false,
+          "successful_reads": 0,
+          "unique_read_lines": 0
+        },
+        {
+          "id": "flask-06",
+          "read_target": false,
+          "successful_reads": 0,
+          "unique_read_lines": 0
+        },
+        {
+          "id": "flask-07",
+          "read_target": false,
+          "successful_reads": 1,
+          "unique_read_lines": 74
+        },
+        {
+          "id": "flask-08",
+          "read_target": false,
+          "successful_reads": 1,
+          "unique_read_lines": 101
+        },
+        {
+          "id": "flask-09",
+          "read_target": false,
+          "successful_reads": 1,
+          "unique_read_lines": 101
+        },
+        {
+          "id": "flask-10",
+          "read_target": false,
+          "successful_reads": 0,
+          "unique_read_lines": 0
+        },
+        {
+          "id": "click-01",
+          "read_target": false,
+          "successful_reads": 0,
+          "unique_read_lines": 0
+        },
+        {
+          "id": "click-02",
+          "read_target": false,
+          "successful_reads": 0,
+          "unique_read_lines": 0
+        },
+        {
+          "id": "click-03",
+          "read_target": false,
+          "successful_reads": 0,
+          "unique_read_lines": 0
+        },
+        {
+          "id": "click-04",
+          "read_target": false,
+          "successful_reads": 0,
+          "unique_read_lines": 0
+        },
+        {
+          "id": "click-05",
+          "read_target": false,
+          "successful_reads": 0,
+          "unique_read_lines": 0
+        },
+        {
+          "id": "click-06",
+          "read_target": false,
+          "successful_reads": 1,
+          "unique_read_lines": 118
+        },
+        {
+          "id": "click-07",
+          "read_target": false,
+          "successful_reads": 0,
+          "unique_read_lines": 0
+        },
+        {
+          "id": "click-08",
+          "read_target": false,
+          "successful_reads": 0,
+          "unique_read_lines": 0
+        },
+        {
+          "id": "click-09",
+          "read_target": false,
+          "successful_reads": 0,
+          "unique_read_lines": 0
+        },
+        {
+          "id": "click-10",
+          "read_target": false,
+          "successful_reads": 0,
+          "unique_read_lines": 0
+        }
+      ]
+    }
+  }
+}

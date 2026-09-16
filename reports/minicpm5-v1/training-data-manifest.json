@@ -1,0 +1,25 @@
+{
+  "kind": "executed_oracle_demonstrations",
+  "seed": 42,
+  "limitations": "Three-file synthetic repositories; query-word searches and oracle-chosen target ranges. Teaches protocol, not realistic repository planning.",
+  "excluded_repositories_by_name": [
+    "click",
+    "flask",
+    "requests"
+  ],
+  "splits": {
+    "train": {
+      "trajectories": 256,
+      "action_examples": 826,
+      "source_sha256": "3eeed3185b74f934462aaccbd3c567f8db20754a1bf6f5f3686779f8b39f4338",
+      "output_sha256": "af0abde43f8bbebfb384885b021d316b26354f8d4d4d6a535528d4c91708b756"
+    },
+    "validation": {
+      "trajectories": 32,
+      "action_examples": 104,
+      "source_sha256": "e1b934c33f12322e4a56d0d17a987966c40961b035e15939fd716b76d4e017a2",
+      "output_sha256": "57c33bcef55832c4e86e4cbc37de31aeb94d8f118b5389dbcb73fd09cd7fd264"
+    }
+  },
+  "repository_disjoint": true
+}

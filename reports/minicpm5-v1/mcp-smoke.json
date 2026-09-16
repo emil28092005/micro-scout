@@ -1,0 +1,34 @@
+{
+  "initialization_seconds": 22.52389923999999,
+  "tools": [
+    "scout_live_search"
+  ],
+  "same_resident_server_calls": 2,
+  "results": [
+    {
+      "status": "budget_exhausted",
+      "elapsed_seconds": 31.885786627000016,
+      "rounds": 6,
+      "tool_calls": 5,
+      "tool_errors": 1,
+      "invalid_actions": 2,
+      "input_tokens": 17537,
+      "output_tokens": 168,
+      "returned_chars": 0,
+      "references": []
+    },
+    {
+      "status": "budget_exhausted",
+      "elapsed_seconds": 30.79203933000008,
+      "rounds": 6,
+      "tool_calls": 5,
+      "tool_errors": 1,
+      "invalid_actions": 2,
+      "input_tokens": 17537,
+      "output_tokens": 168,
+      "returned_chars": 0,
+      "references": []
+    }
+  ],
+  "scope": "Transport/resident inference check on an excluded development query; not task accuracy."
+}

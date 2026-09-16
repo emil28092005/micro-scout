@@ -1,0 +1,1352 @@
+[
+  {
+    "id": "requests-01",
+    "repository": "requests",
+    "scores": {
+      "file_hit": true,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 75,
+      "overlap_lines": 0
+    },
+    "status": "completed",
+    "elapsed_seconds": 0.2123761269976967,
+    "rounds": 0,
+    "tool_calls": 10,
+    "tool_errors": 0,
+    "invalid_actions": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "returned_chars": 2624,
+    "references": [
+      {
+        "path": "docs/user/quickstart.rst",
+        "start_line": 546,
+        "end_line": 570,
+        "sha256": "89406fd034b6a7d354ca367489fa9f1b8c65e68af05d7f119f06aaed12868c57",
+        "verified": true
+      },
+      {
+        "path": "src/requests/models.py",
+        "start_line": 630,
+        "end_line": 654,
+        "sha256": "32365d67893bb67c3ed67cf93ca4a18e63e6ab29342fa0dc8b09c59e06ff564e",
+        "verified": true
+      },
+      {
+        "path": "src/requests/models.py",
+        "start_line": 675,
+        "end_line": 699,
+        "sha256": "32365d67893bb67c3ed67cf93ca4a18e63e6ab29342fa0dc8b09c59e06ff564e",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "requests-02",
+    "repository": "requests",
+    "scores": {
+      "file_hit": true,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 75,
+      "overlap_lines": 0
+    },
+    "status": "completed",
+    "elapsed_seconds": 0.23922935999871697,
+    "rounds": 0,
+    "tool_calls": 12,
+    "tool_errors": 0,
+    "invalid_actions": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "returned_chars": 2764,
+    "references": [
+      {
+        "path": "tests/test_lowlevel.py",
+        "start_line": 30,
+        "end_line": 54,
+        "sha256": "2dc5990ef15fbbfcf1681827a337e6195144ee0e2031fb951ed1d32e29cdc27d",
+        "verified": true
+      },
+      {
+        "path": "src/requests/models.py",
+        "start_line": 833,
+        "end_line": 857,
+        "sha256": "32365d67893bb67c3ed67cf93ca4a18e63e6ab29342fa0dc8b09c59e06ff564e",
+        "verified": true
+      },
+      {
+        "path": "docs/user/advanced.rst",
+        "start_line": 291,
+        "end_line": 315,
+        "sha256": "2f6ad85a29e93427fe3eba05dfc80442bec71107f3b2d662b77bf8ae0fa1a000",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "requests-03",
+    "repository": "requests",
+    "scores": {
+      "file_hit": true,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 75,
+      "overlap_lines": 0
+    },
+    "status": "completed",
+    "elapsed_seconds": 0.22665887499897508,
+    "rounds": 0,
+    "tool_calls": 12,
+    "tool_errors": 0,
+    "invalid_actions": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "returned_chars": 4094,
+    "references": [
+      {
+        "path": "HISTORY.md",
+        "start_line": 4,
+        "end_line": 28,
+        "sha256": "7ee222a17a09d6c33c50bc5247d7cf1455b207218f0127cae952a3c09006648b",
+        "verified": true
+      },
+      {
+        "path": "src/requests/api.py",
+        "start_line": 25,
+        "end_line": 49,
+        "sha256": "fd96fd39aeedcd5222cd32b016b3e30c463d7a3b66fce9d2444467003c46b10b",
+        "verified": true
+      },
+      {
+        "path": "src/requests/sessions.py",
+        "start_line": 532,
+        "end_line": 556,
+        "sha256": "0a5d5da449ce7f0af3ccf6e4bbe7a67a935e37846dff4ff9f08cb6c7e2464e6f",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "requests-04",
+    "repository": "requests",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 75,
+      "overlap_lines": 0
+    },
+    "status": "completed",
+    "elapsed_seconds": 0.15885140899627004,
+    "rounds": 0,
+    "tool_calls": 9,
+    "tool_errors": 0,
+    "invalid_actions": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "returned_chars": 2948,
+    "references": [
+      {
+        "path": "docs/api.rst",
+        "start_line": 141,
+        "end_line": 165,
+        "sha256": "a4fb97ffeb6eae60455fd7d3e5bc104a477aae495185fc3907aef8f412ff7295",
+        "verified": true
+      },
+      {
+        "path": "HISTORY.md",
+        "start_line": 1896,
+        "end_line": 1920,
+        "sha256": "7ee222a17a09d6c33c50bc5247d7cf1455b207218f0127cae952a3c09006648b",
+        "verified": true
+      },
+      {
+        "path": "docs/user/advanced.rst",
+        "start_line": 723,
+        "end_line": 747,
+        "sha256": "2f6ad85a29e93427fe3eba05dfc80442bec71107f3b2d662b77bf8ae0fa1a000",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "requests-05",
+    "repository": "requests",
+    "scores": {
+      "file_hit": true,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 75,
+      "overlap_lines": 0
+    },
+    "status": "completed",
+    "elapsed_seconds": 0.24808696300169686,
+    "rounds": 0,
+    "tool_calls": 12,
+    "tool_errors": 0,
+    "invalid_actions": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "returned_chars": 2641,
+    "references": [
+      {
+        "path": "docs/user/advanced.rst",
+        "start_line": 179,
+        "end_line": 203,
+        "sha256": "2f6ad85a29e93427fe3eba05dfc80442bec71107f3b2d662b77bf8ae0fa1a000",
+        "verified": true
+      },
+      {
+        "path": "HISTORY.md",
+        "start_line": 645,
+        "end_line": 669,
+        "sha256": "7ee222a17a09d6c33c50bc5247d7cf1455b207218f0127cae952a3c09006648b",
+        "verified": true
+      },
+      {
+        "path": "src/requests/sessions.py",
+        "start_line": 462,
+        "end_line": 486,
+        "sha256": "0a5d5da449ce7f0af3ccf6e4bbe7a67a935e37846dff4ff9f08cb6c7e2464e6f",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "requests-06",
+    "repository": "requests",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 75,
+      "overlap_lines": 0
+    },
+    "status": "completed",
+    "elapsed_seconds": 0.2566766380041372,
+    "rounds": 0,
+    "tool_calls": 12,
+    "tool_errors": 0,
+    "invalid_actions": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "returned_chars": 3508,
+    "references": [
+      {
+        "path": "src/requests/sessions.py",
+        "start_line": 225,
+        "end_line": 249,
+        "sha256": "0a5d5da449ce7f0af3ccf6e4bbe7a67a935e37846dff4ff9f08cb6c7e2464e6f",
+        "verified": true
+      },
+      {
+        "path": "tests/test_lowlevel.py",
+        "start_line": 152,
+        "end_line": 176,
+        "sha256": "2dc5990ef15fbbfcf1681827a337e6195144ee0e2031fb951ed1d32e29cdc27d",
+        "verified": true
+      },
+      {
+        "path": "HISTORY.md",
+        "start_line": 1070,
+        "end_line": 1094,
+        "sha256": "7ee222a17a09d6c33c50bc5247d7cf1455b207218f0127cae952a3c09006648b",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "requests-07",
+    "repository": "requests",
+    "scores": {
+      "file_hit": true,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 69,
+      "overlap_lines": 0
+    },
+    "status": "completed",
+    "elapsed_seconds": 0.23799736799992388,
+    "rounds": 0,
+    "tool_calls": 13,
+    "tool_errors": 0,
+    "invalid_actions": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "returned_chars": 2945,
+    "references": [
+      {
+        "path": "docs/community/release-process.rst",
+        "start_line": 10,
+        "end_line": 34,
+        "sha256": "a7a8e987bf671a79e4b44e8722b7446fd429922e7d0bde50dd2fba578b966485",
+        "verified": true
+      },
+      {
+        "path": "docs/user/install.rst",
+        "start_line": 18,
+        "end_line": 36,
+        "sha256": "8b70734839932fa0a53da6e1d97e9c8077fe15f6e06747f24acf154feea039db",
+        "verified": true
+      },
+      {
+        "path": "src/requests/cookies.py",
+        "start_line": 383,
+        "end_line": 407,
+        "sha256": "6cd8be8aa123e0d3d9d34fa86feac7bf392f39bccdde5129830de0ea9692dd7c",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "requests-08",
+    "repository": "requests",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 75,
+      "overlap_lines": 0
+    },
+    "status": "completed",
+    "elapsed_seconds": 0.21456882300117286,
+    "rounds": 0,
+    "tool_calls": 12,
+    "tool_errors": 0,
+    "invalid_actions": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "returned_chars": 2512,
+    "references": [
+      {
+        "path": "docs/user/authentication.rst",
+        "start_line": 28,
+        "end_line": 52,
+        "sha256": "5878d62d3929b057f8a6008f21641ae9fae0515b5ed6174da7ac763e36ccdae6",
+        "verified": true
+      },
+      {
+        "path": "HISTORY.md",
+        "start_line": 1255,
+        "end_line": 1279,
+        "sha256": "7ee222a17a09d6c33c50bc5247d7cf1455b207218f0127cae952a3c09006648b",
+        "verified": true
+      },
+      {
+        "path": "HISTORY.md",
+        "start_line": 16,
+        "end_line": 40,
+        "sha256": "7ee222a17a09d6c33c50bc5247d7cf1455b207218f0127cae952a3c09006648b",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "requests-09",
+    "repository": "requests",
+    "scores": {
+      "file_hit": true,
+      "target_hit": true,
+      "line_precision": 0.13333333333333333,
+      "line_recall": 0.8333333333333334,
+      "line_f1": 0.2298850574712644,
+      "returned_lines": 75,
+      "overlap_lines": 10
+    },
+    "status": "completed",
+    "elapsed_seconds": 0.2577098979963921,
+    "rounds": 0,
+    "tool_calls": 12,
+    "tool_errors": 0,
+    "invalid_actions": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "returned_chars": 2670,
+    "references": [
+      {
+        "path": "src/requests/utils.py",
+        "start_line": 1060,
+        "end_line": 1084,
+        "sha256": "5aa53ceab677c2f842fad42359c8ed1ff1c4299c1607789609957a496e4311d4",
+        "verified": true
+      },
+      {
+        "path": "src/requests/sessions.py",
+        "start_line": 236,
+        "end_line": 260,
+        "sha256": "0a5d5da449ce7f0af3ccf6e4bbe7a67a935e37846dff4ff9f08cb6c7e2464e6f",
+        "verified": true
+      },
+      {
+        "path": "src/requests/exceptions.py",
+        "start_line": 115,
+        "end_line": 139,
+        "sha256": "8c93d2d545804ecf3a4a155468ba2b4e225bd52686ba83445a020225ea7e5646",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "requests-10",
+    "repository": "requests",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 75,
+      "overlap_lines": 0
+    },
+    "status": "completed",
+    "elapsed_seconds": 0.22547175100044115,
+    "rounds": 0,
+    "tool_calls": 11,
+    "tool_errors": 0,
+    "invalid_actions": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "returned_chars": 2546,
+    "references": [
+      {
+        "path": "tests/test_requests.py",
+        "start_line": 647,
+        "end_line": 671,
+        "sha256": "4508b22c1aa65417427fe7e51ea1f4e3a3d43d3021acdeb5a5260720a1b367a1",
+        "verified": true
+      },
+      {
+        "path": "src/requests/sessions.py",
+        "start_line": 396,
+        "end_line": 420,
+        "sha256": "0a5d5da449ce7f0af3ccf6e4bbe7a67a935e37846dff4ff9f08cb6c7e2464e6f",
+        "verified": true
+      },
+      {
+        "path": "HISTORY.md",
+        "start_line": 1880,
+        "end_line": 1904,
+        "sha256": "7ee222a17a09d6c33c50bc5247d7cf1455b207218f0127cae952a3c09006648b",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "flask-01",
+    "repository": "flask",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 75,
+      "overlap_lines": 0
+    },
+    "status": "completed",
+    "elapsed_seconds": 0.1357761089966516,
+    "rounds": 0,
+    "tool_calls": 8,
+    "tool_errors": 0,
+    "invalid_actions": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "returned_chars": 3849,
+    "references": [
+      {
+        "path": "docs/lifecycle.rst",
+        "start_line": 117,
+        "end_line": 141,
+        "sha256": "e056e80bc5cbe46cf616c335b08fc0fd6aad513f3fb1f8fe2d02807dfe0c504c",
+        "verified": true
+      },
+      {
+        "path": "src/flask/wrappers.py",
+        "start_line": 21,
+        "end_line": 45,
+        "sha256": "8d492fe2655e93622ae21c3177846faab20c6faf41bf43c49438162e6779391a",
+        "verified": true
+      },
+      {
+        "path": "docs/patterns/fileuploads.rst",
+        "start_line": 49,
+        "end_line": 73,
+        "sha256": "1db4e08f5a4435abb41946314bb35d5d0b3e86723db02961ba5bd8f9f9f9a556",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "flask-02",
+    "repository": "flask",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 75,
+      "overlap_lines": 0
+    },
+    "status": "completed",
+    "elapsed_seconds": 0.24562457499996526,
+    "rounds": 0,
+    "tool_calls": 12,
+    "tool_errors": 0,
+    "invalid_actions": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "returned_chars": 3072,
+    "references": [
+      {
+        "path": "docs/quickstart.rst",
+        "start_line": 683,
+        "end_line": 707,
+        "sha256": "7edf2b08a926b08149ba13d9d8124431244568b9de06791aeefff44d39491071",
+        "verified": true
+      },
+      {
+        "path": "src/flask/helpers.py",
+        "start_line": 135,
+        "end_line": 159,
+        "sha256": "ac96607bbfc9dbcf09d5442fe7e90d7f8a046b0df7d8f3fc3535b44112016d71",
+        "verified": true
+      },
+      {
+        "path": "src/flask/ctx.py",
+        "start_line": 122,
+        "end_line": 146,
+        "sha256": "b0f2b36a1aad831692eced32f44fcdcd424d503c930fa3381a40eb56ed9f5376",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "flask-03",
+    "repository": "flask",
+    "scores": {
+      "file_hit": true,
+      "target_hit": true,
+      "line_precision": 0.056338028169014086,
+      "line_recall": 1.0,
+      "line_f1": 0.10666666666666667,
+      "returned_lines": 71,
+      "overlap_lines": 4
+    },
+    "status": "completed",
+    "elapsed_seconds": 0.16663112300011562,
+    "rounds": 0,
+    "tool_calls": 9,
+    "tool_errors": 0,
+    "invalid_actions": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "returned_chars": 2614,
+    "references": [
+      {
+        "path": "docs/design.rst",
+        "start_line": 171,
+        "end_line": 195,
+        "sha256": "f30b92ea13bf767cb087559763489431635015bb6dd13937174f76b9121685e0",
+        "verified": true
+      },
+      {
+        "path": "docs/async-await.rst",
+        "start_line": 1,
+        "end_line": 21,
+        "sha256": "d8ccc9c865191b6465eb45e421af4a4c89372fcf9f7251ba5b0b99f54fe55a5e",
+        "verified": true
+      },
+      {
+        "path": "src/flask/app.py",
+        "start_line": 955,
+        "end_line": 979,
+        "sha256": "5c6aa0151b0b8018732280761d27eda0c4c83378630e21faadd57b73783720a7",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "flask-04",
+    "repository": "flask",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 70,
+      "overlap_lines": 0
+    },
+    "status": "completed",
+    "elapsed_seconds": 0.23229297299985774,
+    "rounds": 0,
+    "tool_calls": 11,
+    "tool_errors": 0,
+    "invalid_actions": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "returned_chars": 2110,
+    "references": [
+      {
+        "path": "src/flask/helpers.py",
+        "start_line": 54,
+        "end_line": 78,
+        "sha256": "ac96607bbfc9dbcf09d5442fe7e90d7f8a046b0df7d8f3fc3535b44112016d71",
+        "verified": true
+      },
+      {
+        "path": "tests/test_basic.py",
+        "start_line": 673,
+        "end_line": 697,
+        "sha256": "14f1b45df7cebd1c556c0b67e06a581b9ab316fe1d2415e724d287077484b65f",
+        "verified": true
+      },
+      {
+        "path": "docs/reqcontext.rst",
+        "start_line": 1,
+        "end_line": 20,
+        "sha256": "af99d77d335c3dc83603634ff14405e277d562df4e0f28f1f18073b40c9e533a",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "flask-05",
+    "repository": "flask",
+    "scores": {
+      "file_hit": true,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 75,
+      "overlap_lines": 0
+    },
+    "status": "completed",
+    "elapsed_seconds": 0.2190158919984242,
+    "rounds": 0,
+    "tool_calls": 11,
+    "tool_errors": 0,
+    "invalid_actions": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "returned_chars": 3167,
+    "references": [
+      {
+        "path": "src/flask/app.py",
+        "start_line": 917,
+        "end_line": 941,
+        "sha256": "5c6aa0151b0b8018732280761d27eda0c4c83378630e21faadd57b73783720a7",
+        "verified": true
+      },
+      {
+        "path": "CHANGES.rst",
+        "start_line": 588,
+        "end_line": 612,
+        "sha256": "792e2506b6fd603fba8fcbacbfa61153249cd16eee3a22edfc27911709ee4b42",
+        "verified": true
+      },
+      {
+        "path": "src/flask/cli.py",
+        "start_line": 1044,
+        "end_line": 1068,
+        "sha256": "3df87bdbe07196fa07d101c20ce7351ef5c6ecaab95deb5fdf3ccdcf690d4879",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "flask-06",
+    "repository": "flask",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 75,
+      "overlap_lines": 0
+    },
+    "status": "completed",
+    "elapsed_seconds": 0.2650615550010116,
+    "rounds": 0,
+    "tool_calls": 13,
+    "tool_errors": 0,
+    "invalid_actions": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "returned_chars": 2767,
+    "references": [
+      {
+        "path": "docs/patterns/streaming.rst",
+        "start_line": 37,
+        "end_line": 61,
+        "sha256": "8c647dcfaee32f938d8d58fcc23e67a9c1fdb9b56c07ac714c49018696ae799b",
+        "verified": true
+      },
+      {
+        "path": "src/flask/templating.py",
+        "start_line": 169,
+        "end_line": 193,
+        "sha256": "207b1db05f9e0493c2244d0024b0a2d558619f2b4e19dcc70a7df24e1cfcedce",
+        "verified": true
+      },
+      {
+        "path": "docs/quickstart.rst",
+        "start_line": 683,
+        "end_line": 707,
+        "sha256": "7edf2b08a926b08149ba13d9d8124431244568b9de06791aeefff44d39491071",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "flask-07",
+    "repository": "flask",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 75,
+      "overlap_lines": 0
+    },
+    "status": "completed",
+    "elapsed_seconds": 0.19137925700488267,
+    "rounds": 0,
+    "tool_calls": 11,
+    "tool_errors": 0,
+    "invalid_actions": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "returned_chars": 2990,
+    "references": [
+      {
+        "path": "docs/signals.rst",
+        "start_line": 20,
+        "end_line": 44,
+        "sha256": "b5c0e6bb0ec158aa9cf2bcbca49ed0090c5c0942bb4da7a7578af27d01262f84",
+        "verified": true
+      },
+      {
+        "path": "src/flask/__init__.py",
+        "start_line": 4,
+        "end_line": 28,
+        "sha256": "987bc937d4b0b65d510ed8c2a82218c889e22bf499fe5fe1a94ca73b382927da",
+        "verified": true
+      },
+      {
+        "path": "src/flask/app.py",
+        "start_line": 27,
+        "end_line": 51,
+        "sha256": "5c6aa0151b0b8018732280761d27eda0c4c83378630e21faadd57b73783720a7",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "flask-08",
+    "repository": "flask",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 75,
+      "overlap_lines": 0
+    },
+    "status": "completed",
+    "elapsed_seconds": 0.24074820499663474,
+    "rounds": 0,
+    "tool_calls": 12,
+    "tool_errors": 0,
+    "invalid_actions": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "returned_chars": 3063,
+    "references": [
+      {
+        "path": "src/flask/__init__.py",
+        "start_line": 4,
+        "end_line": 28,
+        "sha256": "987bc937d4b0b65d510ed8c2a82218c889e22bf499fe5fe1a94ca73b382927da",
+        "verified": true
+      },
+      {
+        "path": "src/flask/ctx.py",
+        "start_line": 291,
+        "end_line": 315,
+        "sha256": "b0f2b36a1aad831692eced32f44fcdcd424d503c930fa3381a40eb56ed9f5376",
+        "verified": true
+      },
+      {
+        "path": "docs/patterns/viewdecorators.rst",
+        "start_line": 66,
+        "end_line": 90,
+        "sha256": "2e461ba65df1ba86c01b49f20b5c118d75544796ba637c8bebe8c4789c761144",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "flask-09",
+    "repository": "flask",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 75,
+      "overlap_lines": 0
+    },
+    "status": "completed",
+    "elapsed_seconds": 0.3122654109974974,
+    "rounds": 0,
+    "tool_calls": 14,
+    "tool_errors": 0,
+    "invalid_actions": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "returned_chars": 3901,
+    "references": [
+      {
+        "path": "docs/cli.rst",
+        "start_line": 148,
+        "end_line": 172,
+        "sha256": "e8e5e9b220a5159e9c9c8b413de499aa5a51cd0ca487681e2352bbdf6f9b0cda",
+        "verified": true
+      },
+      {
+        "path": "CHANGES.rst",
+        "start_line": 916,
+        "end_line": 940,
+        "sha256": "792e2506b6fd603fba8fcbacbfa61153249cd16eee3a22edfc27911709ee4b42",
+        "verified": true
+      },
+      {
+        "path": "src/flask/app.py",
+        "start_line": 578,
+        "end_line": 602,
+        "sha256": "5c6aa0151b0b8018732280761d27eda0c4c83378630e21faadd57b73783720a7",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "flask-10",
+    "repository": "flask",
+    "scores": {
+      "file_hit": true,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 75,
+      "overlap_lines": 0
+    },
+    "status": "completed",
+    "elapsed_seconds": 0.2551453929991112,
+    "rounds": 0,
+    "tool_calls": 11,
+    "tool_errors": 0,
+    "invalid_actions": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "returned_chars": 2785,
+    "references": [
+      {
+        "path": "src/flask/sessions.py",
+        "start_line": 287,
+        "end_line": 311,
+        "sha256": "76ebd81a608687f1f772032ecb6a1e4a3ac2b02bcbca517808128e5e9374426b",
+        "verified": true
+      },
+      {
+        "path": "src/flask/sessions.py",
+        "start_line": 40,
+        "end_line": 64,
+        "sha256": "76ebd81a608687f1f772032ecb6a1e4a3ac2b02bcbca517808128e5e9374426b",
+        "verified": true
+      },
+      {
+        "path": "docs/api.rst",
+        "start_line": 49,
+        "end_line": 73,
+        "sha256": "08650a7a23f8b2f0ca46f52f66c79ae578fe105b33a6ee541c20bc6aa70e52c9",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "click-01",
+    "repository": "click",
+    "scores": {
+      "file_hit": true,
+      "target_hit": false,
+      "line_precision": 0.02666666666666667,
+      "line_recall": 0.13333333333333333,
+      "line_f1": 0.044444444444444446,
+      "returned_lines": 75,
+      "overlap_lines": 2
+    },
+    "status": "completed",
+    "elapsed_seconds": 0.20389179199992213,
+    "rounds": 0,
+    "tool_calls": 11,
+    "tool_errors": 0,
+    "invalid_actions": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "returned_chars": 3270,
+    "references": [
+      {
+        "path": "src/click/types.py",
+        "start_line": 321,
+        "end_line": 345,
+        "sha256": "2814d1c4ddbc711d5567999bf62257f7c3104b0fe9f521b3963a9f108f33e53c",
+        "verified": true
+      },
+      {
+        "path": "src/click/core.py",
+        "start_line": 2277,
+        "end_line": 2301,
+        "sha256": "814869352f5c14119d1175dd8ac1951be791bc67f8f514f215a831ba5ab0745c",
+        "verified": true
+      },
+      {
+        "path": "src/click/termui.py",
+        "start_line": 97,
+        "end_line": 121,
+        "sha256": "bc062b282d9aedffcd7c42210138445587dafff89be5741b4d2086b499400510",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "click-02",
+    "repository": "click",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 75,
+      "overlap_lines": 0
+    },
+    "status": "completed",
+    "elapsed_seconds": 0.24203612299606903,
+    "rounds": 0,
+    "tool_calls": 13,
+    "tool_errors": 0,
+    "invalid_actions": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "returned_chars": 2733,
+    "references": [
+      {
+        "path": "CHANGES.rst",
+        "start_line": 547,
+        "end_line": 571,
+        "sha256": "ee3157166cac1cfff808b1fe0d4152a6d29b1de9b3a77e0709190c690e6a54e5",
+        "verified": true
+      },
+      {
+        "path": "docs/testing.md",
+        "start_line": 105,
+        "end_line": 129,
+        "sha256": "a9242b5bdac18255775951ec18e0850c96633c0fc4cae20a81d502ae6aa687e8",
+        "verified": true
+      },
+      {
+        "path": "docs/testing.md",
+        "start_line": 135,
+        "end_line": 159,
+        "sha256": "a9242b5bdac18255775951ec18e0850c96633c0fc4cae20a81d502ae6aa687e8",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "click-03",
+    "repository": "click",
+    "scores": {
+      "file_hit": true,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 75,
+      "overlap_lines": 0
+    },
+    "status": "completed",
+    "elapsed_seconds": 0.258414112002356,
+    "rounds": 0,
+    "tool_calls": 14,
+    "tool_errors": 0,
+    "invalid_actions": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "returned_chars": 3029,
+    "references": [
+      {
+        "path": "src/click/termui.py",
+        "start_line": 345,
+        "end_line": 369,
+        "sha256": "bc062b282d9aedffcd7c42210138445587dafff89be5741b4d2086b499400510",
+        "verified": true
+      },
+      {
+        "path": "src/click/types.py",
+        "start_line": 384,
+        "end_line": 408,
+        "sha256": "2814d1c4ddbc711d5567999bf62257f7c3104b0fe9f521b3963a9f108f33e53c",
+        "verified": true
+      },
+      {
+        "path": "src/click/types.py",
+        "start_line": 412,
+        "end_line": 436,
+        "sha256": "2814d1c4ddbc711d5567999bf62257f7c3104b0fe9f521b3963a9f108f33e53c",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "click-04",
+    "repository": "click",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 75,
+      "overlap_lines": 0
+    },
+    "status": "completed",
+    "elapsed_seconds": 0.20261061099881772,
+    "rounds": 0,
+    "tool_calls": 11,
+    "tool_errors": 0,
+    "invalid_actions": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "returned_chars": 3126,
+    "references": [
+      {
+        "path": "CHANGES.rst",
+        "start_line": 45,
+        "end_line": 69,
+        "sha256": "ee3157166cac1cfff808b1fe0d4152a6d29b1de9b3a77e0709190c690e6a54e5",
+        "verified": true
+      },
+      {
+        "path": "CHANGES.rst",
+        "start_line": 283,
+        "end_line": 307,
+        "sha256": "ee3157166cac1cfff808b1fe0d4152a6d29b1de9b3a77e0709190c690e6a54e5",
+        "verified": true
+      },
+      {
+        "path": "docs/options.md",
+        "start_line": 122,
+        "end_line": 146,
+        "sha256": "d9d94ddb6593b558d2f0bdd6190da3c2520faecb44f61cef9d67b2f9e50d9652",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "click-05",
+    "repository": "click",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 75,
+      "overlap_lines": 0
+    },
+    "status": "completed",
+    "elapsed_seconds": 0.3045571469992865,
+    "rounds": 0,
+    "tool_calls": 14,
+    "tool_errors": 0,
+    "invalid_actions": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "returned_chars": 3028,
+    "references": [
+      {
+        "path": "src/click/_termui_impl.py",
+        "start_line": 406,
+        "end_line": 430,
+        "sha256": "0125e12e2f4840873426cf4a4124bedfe48b65c3deb7756acac05ff5681b6e92",
+        "verified": true
+      },
+      {
+        "path": "src/click/_termui_impl.py",
+        "start_line": 506,
+        "end_line": 530,
+        "sha256": "0125e12e2f4840873426cf4a4124bedfe48b65c3deb7756acac05ff5681b6e92",
+        "verified": true
+      },
+      {
+        "path": "CHANGES.rst",
+        "start_line": 59,
+        "end_line": 83,
+        "sha256": "ee3157166cac1cfff808b1fe0d4152a6d29b1de9b3a77e0709190c690e6a54e5",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "click-06",
+    "repository": "click",
+    "scores": {
+      "file_hit": true,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 75,
+      "overlap_lines": 0
+    },
+    "status": "completed",
+    "elapsed_seconds": 0.17477613600203767,
+    "rounds": 0,
+    "tool_calls": 10,
+    "tool_errors": 0,
+    "invalid_actions": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "returned_chars": 3077,
+    "references": [
+      {
+        "path": "src/click/core.py",
+        "start_line": 479,
+        "end_line": 503,
+        "sha256": "814869352f5c14119d1175dd8ac1951be791bc67f8f514f215a831ba5ab0745c",
+        "verified": true
+      },
+      {
+        "path": "src/click/shell_completion.py",
+        "start_line": 454,
+        "end_line": 478,
+        "sha256": "09048676382e9f83916ce66b5cfd0256112d3f1e249ecb9f3a446c0e22bae1c3",
+        "verified": true
+      },
+      {
+        "path": "src/click/core.py",
+        "start_line": 847,
+        "end_line": 871,
+        "sha256": "814869352f5c14119d1175dd8ac1951be791bc67f8f514f215a831ba5ab0745c",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "click-07",
+    "repository": "click",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 75,
+      "overlap_lines": 0
+    },
+    "status": "completed",
+    "elapsed_seconds": 0.21878876999835484,
+    "rounds": 0,
+    "tool_calls": 11,
+    "tool_errors": 0,
+    "invalid_actions": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "returned_chars": 2875,
+    "references": [
+      {
+        "path": "CHANGES.rst",
+        "start_line": 316,
+        "end_line": 340,
+        "sha256": "ee3157166cac1cfff808b1fe0d4152a6d29b1de9b3a77e0709190c690e6a54e5",
+        "verified": true
+      },
+      {
+        "path": "src/click/termui.py",
+        "start_line": 267,
+        "end_line": 291,
+        "sha256": "bc062b282d9aedffcd7c42210138445587dafff89be5741b4d2086b499400510",
+        "verified": true
+      },
+      {
+        "path": "src/click/core.py",
+        "start_line": 1984,
+        "end_line": 2008,
+        "sha256": "814869352f5c14119d1175dd8ac1951be791bc67f8f514f215a831ba5ab0745c",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "click-08",
+    "repository": "click",
+    "scores": {
+      "file_hit": true,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 75,
+      "overlap_lines": 0
+    },
+    "status": "completed",
+    "elapsed_seconds": 0.16441234700323548,
+    "rounds": 0,
+    "tool_calls": 11,
+    "tool_errors": 0,
+    "invalid_actions": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "returned_chars": 2501,
+    "references": [
+      {
+        "path": "src/click/termui.py",
+        "start_line": 185,
+        "end_line": 209,
+        "sha256": "bc062b282d9aedffcd7c42210138445587dafff89be5741b4d2086b499400510",
+        "verified": true
+      },
+      {
+        "path": "docs/utils.rst",
+        "start_line": 344,
+        "end_line": 368,
+        "sha256": "2db115bb4a4991092ae41b021f57528e5a02a9873031318d5e252f2a3001f497",
+        "verified": true
+      },
+      {
+        "path": "docs/utils.rst",
+        "start_line": 369,
+        "end_line": 393,
+        "sha256": "2db115bb4a4991092ae41b021f57528e5a02a9873031318d5e252f2a3001f497",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "click-09",
+    "repository": "click",
+    "scores": {
+      "file_hit": true,
+      "target_hit": false,
+      "line_precision": 0.013333333333333334,
+      "line_recall": 0.07142857142857142,
+      "line_f1": 0.02247191011235955,
+      "returned_lines": 75,
+      "overlap_lines": 1
+    },
+    "status": "completed",
+    "elapsed_seconds": 0.17001803599850973,
+    "rounds": 0,
+    "tool_calls": 11,
+    "tool_errors": 0,
+    "invalid_actions": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "returned_chars": 2513,
+    "references": [
+      {
+        "path": "src/click/testing.py",
+        "start_line": 528,
+        "end_line": 552,
+        "sha256": "d9e2dd01a0890864e83f94f0f9737c263ac36f7c1b2487c047183777472b5b93",
+        "verified": true
+      },
+      {
+        "path": "src/click/utils.py",
+        "start_line": 375,
+        "end_line": 399,
+        "sha256": "6f5326faeb040c11ed13070f96d3c89f7cd22b89f0d8a4e9e460bbfe849394ba",
+        "verified": true
+      },
+      {
+        "path": "src/click/globals.py",
+        "start_line": 38,
+        "end_line": 62,
+        "sha256": "80cf8d87a0383341c1fd2824685e4ce2770618c0c773f7e51d7bbdfe88781845",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "click-10",
+    "repository": "click",
+    "scores": {
+      "file_hit": true,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 75,
+      "overlap_lines": 0
+    },
+    "status": "completed",
+    "elapsed_seconds": 0.28486606599472,
+    "rounds": 0,
+    "tool_calls": 14,
+    "tool_errors": 0,
+    "invalid_actions": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "returned_chars": 3083,
+    "references": [
+      {
+        "path": "src/click/utils.py",
+        "start_line": 125,
+        "end_line": 149,
+        "sha256": "6f5326faeb040c11ed13070f96d3c89f7cd22b89f0d8a4e9e460bbfe849394ba",
+        "verified": true
+      },
+      {
+        "path": "src/click/types.py",
+        "start_line": 703,
+        "end_line": 727,
+        "sha256": "2814d1c4ddbc711d5567999bf62257f7c3104b0fe9f521b3963a9f108f33e53c",
+        "verified": true
+      },
+      {
+        "path": "src/click/termui.py",
+        "start_line": 715,
+        "end_line": 739,
+        "sha256": "bc062b282d9aedffcd7c42210138445587dafff89be5741b4d2086b499400510",
+        "verified": true
+      }
+    ]
+  }
+]

@@ -1,0 +1,84 @@
+{
+  "tasks": 30,
+  "target_hit_rate": 0.06666666666666667,
+  "file_hit_rate": 0.5,
+  "macro_line_precision": 0.007655712050078247,
+  "macro_line_recall": 0.06793650793650793,
+  "macro_line_f1": 0.013448935956491168,
+  "latency_median_seconds": 0.2294759239994164,
+  "latency_p95_seconds": 0.2956961605472316,
+  "statuses": {
+    "completed": 30
+  },
+  "total_tool_errors": 0,
+  "total_invalid_actions": 0,
+  "mean_rounds": 0,
+  "mean_tool_calls": 11.566666666666666,
+  "total_input_tokens": 0,
+  "total_output_tokens": 0,
+  "mean_returned_chars": 2960.1666666666665,
+  "per_repository": {
+    "requests": {
+      "tasks": 10,
+      "target_hit_rate": 0.1,
+      "file_hit_rate": 0.6,
+      "macro_line_precision": 0.013333333333333332,
+      "macro_line_recall": 0.08333333333333334,
+      "macro_line_f1": 0.02298850574712644,
+      "latency_median_seconds": 0.23232812149944948,
+      "latency_p95_seconds": 0.2572449309998774,
+      "statuses": {
+        "completed": 10
+      },
+      "total_tool_errors": 0,
+      "total_invalid_actions": 0,
+      "mean_rounds": 0,
+      "mean_tool_calls": 11.5,
+      "total_input_tokens": 0,
+      "total_output_tokens": 0,
+      "mean_returned_chars": 2925.2
+    },
+    "flask": {
+      "tasks": 10,
+      "target_hit_rate": 0.1,
+      "file_hit_rate": 0.3,
+      "macro_line_precision": 0.005633802816901409,
+      "macro_line_recall": 0.1,
+      "macro_line_f1": 0.010666666666666668,
+      "latency_median_seconds": 0.23652058899824624,
+      "latency_p95_seconds": 0.2910236757990788,
+      "statuses": {
+        "completed": 10
+      },
+      "total_tool_errors": 0,
+      "total_invalid_actions": 0,
+      "mean_rounds": 0,
+      "mean_tool_calls": 11.2,
+      "total_input_tokens": 0,
+      "total_output_tokens": 0,
+      "mean_returned_chars": 3031.8
+    },
+    "click": {
+      "tasks": 10,
+      "target_hit_rate": 0,
+      "file_hit_rate": 0.6,
+      "macro_line_precision": 0.004,
+      "macro_line_recall": 0.020476190476190474,
+      "macro_line_f1": 0.006691635455680399,
+      "latency_median_seconds": 0.21134028099913849,
+      "latency_p95_seconds": 0.2956961605472316,
+      "statuses": {
+        "completed": 10
+      },
+      "total_tool_errors": 0,
+      "total_invalid_actions": 0,
+      "mean_rounds": 0,
+      "mean_tool_calls": 12,
+      "total_input_tokens": 0,
+      "total_output_tokens": 0,
+      "mean_returned_chars": 2923.5
+    }
+  },
+  "sampled_peak_gpu_memory_mib": null,
+  "gpu_sampling_interval_seconds": 1
+}

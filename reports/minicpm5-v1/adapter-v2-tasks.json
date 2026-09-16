@@ -1,0 +1,748 @@
+[
+  {
+    "id": "requests-01",
+    "repository": "requests",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 0,
+      "overlap_lines": 0
+    },
+    "status": "budget_exhausted",
+    "elapsed_seconds": 32.45663743799378,
+    "rounds": 6,
+    "tool_calls": 5,
+    "tool_errors": 1,
+    "invalid_actions": 2,
+    "input_tokens": 17782,
+    "output_tokens": 171,
+    "returned_chars": 0,
+    "references": []
+  },
+  {
+    "id": "requests-02",
+    "repository": "requests",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 54,
+      "overlap_lines": 0
+    },
+    "status": "completed",
+    "elapsed_seconds": 15.850956338996184,
+    "rounds": 3,
+    "tool_calls": 3,
+    "tool_errors": 0,
+    "invalid_actions": 0,
+    "input_tokens": 6817,
+    "output_tokens": 89,
+    "returned_chars": 1645,
+    "references": [
+      {
+        "path": "src/requests/utils.py",
+        "start_line": 206,
+        "end_line": 259,
+        "sha256": "5aa53ceab677c2f842fad42359c8ed1ff1c4299c1607789609957a496e4311d4",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "requests-03",
+    "repository": "requests",
+    "scores": {
+      "file_hit": true,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 63,
+      "overlap_lines": 0
+    },
+    "status": "completed",
+    "elapsed_seconds": 16.54656796400377,
+    "rounds": 3,
+    "tool_calls": 3,
+    "tool_errors": 0,
+    "invalid_actions": 0,
+    "input_tokens": 7469,
+    "output_tokens": 92,
+    "returned_chars": 2636,
+    "references": [
+      {
+        "path": "src/requests/sessions.py",
+        "start_line": 282,
+        "end_line": 344,
+        "sha256": "0a5d5da449ce7f0af3ccf6e4bbe7a67a935e37846dff4ff9f08cb6c7e2464e6f",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "requests-04",
+    "repository": "requests",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 0,
+      "overlap_lines": 0
+    },
+    "status": "budget_exhausted",
+    "elapsed_seconds": 30.534921878002933,
+    "rounds": 6,
+    "tool_calls": 5,
+    "tool_errors": 1,
+    "invalid_actions": 2,
+    "input_tokens": 18341,
+    "output_tokens": 169,
+    "returned_chars": 0,
+    "references": []
+  },
+  {
+    "id": "requests-05",
+    "repository": "requests",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 0,
+      "overlap_lines": 0
+    },
+    "status": "budget_exhausted",
+    "elapsed_seconds": 31.391637111999444,
+    "rounds": 6,
+    "tool_calls": 5,
+    "tool_errors": 1,
+    "invalid_actions": 2,
+    "input_tokens": 18226,
+    "output_tokens": 173,
+    "returned_chars": 0,
+    "references": []
+  },
+  {
+    "id": "requests-06",
+    "repository": "requests",
+    "scores": {
+      "file_hit": true,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 19,
+      "overlap_lines": 0
+    },
+    "status": "completed",
+    "elapsed_seconds": 16.67756171700603,
+    "rounds": 3,
+    "tool_calls": 3,
+    "tool_errors": 0,
+    "invalid_actions": 0,
+    "input_tokens": 7856,
+    "output_tokens": 91,
+    "returned_chars": 830,
+    "references": [
+      {
+        "path": "src/requests/auth.py",
+        "start_line": 285,
+        "end_line": 303,
+        "sha256": "905ef9b6a9cb72d67d31ffe19bd4d9223e1c4169cde6ec51cfca16b31e70991d",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "requests-07",
+    "repository": "requests",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 0,
+      "overlap_lines": 0
+    },
+    "status": "budget_exhausted",
+    "elapsed_seconds": 34.047770837001735,
+    "rounds": 6,
+    "tool_calls": 5,
+    "tool_errors": 1,
+    "invalid_actions": 2,
+    "input_tokens": 18003,
+    "output_tokens": 171,
+    "returned_chars": 0,
+    "references": []
+  },
+  {
+    "id": "requests-08",
+    "repository": "requests",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 63,
+      "overlap_lines": 0
+    },
+    "status": "completed",
+    "elapsed_seconds": 16.234001347998856,
+    "rounds": 3,
+    "tool_calls": 3,
+    "tool_errors": 0,
+    "invalid_actions": 0,
+    "input_tokens": 7472,
+    "output_tokens": 92,
+    "returned_chars": 2636,
+    "references": [
+      {
+        "path": "src/requests/sessions.py",
+        "start_line": 282,
+        "end_line": 344,
+        "sha256": "0a5d5da449ce7f0af3ccf6e4bbe7a67a935e37846dff4ff9f08cb6c7e2464e6f",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "requests-09",
+    "repository": "requests",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 0,
+      "overlap_lines": 0
+    },
+    "status": "budget_exhausted",
+    "elapsed_seconds": 33.2997130549993,
+    "rounds": 6,
+    "tool_calls": 5,
+    "tool_errors": 1,
+    "invalid_actions": 2,
+    "input_tokens": 17734,
+    "output_tokens": 168,
+    "returned_chars": 0,
+    "references": []
+  },
+  {
+    "id": "requests-10",
+    "repository": "requests",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 0,
+      "overlap_lines": 0
+    },
+    "status": "budget_exhausted",
+    "elapsed_seconds": 37.05165490099898,
+    "rounds": 6,
+    "tool_calls": 3,
+    "tool_errors": 1,
+    "invalid_actions": 4,
+    "input_tokens": 15948,
+    "output_tokens": 191,
+    "returned_chars": 0,
+    "references": []
+  },
+  {
+    "id": "flask-01",
+    "repository": "flask",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 0,
+      "overlap_lines": 0
+    },
+    "status": "budget_exhausted",
+    "elapsed_seconds": 31.567920669003797,
+    "rounds": 6,
+    "tool_calls": 5,
+    "tool_errors": 1,
+    "invalid_actions": 2,
+    "input_tokens": 19545,
+    "output_tokens": 171,
+    "returned_chars": 0,
+    "references": []
+  },
+  {
+    "id": "flask-02",
+    "repository": "flask",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 0,
+      "overlap_lines": 0
+    },
+    "status": "budget_exhausted",
+    "elapsed_seconds": 31.409248538999236,
+    "rounds": 6,
+    "tool_calls": 5,
+    "tool_errors": 1,
+    "invalid_actions": 2,
+    "input_tokens": 18789,
+    "output_tokens": 171,
+    "returned_chars": 0,
+    "references": []
+  },
+  {
+    "id": "flask-03",
+    "repository": "flask",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 0,
+      "overlap_lines": 0
+    },
+    "status": "budget_exhausted",
+    "elapsed_seconds": 30.19136672300374,
+    "rounds": 6,
+    "tool_calls": 5,
+    "tool_errors": 1,
+    "invalid_actions": 2,
+    "input_tokens": 14973,
+    "output_tokens": 176,
+    "returned_chars": 0,
+    "references": []
+  },
+  {
+    "id": "flask-04",
+    "repository": "flask",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 0,
+      "overlap_lines": 0
+    },
+    "status": "budget_exhausted",
+    "elapsed_seconds": 32.381893327998114,
+    "rounds": 6,
+    "tool_calls": 5,
+    "tool_errors": 1,
+    "invalid_actions": 2,
+    "input_tokens": 18871,
+    "output_tokens": 176,
+    "returned_chars": 0,
+    "references": []
+  },
+  {
+    "id": "flask-05",
+    "repository": "flask",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 0,
+      "overlap_lines": 0
+    },
+    "status": "budget_exhausted",
+    "elapsed_seconds": 34.9670127329955,
+    "rounds": 6,
+    "tool_calls": 3,
+    "tool_errors": 1,
+    "invalid_actions": 4,
+    "input_tokens": 15821,
+    "output_tokens": 199,
+    "returned_chars": 0,
+    "references": []
+  },
+  {
+    "id": "flask-06",
+    "repository": "flask",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 0,
+      "overlap_lines": 0
+    },
+    "status": "budget_exhausted",
+    "elapsed_seconds": 30.41062429500016,
+    "rounds": 6,
+    "tool_calls": 5,
+    "tool_errors": 1,
+    "invalid_actions": 2,
+    "input_tokens": 16521,
+    "output_tokens": 169,
+    "returned_chars": 0,
+    "references": []
+  },
+  {
+    "id": "flask-07",
+    "repository": "flask",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 27,
+      "overlap_lines": 0
+    },
+    "status": "completed",
+    "elapsed_seconds": 15.42695528799959,
+    "rounds": 3,
+    "tool_calls": 3,
+    "tool_errors": 0,
+    "invalid_actions": 0,
+    "input_tokens": 6132,
+    "output_tokens": 92,
+    "returned_chars": 993,
+    "references": [
+      {
+        "path": "docs/debugging.rst",
+        "start_line": 14,
+        "end_line": 40,
+        "sha256": "09bf141a35b5dd6ee45531bb77d9af7bfb94b46c8c8c11f36c26317de07e7b0c",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "flask-08",
+    "repository": "flask",
+    "scores": {
+      "file_hit": true,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 32,
+      "overlap_lines": 0
+    },
+    "status": "completed",
+    "elapsed_seconds": 16.30582055800187,
+    "rounds": 3,
+    "tool_calls": 3,
+    "tool_errors": 0,
+    "invalid_actions": 0,
+    "input_tokens": 8562,
+    "output_tokens": 89,
+    "returned_chars": 1396,
+    "references": [
+      {
+        "path": "src/flask/helpers.py",
+        "start_line": 318,
+        "end_line": 349,
+        "sha256": "ac96607bbfc9dbcf09d5442fe7e90d7f8a046b0df7d8f3fc3535b44112016d71",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "flask-09",
+    "repository": "flask",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 0,
+      "overlap_lines": 0
+    },
+    "status": "budget_exhausted",
+    "elapsed_seconds": 34.930573302000994,
+    "rounds": 6,
+    "tool_calls": 5,
+    "tool_errors": 0,
+    "invalid_actions": 2,
+    "input_tokens": 24485,
+    "output_tokens": 168,
+    "returned_chars": 0,
+    "references": []
+  },
+  {
+    "id": "flask-10",
+    "repository": "flask",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 0,
+      "overlap_lines": 0
+    },
+    "status": "budget_exhausted",
+    "elapsed_seconds": 34.84753715899569,
+    "rounds": 6,
+    "tool_calls": 5,
+    "tool_errors": 1,
+    "invalid_actions": 2,
+    "input_tokens": 17346,
+    "output_tokens": 173,
+    "returned_chars": 0,
+    "references": []
+  },
+  {
+    "id": "click-01",
+    "repository": "click",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 0,
+      "overlap_lines": 0
+    },
+    "status": "budget_exhausted",
+    "elapsed_seconds": 36.52237438899465,
+    "rounds": 6,
+    "tool_calls": 5,
+    "tool_errors": 1,
+    "invalid_actions": 2,
+    "input_tokens": 15572,
+    "output_tokens": 170,
+    "returned_chars": 0,
+    "references": []
+  },
+  {
+    "id": "click-02",
+    "repository": "click",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 0,
+      "overlap_lines": 0
+    },
+    "status": "budget_exhausted",
+    "elapsed_seconds": 45.453592761994514,
+    "rounds": 6,
+    "tool_calls": 5,
+    "tool_errors": 1,
+    "invalid_actions": 2,
+    "input_tokens": 17143,
+    "output_tokens": 172,
+    "returned_chars": 0,
+    "references": []
+  },
+  {
+    "id": "click-03",
+    "repository": "click",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 0,
+      "overlap_lines": 0
+    },
+    "status": "budget_exhausted",
+    "elapsed_seconds": 43.93638536000071,
+    "rounds": 6,
+    "tool_calls": 5,
+    "tool_errors": 1,
+    "invalid_actions": 2,
+    "input_tokens": 18195,
+    "output_tokens": 168,
+    "returned_chars": 0,
+    "references": []
+  },
+  {
+    "id": "click-04",
+    "repository": "click",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 0,
+      "overlap_lines": 0
+    },
+    "status": "budget_exhausted",
+    "elapsed_seconds": 43.39338765000139,
+    "rounds": 6,
+    "tool_calls": 5,
+    "tool_errors": 1,
+    "invalid_actions": 2,
+    "input_tokens": 18602,
+    "output_tokens": 169,
+    "returned_chars": 0,
+    "references": []
+  },
+  {
+    "id": "click-05",
+    "repository": "click",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 0,
+      "overlap_lines": 0
+    },
+    "status": "budget_exhausted",
+    "elapsed_seconds": 43.256231248000404,
+    "rounds": 6,
+    "tool_calls": 6,
+    "tool_errors": 1,
+    "invalid_actions": 1,
+    "input_tokens": 19777,
+    "output_tokens": 156,
+    "returned_chars": 0,
+    "references": []
+  },
+  {
+    "id": "click-06",
+    "repository": "click",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 68,
+      "overlap_lines": 0
+    },
+    "status": "completed",
+    "elapsed_seconds": 23.925040923997585,
+    "rounds": 3,
+    "tool_calls": 3,
+    "tool_errors": 0,
+    "invalid_actions": 0,
+    "input_tokens": 8355,
+    "output_tokens": 93,
+    "returned_chars": 2452,
+    "references": [
+      {
+        "path": "src/click/decorators.py",
+        "start_line": 28,
+        "end_line": 95,
+        "sha256": "e4feda6e126d010629fca1e08d4be132fe3ae044703b3aefd9e9cd9279701f24",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "click-07",
+    "repository": "click",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 0,
+      "overlap_lines": 0
+    },
+    "status": "budget_exhausted",
+    "elapsed_seconds": 47.61191895700176,
+    "rounds": 6,
+    "tool_calls": 5,
+    "tool_errors": 1,
+    "invalid_actions": 2,
+    "input_tokens": 19285,
+    "output_tokens": 171,
+    "returned_chars": 0,
+    "references": []
+  },
+  {
+    "id": "click-08",
+    "repository": "click",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 0,
+      "overlap_lines": 0
+    },
+    "status": "budget_exhausted",
+    "elapsed_seconds": 43.185091651997936,
+    "rounds": 6,
+    "tool_calls": 5,
+    "tool_errors": 1,
+    "invalid_actions": 2,
+    "input_tokens": 16813,
+    "output_tokens": 175,
+    "returned_chars": 0,
+    "references": []
+  },
+  {
+    "id": "click-09",
+    "repository": "click",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 0,
+      "overlap_lines": 0
+    },
+    "status": "budget_exhausted",
+    "elapsed_seconds": 34.059470203000274,
+    "rounds": 6,
+    "tool_calls": 5,
+    "tool_errors": 1,
+    "invalid_actions": 2,
+    "input_tokens": 18742,
+    "output_tokens": 177,
+    "returned_chars": 0,
+    "references": []
+  },
+  {
+    "id": "click-10",
+    "repository": "click",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 0,
+      "overlap_lines": 0
+    },
+    "status": "budget_exhausted",
+    "elapsed_seconds": 38.496093912000106,
+    "rounds": 6,
+    "tool_calls": 3,
+    "tool_errors": 1,
+    "invalid_actions": 4,
+    "input_tokens": 15509,
+    "output_tokens": 201,
+    "returned_chars": 0,
+    "references": []
+  }
+]

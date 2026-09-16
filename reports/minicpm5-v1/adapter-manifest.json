@@ -1,0 +1,16 @@
+{
+  "note": "Adapter base-reference metadata normalized after training; numerical weights unchanged. Future trainer saves these fields directly. Exact training source is preserved in source-snapshot.zip.",
+  "base_id": "openbmb/MiniCPM5-1B",
+  "base_revision": "87179e5c1f455ef22e6223592d2d61351b525bfc",
+  "selected_step": 100,
+  "files": {
+    "best/adapter_config.json": {
+      "sha256": "a814d933ef0d056aa4cc162fe949c5dddf12511c9a1551cac06cd8358b1dbab7",
+      "bytes": 970
+    },
+    "best/adapter_model.safetensors": {
+      "sha256": "4a2a5fdcfcd282da485d31e44b552fc4184a71b75073130f62fdfe4af42f34ce",
+      "bytes": 44871152
+    }
+  }
+}

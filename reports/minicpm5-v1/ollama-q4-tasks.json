@@ -1,0 +1,796 @@
+[
+  {
+    "id": "requests-01",
+    "repository": "requests",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 0,
+      "overlap_lines": 0
+    },
+    "status": "budget_exhausted",
+    "elapsed_seconds": 9.196679419001157,
+    "rounds": 6,
+    "tool_calls": 3,
+    "tool_errors": 0,
+    "invalid_actions": 4,
+    "input_tokens": 14900,
+    "output_tokens": 191,
+    "returned_chars": 0,
+    "references": []
+  },
+  {
+    "id": "requests-02",
+    "repository": "requests",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 0,
+      "overlap_lines": 0
+    },
+    "status": "budget_exhausted",
+    "elapsed_seconds": 5.079564270999981,
+    "rounds": 6,
+    "tool_calls": 7,
+    "tool_errors": 4,
+    "invalid_actions": 0,
+    "input_tokens": 11250,
+    "output_tokens": 244,
+    "returned_chars": 0,
+    "references": []
+  },
+  {
+    "id": "requests-03",
+    "repository": "requests",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 0,
+      "overlap_lines": 0
+    },
+    "status": "budget_exhausted",
+    "elapsed_seconds": 4.466771458995936,
+    "rounds": 6,
+    "tool_calls": 6,
+    "tool_errors": 3,
+    "invalid_actions": 1,
+    "input_tokens": 11000,
+    "output_tokens": 187,
+    "returned_chars": 0,
+    "references": []
+  },
+  {
+    "id": "requests-04",
+    "repository": "requests",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 0,
+      "overlap_lines": 0
+    },
+    "status": "budget_exhausted",
+    "elapsed_seconds": 4.912948177996441,
+    "rounds": 6,
+    "tool_calls": 3,
+    "tool_errors": 0,
+    "invalid_actions": 4,
+    "input_tokens": 15665,
+    "output_tokens": 195,
+    "returned_chars": 0,
+    "references": []
+  },
+  {
+    "id": "requests-05",
+    "repository": "requests",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 17,
+      "overlap_lines": 0
+    },
+    "status": "completed",
+    "elapsed_seconds": 3.2996576329969685,
+    "rounds": 4,
+    "tool_calls": 4,
+    "tool_errors": 0,
+    "invalid_actions": 0,
+    "input_tokens": 7648,
+    "output_tokens": 133,
+    "returned_chars": 426,
+    "references": [
+      {
+        "path": "src/requests/certs.py",
+        "start_line": 1,
+        "end_line": 17,
+        "sha256": "67d49be35d009efea35054f2b2cd23145854eb1b2df1cb442ea7f2f04bf6de0c",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "requests-06",
+    "repository": "requests",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 28,
+      "overlap_lines": 0
+    },
+    "status": "completed",
+    "elapsed_seconds": 4.778130480000982,
+    "rounds": 6,
+    "tool_calls": 6,
+    "tool_errors": 2,
+    "invalid_actions": 0,
+    "input_tokens": 14241,
+    "output_tokens": 188,
+    "returned_chars": 574,
+    "references": [
+      {
+        "path": "src/requests/utils.py",
+        "start_line": 1,
+        "end_line": 28,
+        "sha256": "5aa53ceab677c2f842fad42359c8ed1ff1c4299c1607789609957a496e4311d4",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "requests-07",
+    "repository": "requests",
+    "scores": {
+      "file_hit": true,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 120,
+      "overlap_lines": 0
+    },
+    "status": "completed",
+    "elapsed_seconds": 3.3701258940054686,
+    "rounds": 4,
+    "tool_calls": 4,
+    "tool_errors": 0,
+    "invalid_actions": 0,
+    "input_tokens": 8282,
+    "output_tokens": 131,
+    "returned_chars": 3419,
+    "references": [
+      {
+        "path": "src/requests/cookies.py",
+        "start_line": 1,
+        "end_line": 120,
+        "sha256": "6cd8be8aa123e0d3d9d34fa86feac7bf392f39bccdde5129830de0ea9692dd7c",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "requests-08",
+    "repository": "requests",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 0,
+      "overlap_lines": 0
+    },
+    "status": "budget_exhausted",
+    "elapsed_seconds": 4.330414477000886,
+    "rounds": 6,
+    "tool_calls": 7,
+    "tool_errors": 2,
+    "invalid_actions": 0,
+    "input_tokens": 11005,
+    "output_tokens": 162,
+    "returned_chars": 0,
+    "references": []
+  },
+  {
+    "id": "requests-09",
+    "repository": "requests",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 0,
+      "overlap_lines": 0
+    },
+    "status": "budget_exhausted",
+    "elapsed_seconds": 4.565891188001842,
+    "rounds": 6,
+    "tool_calls": 6,
+    "tool_errors": 1,
+    "invalid_actions": 1,
+    "input_tokens": 10899,
+    "output_tokens": 154,
+    "returned_chars": 0,
+    "references": []
+  },
+  {
+    "id": "requests-10",
+    "repository": "requests",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 19,
+      "overlap_lines": 0
+    },
+    "status": "completed",
+    "elapsed_seconds": 4.182433162997768,
+    "rounds": 5,
+    "tool_calls": 4,
+    "tool_errors": 0,
+    "invalid_actions": 1,
+    "input_tokens": 12696,
+    "output_tokens": 153,
+    "returned_chars": 606,
+    "references": [
+      {
+        "path": "src/requests/api.py",
+        "start_line": 2,
+        "end_line": 20,
+        "sha256": "fd96fd39aeedcd5222cd32b016b3e30c463d7a3b66fce9d2444467003c46b10b",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "flask-01",
+    "repository": "flask",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 0,
+      "overlap_lines": 0
+    },
+    "status": "budget_exhausted",
+    "elapsed_seconds": 20.86598295099975,
+    "rounds": 6,
+    "tool_calls": 4,
+    "tool_errors": 0,
+    "invalid_actions": 3,
+    "input_tokens": 19882,
+    "output_tokens": 1603,
+    "returned_chars": 0,
+    "references": []
+  },
+  {
+    "id": "flask-02",
+    "repository": "flask",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 0,
+      "overlap_lines": 0
+    },
+    "status": "budget_exhausted",
+    "elapsed_seconds": 5.218971822003368,
+    "rounds": 6,
+    "tool_calls": 3,
+    "tool_errors": 0,
+    "invalid_actions": 4,
+    "input_tokens": 15851,
+    "output_tokens": 181,
+    "returned_chars": 0,
+    "references": []
+  },
+  {
+    "id": "flask-03",
+    "repository": "flask",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 0,
+      "overlap_lines": 0
+    },
+    "status": "budget_exhausted",
+    "elapsed_seconds": 5.0775881389999995,
+    "rounds": 6,
+    "tool_calls": 3,
+    "tool_errors": 0,
+    "invalid_actions": 4,
+    "input_tokens": 15821,
+    "output_tokens": 181,
+    "returned_chars": 0,
+    "references": []
+  },
+  {
+    "id": "flask-04",
+    "repository": "flask",
+    "scores": {
+      "file_hit": true,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 30,
+      "overlap_lines": 0
+    },
+    "status": "completed",
+    "elapsed_seconds": 3.3676273439996294,
+    "rounds": 4,
+    "tool_calls": 4,
+    "tool_errors": 0,
+    "invalid_actions": 0,
+    "input_tokens": 8506,
+    "output_tokens": 111,
+    "returned_chars": 1019,
+    "references": [
+      {
+        "path": "src/flask/app.py",
+        "start_line": 26,
+        "end_line": 55,
+        "sha256": "5c6aa0151b0b8018732280761d27eda0c4c83378630e21faadd57b73783720a7",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "flask-05",
+    "repository": "flask",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 61,
+      "overlap_lines": 0
+    },
+    "status": "completed",
+    "elapsed_seconds": 3.3826584030030062,
+    "rounds": 4,
+    "tool_calls": 4,
+    "tool_errors": 0,
+    "invalid_actions": 0,
+    "input_tokens": 8260,
+    "output_tokens": 116,
+    "returned_chars": 2700,
+    "references": [
+      {
+        "path": "src/flask/__init__.py",
+        "start_line": 1,
+        "end_line": 61,
+        "sha256": "987bc937d4b0b65d510ed8c2a82218c889e22bf499fe5fe1a94ca73b382927da",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "flask-06",
+    "repository": "flask",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 1,
+      "overlap_lines": 0
+    },
+    "status": "completed",
+    "elapsed_seconds": 3.1846724950009957,
+    "rounds": 4,
+    "tool_calls": 4,
+    "tool_errors": 0,
+    "invalid_actions": 0,
+    "input_tokens": 7710,
+    "output_tokens": 115,
+    "returned_chars": 66,
+    "references": [
+      {
+        "path": "src/flask/app.py",
+        "start_line": 1175,
+        "end_line": 1175,
+        "sha256": "5c6aa0151b0b8018732280761d27eda0c4c83378630e21faadd57b73783720a7",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "flask-07",
+    "repository": "flask",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 29,
+      "overlap_lines": 0
+    },
+    "status": "completed",
+    "elapsed_seconds": 4.172228956005711,
+    "rounds": 5,
+    "tool_calls": 5,
+    "tool_errors": 0,
+    "invalid_actions": 0,
+    "input_tokens": 11127,
+    "output_tokens": 143,
+    "returned_chars": 1003,
+    "references": [
+      {
+        "path": "src/flask/sessions.py",
+        "start_line": 24,
+        "end_line": 52,
+        "sha256": "76ebd81a608687f1f772032ecb6a1e4a3ac2b02bcbca517808128e5e9374426b",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "flask-08",
+    "repository": "flask",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 0,
+      "overlap_lines": 0
+    },
+    "status": "budget_exhausted",
+    "elapsed_seconds": 4.9149078039990854,
+    "rounds": 6,
+    "tool_calls": 3,
+    "tool_errors": 0,
+    "invalid_actions": 4,
+    "input_tokens": 16124,
+    "output_tokens": 181,
+    "returned_chars": 0,
+    "references": []
+  },
+  {
+    "id": "flask-09",
+    "repository": "flask",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 0,
+      "overlap_lines": 0
+    },
+    "status": "budget_exhausted",
+    "elapsed_seconds": 7.128173559998686,
+    "rounds": 6,
+    "tool_calls": 6,
+    "tool_errors": 2,
+    "invalid_actions": 1,
+    "input_tokens": 14589,
+    "output_tokens": 430,
+    "returned_chars": 0,
+    "references": []
+  },
+  {
+    "id": "flask-10",
+    "repository": "flask",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 0,
+      "overlap_lines": 0
+    },
+    "status": "budget_exhausted",
+    "elapsed_seconds": 11.00780210299854,
+    "rounds": 6,
+    "tool_calls": 5,
+    "tool_errors": 1,
+    "invalid_actions": 2,
+    "input_tokens": 16847,
+    "output_tokens": 756,
+    "returned_chars": 0,
+    "references": []
+  },
+  {
+    "id": "click-01",
+    "repository": "click",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 0,
+      "overlap_lines": 0
+    },
+    "status": "budget_exhausted",
+    "elapsed_seconds": 4.937992402999953,
+    "rounds": 6,
+    "tool_calls": 5,
+    "tool_errors": 1,
+    "invalid_actions": 2,
+    "input_tokens": 13358,
+    "output_tokens": 175,
+    "returned_chars": 0,
+    "references": []
+  },
+  {
+    "id": "click-02",
+    "repository": "click",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 0,
+      "overlap_lines": 0
+    },
+    "status": "budget_exhausted",
+    "elapsed_seconds": 4.979381118995661,
+    "rounds": 6,
+    "tool_calls": 6,
+    "tool_errors": 1,
+    "invalid_actions": 1,
+    "input_tokens": 13377,
+    "output_tokens": 181,
+    "returned_chars": 0,
+    "references": []
+  },
+  {
+    "id": "click-03",
+    "repository": "click",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 0,
+      "overlap_lines": 0
+    },
+    "status": "budget_exhausted",
+    "elapsed_seconds": 5.384169265002129,
+    "rounds": 6,
+    "tool_calls": 7,
+    "tool_errors": 1,
+    "invalid_actions": 0,
+    "input_tokens": 15965,
+    "output_tokens": 188,
+    "returned_chars": 0,
+    "references": []
+  },
+  {
+    "id": "click-04",
+    "repository": "click",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 0,
+      "overlap_lines": 0
+    },
+    "status": "budget_exhausted",
+    "elapsed_seconds": 9.760484937003639,
+    "rounds": 6,
+    "tool_calls": 6,
+    "tool_errors": 3,
+    "invalid_actions": 1,
+    "input_tokens": 13646,
+    "output_tokens": 658,
+    "returned_chars": 0,
+    "references": []
+  },
+  {
+    "id": "click-05",
+    "repository": "click",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 118,
+      "overlap_lines": 0
+    },
+    "status": "completed",
+    "elapsed_seconds": 4.572031217998301,
+    "rounds": 5,
+    "tool_calls": 5,
+    "tool_errors": 0,
+    "invalid_actions": 0,
+    "input_tokens": 12974,
+    "output_tokens": 161,
+    "returned_chars": 3406,
+    "references": [
+      {
+        "path": "src/click/_termui_impl.py",
+        "start_line": 3,
+        "end_line": 120,
+        "sha256": "0125e12e2f4840873426cf4a4124bedfe48b65c3deb7756acac05ff5681b6e92",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "click-06",
+    "repository": "click",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 16,
+      "overlap_lines": 0
+    },
+    "status": "completed",
+    "elapsed_seconds": 4.88661306600261,
+    "rounds": 6,
+    "tool_calls": 5,
+    "tool_errors": 1,
+    "invalid_actions": 1,
+    "input_tokens": 14005,
+    "output_tokens": 179,
+    "returned_chars": 469,
+    "references": [
+      {
+        "path": "src/click/formatting.py",
+        "start_line": 256,
+        "end_line": 271,
+        "sha256": "061ab1e105dd290f56e162a49c8c23e4a3ca166b5db863ae1aad72c3f4c72d9f",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "click-07",
+    "repository": "click",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 1,
+      "overlap_lines": 0
+    },
+    "status": "completed",
+    "elapsed_seconds": 3.422570918999554,
+    "rounds": 4,
+    "tool_calls": 4,
+    "tool_errors": 0,
+    "invalid_actions": 0,
+    "input_tokens": 9480,
+    "output_tokens": 112,
+    "returned_chars": 33,
+    "references": [
+      {
+        "path": "src/click/__init__.py",
+        "start_line": 63,
+        "end_line": 63,
+        "sha256": "e98c92d5a7b29276742d8c1e5a8ccd672d00f6767fd75c2660886fddc6d0ad8a",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "click-08",
+    "repository": "click",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 120,
+      "overlap_lines": 0
+    },
+    "status": "completed",
+    "elapsed_seconds": 3.3780149169979268,
+    "rounds": 4,
+    "tool_calls": 4,
+    "tool_errors": 0,
+    "invalid_actions": 0,
+    "input_tokens": 8385,
+    "output_tokens": 110,
+    "returned_chars": 3507,
+    "references": [
+      {
+        "path": "src/click/core.py",
+        "start_line": 1,
+        "end_line": 120,
+        "sha256": "814869352f5c14119d1175dd8ac1951be791bc67f8f514f215a831ba5ab0745c",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "click-09",
+    "repository": "click",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 0,
+      "overlap_lines": 0
+    },
+    "status": "budget_exhausted",
+    "elapsed_seconds": 19.02063663300214,
+    "rounds": 6,
+    "tool_calls": 4,
+    "tool_errors": 0,
+    "invalid_actions": 3,
+    "input_tokens": 13511,
+    "output_tokens": 1613,
+    "returned_chars": 0,
+    "references": []
+  },
+  {
+    "id": "click-10",
+    "repository": "click",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 11,
+      "overlap_lines": 0
+    },
+    "status": "completed",
+    "elapsed_seconds": 3.321955243998673,
+    "rounds": 4,
+    "tool_calls": 4,
+    "tool_errors": 0,
+    "invalid_actions": 0,
+    "input_tokens": 9235,
+    "output_tokens": 106,
+    "returned_chars": 550,
+    "references": [
+      {
+        "path": "src/click/core.py",
+        "start_line": 820,
+        "end_line": 830,
+        "sha256": "814869352f5c14119d1175dd8ac1951be791bc67f8f514f215a831ba5ab0745c",
+        "verified": true
+      }
+    ]
+  }
+]

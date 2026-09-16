@@ -1,0 +1,102 @@
+{
+  "base_id": "openbmb/MiniCPM5-1B",
+  "base_revision": "87179e5c1f455ef22e6223592d2d61351b525bfc",
+  "settings": {
+    "data": "data/live-policy-windows-v1",
+    "output": "runs/minicpm5-policy-v2",
+    "epochs": 1,
+    "max_length": 2560,
+    "learning_rate": 0.0001,
+    "max_steps": 0
+  },
+  "examples": {
+    "train": 826,
+    "validation": 104
+  },
+  "overlength_dropped": {
+    "train": 0,
+    "validation": 0
+  },
+  "data_sha256": {
+    "train": "7c6315531aa37e5de59c6944a425cb9cb700474551a62a3fc51dd58134649b7b",
+    "validation": "ac270e077c3e65f5590c18f27a3dec1fd80c48aac6067bc81b0e05f9b2cb0bc1"
+  },
+  "seed": 42,
+  "batch_size": 1,
+  "gradient_accumulation": 8,
+  "lora_rank": 16,
+  "lora_alpha": 32,
+  "quantization": "nf4_double_quant",
+  "loss": "assistant XML action tokens and end-of-turn token only",
+  "data_manifest": {
+    "kind": "executed_oracle_demonstrations",
+    "seed": 42,
+    "limitations": "Three-file synthetic repositories; query-word searches and oracle-chosen target files and final ranges. Teaches protocol, not realistic planning.",
+    "recipe": "read-windows",
+    "read_window": {
+      "lines_before_match": 40,
+      "lines_after_match": 60
+    },
+    "functions_per_file": 2,
+    "target_position": "randomized before or after a distractor function",
+    "excluded_repositories_by_name": [
+      "click",
+      "flask",
+      "requests"
+    ],
+    "splits": {
+      "train": {
+        "trajectories": 256,
+        "action_examples": 826,
+        "unobservable_candidates_skipped": 1,
+        "source_sha256": "3eeed3185b74f934462aaccbd3c567f8db20754a1bf6f5f3686779f8b39f4338",
+        "output_sha256": "7c6315531aa37e5de59c6944a425cb9cb700474551a62a3fc51dd58134649b7b"
+      },
+      "validation": {
+        "trajectories": 32,
+        "action_examples": 104,
+        "unobservable_candidates_skipped": 0,
+        "source_sha256": "e1b934c33f12322e4a56d0d17a987966c40961b035e15939fd716b76d4e017a2",
+        "output_sha256": "ac270e077c3e65f5590c18f27a3dec1fd80c48aac6067bc81b0e05f9b2cb0bc1"
+      }
+    },
+    "repository_disjoint": true
+  },
+  "packages": {
+    "torch": "2.7.1",
+    "transformers": "4.57.6",
+    "peft": "0.17.1",
+    "accelerate": "1.10.1",
+    "bitsandbytes": "0.47.0"
+  },
+  "gpu": "NVIDIA GeForce RTX 3050 Laptop GPU",
+  "source_sha256": {
+    "__init__.py": "dcd2b573883b8068e806e3052adf9c03728f1cf621d35ff013179de76f76c702",
+    "text.py": "8db7b80ee446480175f7691872303c8b72fd014604ad4fb575b359cee71f1938",
+    "io.py": "b29c21db767ea9773281b17fe0754375153d18fb64f314907528f00d584a047f",
+    "data.py": "20a891eff11d555d2301b62f4953146603efc87b03da4802f136f694ebdba78d",
+    "encoder.py": "cb5671c08f28a70ffd0e2a7033528efc3581896a27242d55eb250ce922ab038f",
+    "metrics.py": "cb93d30878c0c1006f06d1d0c4cbb188f90c6f4fc65f69f9a3b11d847f28ad27",
+    "train.py": "cf20f6189967cfc88f3849bc3a225f2680c42026d53f204d9d5afc05fe88a2d6",
+    "lexical.py": "6c47c834c6bbf7b317e2514057eee7444720581f5ec452ecb01ac666397b86b3",
+    "symbols.py": "a377d6aa2c6b479c2ee115dd8e4859f0c06d188ae97b86fa1c7133885ee32d86",
+    "index.py": "e8b0a666b41fed48d98616d5dcdd104e59c4308ac990281b463e5ee68f97877f",
+    "evaluate.py": "29c942b9cbfff21ba8514511e27752527f0ec5e2cad5fbf57ec3b220fc7acd0b",
+    "__main__.py": "ab30d9b696e41ece67094e19c87b1a31fc0ebce8d3afa79dc8eaf561f8fb4895",
+    "download.py": "24f9802fb7cc82b81f6b1cb93e9244352d7b86feeb0a54ec055fb3e8d0a6a4d7",
+    "cli.py": "d081962fc459808c65bd4c1d389e12ad9a9466df0a1374c8095a8bd5ccbb369e",
+    "scout.py": "c3150baae51f37646305fee1d2c61e7b37f2ec9c4a0ba7f92ab4d7d6b1710161",
+    "server.py": "483fe8051012249e38a6836cbe217d8c581d033e4d19026a29a7bd5c83878190",
+    "live_tools.py": "e10fb6aaeaa6d7c4a5a35c0c6a210be4a4c283b18d215767d6bee0bac707d14c",
+    "local_policy.py": "b0711b46a6399dfbeeecdcc045fb7392030e187d7e21c6e4fa9b51e6fc8056f4",
+    "agent.py": "47357a900e9696b7ec5268eb031067eb0069faaeef92fd3159bd822d6bc67cdb",
+    "live_server.py": "ccfb3c63115fe991c2f5f22c05f794d89c90d783b52f8ddbb668a8541e3af6fe",
+    "native_protocol.py": "3a4d16c1d2cd90cb7d81e635f40d721270b0d541f454557a6d14e80b6b1073a7",
+    "eval_live.py": "38250d45fd7e60c23c4c86f5819242736f29df8af384f92713128c84ffd734ff",
+    "prepare_live.py": "0675173c5e9c116c995c271dc06de914388f19eb83779c07e3009000a810290b",
+    "live_data.py": "4d064db6c4da6ef3b55c63e92c0da4ceb62d5cecd746458a90e0b7a9b4e86913",
+    "transformers_policy.py": "e8e8a81b70eb37563973e640534b425a7ea9fc7d398a39dc8d8f71b9be3f1b89",
+    "train_policy.py": "d712111e3b7272372e68986f62c464afcb66d0c4b13b2cdd632459980e2091a8",
+    "keyword_baseline.py": "5fe18c76b4c6e085c358ab5c490d717ffdd82b917a2882cf826fa26c57f64816"
+  }
+}

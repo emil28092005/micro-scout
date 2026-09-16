@@ -16,6 +16,21 @@ def main() -> None:
     index_parser.add_argument("root", type=Path)
     index_parser.add_argument("--output", type=Path, default=Path(".micro-scout/index.sqlite"))
     index_parser.add_argument("--max-symbols", type=int, default=50_000)
+    for name in ("live", "serve-live"):
+        command = sub.add_parser(name, help="MiniCPM search without a repository index")
+        command.add_argument("root", type=Path)
+        command.add_argument("--model", default="openbmb/minicpm5:q4_K_M")
+        command.add_argument("--backend", choices=["ollama", "transformers"], default="ollama")
+        command.add_argument("--adapter", type=Path)
+        command.add_argument("--bf16", action="store_true", help="Reference weights without NF4")
+        command.add_argument("--endpoint", default="http://127.0.0.1:11434")
+        command.add_argument("--context", type=int, default=8192)
+        command.add_argument("--max-rounds", type=int, default=6)
+        command.add_argument("--timeout", type=float, default=90)
+        if name == "live":
+            command.add_argument("query")
+            command.add_argument("--max-chars", type=int, default=6000)
+            command.add_argument("--trace", type=Path)
     for name in ("search", "serve", "benchmark"):
         command = sub.add_parser(name)
         command.add_argument("--index", type=Path, default=Path(".micro-scout/index.sqlite"))
@@ -39,6 +54,43 @@ def main() -> None:
         command.add_argument("--threads", type=int, default=4)
     args = parser.parse_args()
     try:
+        if args.command in {"live", "serve-live"}:
+            from micro_scout.agent import search_live
+            from micro_scout.local_policy import OllamaPolicy
+
+            if args.backend == "transformers":
+                from micro_scout.transformers_policy import TransformersPolicy
+
+                policy = TransformersPolicy(
+                    adapter=args.adapter,
+                    quantized=not args.bf16,
+                    context=args.context,
+                )
+            else:
+                if args.adapter or args.bf16:
+                    raise ValueError("--adapter and --bf16 require --backend transformers")
+                policy = OllamaPolicy(args.model, endpoint=args.endpoint, context=args.context)
+            if args.command == "serve-live":
+                from micro_scout.live_server import create_live_server
+
+                create_live_server(
+                    args.root,
+                    policy,
+                    max_rounds=args.max_rounds,
+                    timeout=args.timeout,
+                ).run(transport="stdio")
+                return
+            result = search_live(
+                args.root,
+                args.query,
+                policy,
+                max_rounds=args.max_rounds,
+                max_chars=args.max_chars,
+                timeout=args.timeout,
+                trace=args.trace,
+            )
+            print(json.dumps(result, indent=2, ensure_ascii=False, allow_nan=False))
+            return
         from micro_scout.index import Index, build_index
         from micro_scout.scout import Scout
 

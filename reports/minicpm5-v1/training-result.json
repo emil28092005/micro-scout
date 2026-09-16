@@ -1,0 +1,9 @@
+{
+  "optimizer_steps": 104,
+  "trainable_parameters": 11206656,
+  "training_seconds": 1205.9964395429997,
+  "best_validation_loss": 0.08245812071940097,
+  "peak_cuda_allocated_mib": 2779.103515625,
+  "selected_adapter": "runs/minicpm5-policy-v1/best",
+  "note": "Validation measures teacher-forced actions on synthetic repositories, not task success."
+}

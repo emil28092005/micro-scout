@@ -1,0 +1,15 @@
+{
+  "selected_step": 104,
+  "base_id": "openbmb/MiniCPM5-1B",
+  "base_revision": "87179e5c1f455ef22e6223592d2d61351b525bfc",
+  "files": {
+    "best/adapter_config.json": {
+      "sha256": "e2234e69e62ebdc618a7e6cc0881a962e31f86a859b8b9b0f5c83823a317c15a",
+      "bytes": 969
+    },
+    "best/adapter_model.safetensors": {
+      "sha256": "1ef1ef35fc5545d3d8ed64d5be182e43759d96704e6a07afba6bde291bcb89bc",
+      "bytes": 44871152
+    }
+  }
+}

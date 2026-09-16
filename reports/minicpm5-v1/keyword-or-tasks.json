@@ -1,0 +1,1352 @@
+[
+  {
+    "id": "requests-01",
+    "repository": "requests",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 69,
+      "overlap_lines": 0
+    },
+    "status": "completed",
+    "elapsed_seconds": 0.054705160997400526,
+    "rounds": 0,
+    "tool_calls": 4,
+    "tool_errors": 0,
+    "invalid_actions": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "returned_chars": 1674,
+    "references": [
+      {
+        "path": "src/requests/__init__.py",
+        "start_line": 1,
+        "end_line": 19,
+        "sha256": "e3168011198f0c804fb1ad8fb23a54f6bd3aca8a0afb69992874d90215915adb",
+        "verified": true
+      },
+      {
+        "path": "src/requests/__init__.py",
+        "start_line": 22,
+        "end_line": 46,
+        "sha256": "e3168011198f0c804fb1ad8fb23a54f6bd3aca8a0afb69992874d90215915adb",
+        "verified": true
+      },
+      {
+        "path": "src/requests/adapters.py",
+        "start_line": 2,
+        "end_line": 26,
+        "sha256": "f275f5d7781b6f5db7694b71d844e400dffa22c617f8cd9f4682c696e4c47119",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "requests-02",
+    "repository": "requests",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 70,
+      "overlap_lines": 0
+    },
+    "status": "completed",
+    "elapsed_seconds": 0.04433310600143159,
+    "rounds": 0,
+    "tool_calls": 4,
+    "tool_errors": 0,
+    "invalid_actions": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "returned_chars": 2628,
+    "references": [
+      {
+        "path": "src/requests/api.py",
+        "start_line": 30,
+        "end_line": 54,
+        "sha256": "fd96fd39aeedcd5222cd32b016b3e30c463d7a3b66fce9d2444467003c46b10b",
+        "verified": true
+      },
+      {
+        "path": "src/requests/__init__.py",
+        "start_line": 165,
+        "end_line": 184,
+        "sha256": "e3168011198f0c804fb1ad8fb23a54f6bd3aca8a0afb69992874d90215915adb",
+        "verified": true
+      },
+      {
+        "path": "src/requests/adapters.py",
+        "start_line": 12,
+        "end_line": 36,
+        "sha256": "f275f5d7781b6f5db7694b71d844e400dffa22c617f8cd9f4682c696e4c47119",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "requests-03",
+    "repository": "requests",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 75,
+      "overlap_lines": 0
+    },
+    "status": "completed",
+    "elapsed_seconds": 0.041756528000405524,
+    "rounds": 0,
+    "tool_calls": 4,
+    "tool_errors": 0,
+    "invalid_actions": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "returned_chars": 2816,
+    "references": [
+      {
+        "path": "src/requests/api.py",
+        "start_line": 25,
+        "end_line": 49,
+        "sha256": "fd96fd39aeedcd5222cd32b016b3e30c463d7a3b66fce9d2444467003c46b10b",
+        "verified": true
+      },
+      {
+        "path": "src/requests/__init__.py",
+        "start_line": 1,
+        "end_line": 25,
+        "sha256": "e3168011198f0c804fb1ad8fb23a54f6bd3aca8a0afb69992874d90215915adb",
+        "verified": true
+      },
+      {
+        "path": "src/requests/__init__.py",
+        "start_line": 29,
+        "end_line": 53,
+        "sha256": "e3168011198f0c804fb1ad8fb23a54f6bd3aca8a0afb69992874d90215915adb",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "requests-04",
+    "repository": "requests",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 69,
+      "overlap_lines": 0
+    },
+    "status": "completed",
+    "elapsed_seconds": 0.047419892995094415,
+    "rounds": 0,
+    "tool_calls": 4,
+    "tool_errors": 0,
+    "invalid_actions": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "returned_chars": 2764,
+    "references": [
+      {
+        "path": "src/requests/__init__.py",
+        "start_line": 157,
+        "end_line": 181,
+        "sha256": "e3168011198f0c804fb1ad8fb23a54f6bd3aca8a0afb69992874d90215915adb",
+        "verified": true
+      },
+      {
+        "path": "src/requests/api.py",
+        "start_line": 12,
+        "end_line": 36,
+        "sha256": "fd96fd39aeedcd5222cd32b016b3e30c463d7a3b66fce9d2444467003c46b10b",
+        "verified": true
+      },
+      {
+        "path": "src/requests/__init__.py",
+        "start_line": 1,
+        "end_line": 19,
+        "sha256": "e3168011198f0c804fb1ad8fb23a54f6bd3aca8a0afb69992874d90215915adb",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "requests-05",
+    "repository": "requests",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 67,
+      "overlap_lines": 0
+    },
+    "status": "completed",
+    "elapsed_seconds": 0.04757619199517649,
+    "rounds": 0,
+    "tool_calls": 4,
+    "tool_errors": 0,
+    "invalid_actions": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "returned_chars": 2878,
+    "references": [
+      {
+        "path": "src/requests/api.py",
+        "start_line": 24,
+        "end_line": 48,
+        "sha256": "fd96fd39aeedcd5222cd32b016b3e30c463d7a3b66fce9d2444467003c46b10b",
+        "verified": true
+      },
+      {
+        "path": "src/requests/certs.py",
+        "start_line": 1,
+        "end_line": 17,
+        "sha256": "67d49be35d009efea35054f2b2cd23145854eb1b2df1cb442ea7f2f04bf6de0c",
+        "verified": true
+      },
+      {
+        "path": "src/requests/adapters.py",
+        "start_line": 26,
+        "end_line": 50,
+        "sha256": "f275f5d7781b6f5db7694b71d844e400dffa22c617f8cd9f4682c696e4c47119",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "requests-06",
+    "repository": "requests",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 58,
+      "overlap_lines": 0
+    },
+    "status": "completed",
+    "elapsed_seconds": 0.058431466000911314,
+    "rounds": 0,
+    "tool_calls": 4,
+    "tool_errors": 0,
+    "invalid_actions": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "returned_chars": 1354,
+    "references": [
+      {
+        "path": "src/requests/__init__.py",
+        "start_line": 1,
+        "end_line": 19,
+        "sha256": "e3168011198f0c804fb1ad8fb23a54f6bd3aca8a0afb69992874d90215915adb",
+        "verified": true
+      },
+      {
+        "path": "src/requests/__init__.py",
+        "start_line": 22,
+        "end_line": 46,
+        "sha256": "e3168011198f0c804fb1ad8fb23a54f6bd3aca8a0afb69992874d90215915adb",
+        "verified": true
+      },
+      {
+        "path": "src/requests/__version__.py",
+        "start_line": 1,
+        "end_line": 14,
+        "sha256": "40a0dc78af0afee8eac030dcde862b474a1d381620295390439bc56a9fc6fdc8",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "requests-07",
+    "repository": "requests",
+    "scores": {
+      "file_hit": true,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 67,
+      "overlap_lines": 0
+    },
+    "status": "completed",
+    "elapsed_seconds": 0.04546180000033928,
+    "rounds": 0,
+    "tool_calls": 4,
+    "tool_errors": 0,
+    "invalid_actions": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "returned_chars": 1568,
+    "references": [
+      {
+        "path": "src/requests/compat.py",
+        "start_line": 61,
+        "end_line": 85,
+        "sha256": "27bb088d1e97a031a9e494d5ccec642b97d2a145546bf3e373b8916610161a62",
+        "verified": true
+      },
+      {
+        "path": "src/requests/cookies.py",
+        "start_line": 1,
+        "end_line": 17,
+        "sha256": "6cd8be8aa123e0d3d9d34fa86feac7bf392f39bccdde5129830de0ea9692dd7c",
+        "verified": true
+      },
+      {
+        "path": "src/requests/models.py",
+        "start_line": 20,
+        "end_line": 44,
+        "sha256": "32365d67893bb67c3ed67cf93ca4a18e63e6ab29342fa0dc8b09c59e06ff564e",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "requests-08",
+    "repository": "requests",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 75,
+      "overlap_lines": 0
+    },
+    "status": "completed",
+    "elapsed_seconds": 0.04242080399853876,
+    "rounds": 0,
+    "tool_calls": 4,
+    "tool_errors": 0,
+    "invalid_actions": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "returned_chars": 3396,
+    "references": [
+      {
+        "path": "src/requests/adapters.py",
+        "start_line": 87,
+        "end_line": 111,
+        "sha256": "f275f5d7781b6f5db7694b71d844e400dffa22c617f8cd9f4682c696e4c47119",
+        "verified": true
+      },
+      {
+        "path": "src/requests/api.py",
+        "start_line": 18,
+        "end_line": 42,
+        "sha256": "fd96fd39aeedcd5222cd32b016b3e30c463d7a3b66fce9d2444467003c46b10b",
+        "verified": true
+      },
+      {
+        "path": "src/requests/__init__.py",
+        "start_line": 156,
+        "end_line": 180,
+        "sha256": "e3168011198f0c804fb1ad8fb23a54f6bd3aca8a0afb69992874d90215915adb",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "requests-09",
+    "repository": "requests",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 69,
+      "overlap_lines": 0
+    },
+    "status": "completed",
+    "elapsed_seconds": 0.0561964930020622,
+    "rounds": 0,
+    "tool_calls": 4,
+    "tool_errors": 0,
+    "invalid_actions": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "returned_chars": 2087,
+    "references": [
+      {
+        "path": "src/requests/api.py",
+        "start_line": 2,
+        "end_line": 26,
+        "sha256": "fd96fd39aeedcd5222cd32b016b3e30c463d7a3b66fce9d2444467003c46b10b",
+        "verified": true
+      },
+      {
+        "path": "src/requests/__init__.py",
+        "start_line": 1,
+        "end_line": 19,
+        "sha256": "e3168011198f0c804fb1ad8fb23a54f6bd3aca8a0afb69992874d90215915adb",
+        "verified": true
+      },
+      {
+        "path": "src/requests/__init__.py",
+        "start_line": 22,
+        "end_line": 46,
+        "sha256": "e3168011198f0c804fb1ad8fb23a54f6bd3aca8a0afb69992874d90215915adb",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "requests-10",
+    "repository": "requests",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 69,
+      "overlap_lines": 0
+    },
+    "status": "completed",
+    "elapsed_seconds": 0.05919035700208042,
+    "rounds": 0,
+    "tool_calls": 4,
+    "tool_errors": 0,
+    "invalid_actions": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "returned_chars": 2087,
+    "references": [
+      {
+        "path": "src/requests/api.py",
+        "start_line": 2,
+        "end_line": 26,
+        "sha256": "fd96fd39aeedcd5222cd32b016b3e30c463d7a3b66fce9d2444467003c46b10b",
+        "verified": true
+      },
+      {
+        "path": "src/requests/__init__.py",
+        "start_line": 1,
+        "end_line": 19,
+        "sha256": "e3168011198f0c804fb1ad8fb23a54f6bd3aca8a0afb69992874d90215915adb",
+        "verified": true
+      },
+      {
+        "path": "src/requests/__init__.py",
+        "start_line": 22,
+        "end_line": 46,
+        "sha256": "e3168011198f0c804fb1ad8fb23a54f6bd3aca8a0afb69992874d90215915adb",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "flask-01",
+    "repository": "flask",
+    "scores": {
+      "file_hit": true,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 75,
+      "overlap_lines": 0
+    },
+    "status": "completed",
+    "elapsed_seconds": 0.041903265002474654,
+    "rounds": 0,
+    "tool_calls": 4,
+    "tool_errors": 0,
+    "invalid_actions": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "returned_chars": 3158,
+    "references": [
+      {
+        "path": "src/flask/app.py",
+        "start_line": 73,
+        "end_line": 97,
+        "sha256": "5c6aa0151b0b8018732280761d27eda0c4c83378630e21faadd57b73783720a7",
+        "verified": true
+      },
+      {
+        "path": "src/flask/app.py",
+        "start_line": 260,
+        "end_line": 284,
+        "sha256": "5c6aa0151b0b8018732280761d27eda0c4c83378630e21faadd57b73783720a7",
+        "verified": true
+      },
+      {
+        "path": "src/flask/ctx.py",
+        "start_line": 350,
+        "end_line": 374,
+        "sha256": "b0f2b36a1aad831692eced32f44fcdcd424d503c930fa3381a40eb56ed9f5376",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "flask-02",
+    "repository": "flask",
+    "scores": {
+      "file_hit": true,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 75,
+      "overlap_lines": 0
+    },
+    "status": "completed",
+    "elapsed_seconds": 0.05541092299972661,
+    "rounds": 0,
+    "tool_calls": 4,
+    "tool_errors": 0,
+    "invalid_actions": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "returned_chars": 2709,
+    "references": [
+      {
+        "path": "src/flask/config.py",
+        "start_line": 40,
+        "end_line": 64,
+        "sha256": "3e2a85d033da9ba1d6d051f8087d61a574c17b7d0d4b38cf10ec2bcf56fa92dd",
+        "verified": true
+      },
+      {
+        "path": "src/flask/app.py",
+        "start_line": 70,
+        "end_line": 94,
+        "sha256": "5c6aa0151b0b8018732280761d27eda0c4c83378630e21faadd57b73783720a7",
+        "verified": true
+      },
+      {
+        "path": "src/flask/blueprints.py",
+        "start_line": 70,
+        "end_line": 94,
+        "sha256": "a79404da5635f0622d6ddaff44a46967c0e8d7b8343ef4062206644940e15f69",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "flask-03",
+    "repository": "flask",
+    "scores": {
+      "file_hit": true,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 67,
+      "overlap_lines": 0
+    },
+    "status": "completed",
+    "elapsed_seconds": 0.07182935500168242,
+    "rounds": 0,
+    "tool_calls": 4,
+    "tool_errors": 0,
+    "invalid_actions": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "returned_chars": 2786,
+    "references": [
+      {
+        "path": "src/flask/app.py",
+        "start_line": 1,
+        "end_line": 21,
+        "sha256": "5c6aa0151b0b8018732280761d27eda0c4c83378630e21faadd57b73783720a7",
+        "verified": true
+      },
+      {
+        "path": "src/flask/__init__.py",
+        "start_line": 1,
+        "end_line": 21,
+        "sha256": "987bc937d4b0b65d510ed8c2a82218c889e22bf499fe5fe1a94ca73b382927da",
+        "verified": true
+      },
+      {
+        "path": "src/flask/__init__.py",
+        "start_line": 22,
+        "end_line": 46,
+        "sha256": "987bc937d4b0b65d510ed8c2a82218c889e22bf499fe5fe1a94ca73b382927da",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "flask-04",
+    "repository": "flask",
+    "scores": {
+      "file_hit": true,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 71,
+      "overlap_lines": 0
+    },
+    "status": "completed",
+    "elapsed_seconds": 0.06695332399976905,
+    "rounds": 0,
+    "tool_calls": 4,
+    "tool_errors": 0,
+    "invalid_actions": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "returned_chars": 2650,
+    "references": [
+      {
+        "path": "src/flask/__init__.py",
+        "start_line": 1,
+        "end_line": 21,
+        "sha256": "987bc937d4b0b65d510ed8c2a82218c889e22bf499fe5fe1a94ca73b382927da",
+        "verified": true
+      },
+      {
+        "path": "src/flask/app.py",
+        "start_line": 20,
+        "end_line": 44,
+        "sha256": "5c6aa0151b0b8018732280761d27eda0c4c83378630e21faadd57b73783720a7",
+        "verified": true
+      },
+      {
+        "path": "src/flask/cli.py",
+        "start_line": 561,
+        "end_line": 585,
+        "sha256": "3df87bdbe07196fa07d101c20ce7351ef5c6ecaab95deb5fdf3ccdcf690d4879",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "flask-05",
+    "repository": "flask",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 71,
+      "overlap_lines": 0
+    },
+    "status": "completed",
+    "elapsed_seconds": 0.05651423299423186,
+    "rounds": 0,
+    "tool_calls": 4,
+    "tool_errors": 0,
+    "invalid_actions": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "returned_chars": 3252,
+    "references": [
+      {
+        "path": "src/flask/blueprints.py",
+        "start_line": 45,
+        "end_line": 69,
+        "sha256": "a79404da5635f0622d6ddaff44a46967c0e8d7b8343ef4062206644940e15f69",
+        "verified": true
+      },
+      {
+        "path": "src/flask/__init__.py",
+        "start_line": 1,
+        "end_line": 21,
+        "sha256": "987bc937d4b0b65d510ed8c2a82218c889e22bf499fe5fe1a94ca73b382927da",
+        "verified": true
+      },
+      {
+        "path": "src/flask/__init__.py",
+        "start_line": 22,
+        "end_line": 46,
+        "sha256": "987bc937d4b0b65d510ed8c2a82218c889e22bf499fe5fe1a94ca73b382927da",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "flask-06",
+    "repository": "flask",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 71,
+      "overlap_lines": 0
+    },
+    "status": "completed",
+    "elapsed_seconds": 0.06750896800076589,
+    "rounds": 0,
+    "tool_calls": 4,
+    "tool_errors": 0,
+    "invalid_actions": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "returned_chars": 2602,
+    "references": [
+      {
+        "path": "src/flask/__init__.py",
+        "start_line": 1,
+        "end_line": 21,
+        "sha256": "987bc937d4b0b65d510ed8c2a82218c889e22bf499fe5fe1a94ca73b382927da",
+        "verified": true
+      },
+      {
+        "path": "src/flask/app.py",
+        "start_line": 10,
+        "end_line": 34,
+        "sha256": "5c6aa0151b0b8018732280761d27eda0c4c83378630e21faadd57b73783720a7",
+        "verified": true
+      },
+      {
+        "path": "src/flask/app.py",
+        "start_line": 36,
+        "end_line": 60,
+        "sha256": "5c6aa0151b0b8018732280761d27eda0c4c83378630e21faadd57b73783720a7",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "flask-07",
+    "repository": "flask",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 75,
+      "overlap_lines": 0
+    },
+    "status": "completed",
+    "elapsed_seconds": 0.04769727999519091,
+    "rounds": 0,
+    "tool_calls": 4,
+    "tool_errors": 0,
+    "invalid_actions": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "returned_chars": 2673,
+    "references": [
+      {
+        "path": "src/flask/__init__.py",
+        "start_line": 4,
+        "end_line": 28,
+        "sha256": "987bc937d4b0b65d510ed8c2a82218c889e22bf499fe5fe1a94ca73b382927da",
+        "verified": true
+      },
+      {
+        "path": "src/flask/app.py",
+        "start_line": 27,
+        "end_line": 51,
+        "sha256": "5c6aa0151b0b8018732280761d27eda0c4c83378630e21faadd57b73783720a7",
+        "verified": true
+      },
+      {
+        "path": "src/flask/cli.py",
+        "start_line": 763,
+        "end_line": 787,
+        "sha256": "3df87bdbe07196fa07d101c20ce7351ef5c6ecaab95deb5fdf3ccdcf690d4879",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "flask-08",
+    "repository": "flask",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 70,
+      "overlap_lines": 0
+    },
+    "status": "completed",
+    "elapsed_seconds": 0.05927536699891789,
+    "rounds": 0,
+    "tool_calls": 4,
+    "tool_errors": 0,
+    "invalid_actions": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "returned_chars": 2363,
+    "references": [
+      {
+        "path": "src/flask/__init__.py",
+        "start_line": 4,
+        "end_line": 28,
+        "sha256": "987bc937d4b0b65d510ed8c2a82218c889e22bf499fe5fe1a94ca73b382927da",
+        "verified": true
+      },
+      {
+        "path": "src/flask/ctx.py",
+        "start_line": 1,
+        "end_line": 25,
+        "sha256": "b0f2b36a1aad831692eced32f44fcdcd424d503c930fa3381a40eb56ed9f5376",
+        "verified": true
+      },
+      {
+        "path": "src/flask/app.py",
+        "start_line": 1,
+        "end_line": 20,
+        "sha256": "5c6aa0151b0b8018732280761d27eda0c4c83378630e21faadd57b73783720a7",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "flask-09",
+    "repository": "flask",
+    "scores": {
+      "file_hit": true,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 75,
+      "overlap_lines": 0
+    },
+    "status": "completed",
+    "elapsed_seconds": 0.04548639599670423,
+    "rounds": 0,
+    "tool_calls": 4,
+    "tool_errors": 0,
+    "invalid_actions": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "returned_chars": 2848,
+    "references": [
+      {
+        "path": "src/flask/cli.py",
+        "start_line": 311,
+        "end_line": 335,
+        "sha256": "3df87bdbe07196fa07d101c20ce7351ef5c6ecaab95deb5fdf3ccdcf690d4879",
+        "verified": true
+      },
+      {
+        "path": "src/flask/config.py",
+        "start_line": 91,
+        "end_line": 115,
+        "sha256": "3e2a85d033da9ba1d6d051f8087d61a574c17b7d0d4b38cf10ec2bcf56fa92dd",
+        "verified": true
+      },
+      {
+        "path": "src/flask/app.py",
+        "start_line": 30,
+        "end_line": 54,
+        "sha256": "5c6aa0151b0b8018732280761d27eda0c4c83378630e21faadd57b73783720a7",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "flask-10",
+    "repository": "flask",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 68,
+      "overlap_lines": 0
+    },
+    "status": "completed",
+    "elapsed_seconds": 0.042185129001154564,
+    "rounds": 0,
+    "tool_calls": 4,
+    "tool_errors": 0,
+    "invalid_actions": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "returned_chars": 2368,
+    "references": [
+      {
+        "path": "src/flask/app.py",
+        "start_line": 27,
+        "end_line": 51,
+        "sha256": "5c6aa0151b0b8018732280761d27eda0c4c83378630e21faadd57b73783720a7",
+        "verified": true
+      },
+      {
+        "path": "src/flask/app.py",
+        "start_line": 173,
+        "end_line": 197,
+        "sha256": "5c6aa0151b0b8018732280761d27eda0c4c83378630e21faadd57b73783720a7",
+        "verified": true
+      },
+      {
+        "path": "src/flask/json/tag.py",
+        "start_line": 1,
+        "end_line": 18,
+        "sha256": "0e168dc2e20e85db7647be28382f58e19f19a6bc4562245be5d50fe5bcb220dc",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "click-01",
+    "repository": "click",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 75,
+      "overlap_lines": 0
+    },
+    "status": "completed",
+    "elapsed_seconds": 0.04587778599670855,
+    "rounds": 0,
+    "tool_calls": 4,
+    "tool_errors": 0,
+    "invalid_actions": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "returned_chars": 2839,
+    "references": [
+      {
+        "path": "src/click/core.py",
+        "start_line": 18,
+        "end_line": 42,
+        "sha256": "814869352f5c14119d1175dd8ac1951be791bc67f8f514f215a831ba5ab0745c",
+        "verified": true
+      },
+      {
+        "path": "src/click/__init__.py",
+        "start_line": 3,
+        "end_line": 27,
+        "sha256": "e98c92d5a7b29276742d8c1e5a8ccd672d00f6767fd75c2660886fddc6d0ad8a",
+        "verified": true
+      },
+      {
+        "path": "src/click/_compat.py",
+        "start_line": 206,
+        "end_line": 230,
+        "sha256": "bf7c4166415bbc0d415cf46415f04973afa92303c8ef7e399be910127a5502ce",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "click-02",
+    "repository": "click",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 72,
+      "overlap_lines": 0
+    },
+    "status": "completed",
+    "elapsed_seconds": 0.05636090700136265,
+    "rounds": 0,
+    "tool_calls": 4,
+    "tool_errors": 0,
+    "invalid_actions": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "returned_chars": 2720,
+    "references": [
+      {
+        "path": "src/click/__init__.py",
+        "start_line": 17,
+        "end_line": 41,
+        "sha256": "e98c92d5a7b29276742d8c1e5a8ccd672d00f6767fd75c2660886fddc6d0ad8a",
+        "verified": true
+      },
+      {
+        "path": "src/click/__init__.py",
+        "start_line": 42,
+        "end_line": 66,
+        "sha256": "e98c92d5a7b29276742d8c1e5a8ccd672d00f6767fd75c2660886fddc6d0ad8a",
+        "verified": true
+      },
+      {
+        "path": "src/click/_compat.py",
+        "start_line": 1,
+        "end_line": 22,
+        "sha256": "bf7c4166415bbc0d415cf46415f04973afa92303c8ef7e399be910127a5502ce",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "click-03",
+    "repository": "click",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 72,
+      "overlap_lines": 0
+    },
+    "status": "completed",
+    "elapsed_seconds": 0.04538814700208604,
+    "rounds": 0,
+    "tool_calls": 4,
+    "tool_errors": 0,
+    "invalid_actions": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "returned_chars": 2593,
+    "references": [
+      {
+        "path": "src/click/_termui_impl.py",
+        "start_line": 43,
+        "end_line": 67,
+        "sha256": "0125e12e2f4840873426cf4a4124bedfe48b65c3deb7756acac05ff5681b6e92",
+        "verified": true
+      },
+      {
+        "path": "src/click/__init__.py",
+        "start_line": 1,
+        "end_line": 22,
+        "sha256": "e98c92d5a7b29276742d8c1e5a8ccd672d00f6767fd75c2660886fddc6d0ad8a",
+        "verified": true
+      },
+      {
+        "path": "src/click/__init__.py",
+        "start_line": 42,
+        "end_line": 66,
+        "sha256": "e98c92d5a7b29276742d8c1e5a8ccd672d00f6767fd75c2660886fddc6d0ad8a",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "click-04",
+    "repository": "click",
+    "scores": {
+      "file_hit": true,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 75,
+      "overlap_lines": 0
+    },
+    "status": "completed",
+    "elapsed_seconds": 0.0495269110033405,
+    "rounds": 0,
+    "tool_calls": 4,
+    "tool_errors": 0,
+    "invalid_actions": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "returned_chars": 2876,
+    "references": [
+      {
+        "path": "src/click/_compat.py",
+        "start_line": 201,
+        "end_line": 225,
+        "sha256": "bf7c4166415bbc0d415cf46415f04973afa92303c8ef7e399be910127a5502ce",
+        "verified": true
+      },
+      {
+        "path": "src/click/core.py",
+        "start_line": 18,
+        "end_line": 42,
+        "sha256": "814869352f5c14119d1175dd8ac1951be791bc67f8f514f215a831ba5ab0745c",
+        "verified": true
+      },
+      {
+        "path": "src/click/__init__.py",
+        "start_line": 3,
+        "end_line": 27,
+        "sha256": "e98c92d5a7b29276742d8c1e5a8ccd672d00f6767fd75c2660886fddc6d0ad8a",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "click-05",
+    "repository": "click",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 65,
+      "overlap_lines": 0
+    },
+    "status": "completed",
+    "elapsed_seconds": 0.04956097200192744,
+    "rounds": 0,
+    "tool_calls": 4,
+    "tool_errors": 0,
+    "invalid_actions": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "returned_chars": 2079,
+    "references": [
+      {
+        "path": "src/click/_termui_impl.py",
+        "start_line": 406,
+        "end_line": 430,
+        "sha256": "0125e12e2f4840873426cf4a4124bedfe48b65c3deb7756acac05ff5681b6e92",
+        "verified": true
+      },
+      {
+        "path": "src/click/__init__.py",
+        "start_line": 1,
+        "end_line": 15,
+        "sha256": "e98c92d5a7b29276742d8c1e5a8ccd672d00f6767fd75c2660886fddc6d0ad8a",
+        "verified": true
+      },
+      {
+        "path": "src/click/__init__.py",
+        "start_line": 55,
+        "end_line": 79,
+        "sha256": "e98c92d5a7b29276742d8c1e5a8ccd672d00f6767fd75c2660886fddc6d0ad8a",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "click-06",
+    "repository": "click",
+    "scores": {
+      "file_hit": true,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 56,
+      "overlap_lines": 0
+    },
+    "status": "completed",
+    "elapsed_seconds": 0.05880310400243616,
+    "rounds": 0,
+    "tool_calls": 4,
+    "tool_errors": 0,
+    "invalid_actions": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "returned_chars": 1481,
+    "references": [
+      {
+        "path": "src/click/__init__.py",
+        "start_line": 1,
+        "end_line": 15,
+        "sha256": "e98c92d5a7b29276742d8c1e5a8ccd672d00f6767fd75c2660886fddc6d0ad8a",
+        "verified": true
+      },
+      {
+        "path": "src/click/_textwrap.py",
+        "start_line": 1,
+        "end_line": 17,
+        "sha256": "04e69ed1143abe0dc590d8122723a81b31b599e18cc49fee9165592b1feffb4a",
+        "verified": true
+      },
+      {
+        "path": "src/click/core.py",
+        "start_line": 1,
+        "end_line": 24,
+        "sha256": "814869352f5c14119d1175dd8ac1951be791bc67f8f514f215a831ba5ab0745c",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "click-07",
+    "repository": "click",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 69,
+      "overlap_lines": 0
+    },
+    "status": "completed",
+    "elapsed_seconds": 0.0540756659975159,
+    "rounds": 0,
+    "tool_calls": 4,
+    "tool_errors": 0,
+    "invalid_actions": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "returned_chars": 2299,
+    "references": [
+      {
+        "path": "src/click/__init__.py",
+        "start_line": 1,
+        "end_line": 22,
+        "sha256": "e98c92d5a7b29276742d8c1e5a8ccd672d00f6767fd75c2660886fddc6d0ad8a",
+        "verified": true
+      },
+      {
+        "path": "src/click/__init__.py",
+        "start_line": 40,
+        "end_line": 64,
+        "sha256": "e98c92d5a7b29276742d8c1e5a8ccd672d00f6767fd75c2660886fddc6d0ad8a",
+        "verified": true
+      },
+      {
+        "path": "src/click/_compat.py",
+        "start_line": 1,
+        "end_line": 22,
+        "sha256": "bf7c4166415bbc0d415cf46415f04973afa92303c8ef7e399be910127a5502ce",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "click-08",
+    "repository": "click",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 75,
+      "overlap_lines": 0
+    },
+    "status": "completed",
+    "elapsed_seconds": 0.035260953998658806,
+    "rounds": 0,
+    "tool_calls": 4,
+    "tool_errors": 0,
+    "invalid_actions": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "returned_chars": 2836,
+    "references": [
+      {
+        "path": "src/click/__init__.py",
+        "start_line": 16,
+        "end_line": 40,
+        "sha256": "e98c92d5a7b29276742d8c1e5a8ccd672d00f6767fd75c2660886fddc6d0ad8a",
+        "verified": true
+      },
+      {
+        "path": "src/click/_termui_impl.py",
+        "start_line": 471,
+        "end_line": 495,
+        "sha256": "0125e12e2f4840873426cf4a4124bedfe48b65c3deb7756acac05ff5681b6e92",
+        "verified": true
+      },
+      {
+        "path": "src/click/_winconsole.py",
+        "start_line": 50,
+        "end_line": 74,
+        "sha256": "fefc54b946b1c01868474bd458236e1d8f1551e7e231d088c94d925cfaa817e0",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "click-09",
+    "repository": "click",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 75,
+      "overlap_lines": 0
+    },
+    "status": "completed",
+    "elapsed_seconds": 0.04240143800416263,
+    "rounds": 0,
+    "tool_calls": 4,
+    "tool_errors": 0,
+    "invalid_actions": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "returned_chars": 2530,
+    "references": [
+      {
+        "path": "src/click/core.py",
+        "start_line": 13,
+        "end_line": 37,
+        "sha256": "814869352f5c14119d1175dd8ac1951be791bc67f8f514f215a831ba5ab0745c",
+        "verified": true
+      },
+      {
+        "path": "src/click/_compat.py",
+        "start_line": 388,
+        "end_line": 412,
+        "sha256": "bf7c4166415bbc0d415cf46415f04973afa92303c8ef7e399be910127a5502ce",
+        "verified": true
+      },
+      {
+        "path": "src/click/_compat.py",
+        "start_line": 464,
+        "end_line": 488,
+        "sha256": "bf7c4166415bbc0d415cf46415f04973afa92303c8ef7e399be910127a5502ce",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "click-10",
+    "repository": "click",
+    "scores": {
+      "file_hit": false,
+      "target_hit": false,
+      "line_precision": 0.0,
+      "line_recall": 0.0,
+      "line_f1": 0.0,
+      "returned_lines": 75,
+      "overlap_lines": 0
+    },
+    "status": "completed",
+    "elapsed_seconds": 0.047332039997854736,
+    "rounds": 0,
+    "tool_calls": 4,
+    "tool_errors": 0,
+    "invalid_actions": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "returned_chars": 2730,
+    "references": [
+      {
+        "path": "src/click/_compat.py",
+        "start_line": 7,
+        "end_line": 31,
+        "sha256": "bf7c4166415bbc0d415cf46415f04973afa92303c8ef7e399be910127a5502ce",
+        "verified": true
+      },
+      {
+        "path": "src/click/__init__.py",
+        "start_line": 21,
+        "end_line": 45,
+        "sha256": "e98c92d5a7b29276742d8c1e5a8ccd672d00f6767fd75c2660886fddc6d0ad8a",
+        "verified": true
+      },
+      {
+        "path": "src/click/__init__.py",
+        "start_line": 55,
+        "end_line": 79,
+        "sha256": "e98c92d5a7b29276742d8c1e5a8ccd672d00f6767fd75c2660886fddc6d0ad8a",
+        "verified": true
+      }
+    ]
+  }
+]

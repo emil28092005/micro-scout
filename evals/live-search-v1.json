@@ -1,0 +1,440 @@
+{
+  "name": "live-search-v1",
+  "scope": "30 hand-authored English single-function localization tasks in three public Python repositories. Development benchmark, not a downstream coding-task or contamination-free evaluation.",
+  "repositories": {
+    "requests": {
+      "commit": "b25c87d7cb8d6a18a37fa12442b5f883f9e41741",
+      "url": "https://github.com/psf/requests.git"
+    },
+    "flask": {
+      "commit": "2c1b30d0503cfb064f1cb252e6614a06915a362a",
+      "url": "https://github.com/pallets/flask.git"
+    },
+    "click": {
+      "commit": "fd183b2ced1cb5857784fe7fb22f4982f671f098",
+      "url": "https://github.com/pallets/click.git"
+    }
+  },
+  "tasks": [
+    {
+      "id": "requests-01",
+      "repository": "requests",
+      "query": "Find where an unsuccessful HTTP status becomes an exception containing the server reason and URL.",
+      "targets": [
+        {
+          "path": "src/requests/models.py",
+          "symbol": "Response.raise_for_status",
+          "start_line": 1002,
+          "end_line": 1026,
+          "sha256": "32365d67893bb67c3ed67cf93ca4a18e63e6ab29342fa0dc8b09c59e06ff564e"
+        }
+      ]
+    },
+    {
+      "id": "requests-02",
+      "repository": "requests",
+      "query": "Locate the response iterator that preserves an incomplete trailing line across downloaded chunks.",
+      "targets": [
+        {
+          "path": "src/requests/models.py",
+          "symbol": "Response.iter_lines",
+          "start_line": 867,
+          "end_line": 888,
+          "sha256": "32365d67893bb67c3ed67cf93ca4a18e63e6ab29342fa0dc8b09c59e06ff564e"
+        }
+      ]
+    },
+    {
+      "id": "requests-03",
+      "repository": "requests",
+      "query": "Where is it decided whether credentials may survive a redirect to another hostname, port, or protocol?",
+      "targets": [
+        {
+          "path": "src/requests/sessions.py",
+          "symbol": "SessionRedirectMixin.should_strip_auth",
+          "start_line": 129,
+          "end_line": 157,
+          "sha256": "0a5d5da449ce7f0af3ccf6e4bbe7a67a935e37846dff4ff9f08cb6c7e2464e6f"
+        }
+      ]
+    },
+    {
+      "id": "requests-04",
+      "repository": "requests",
+      "query": "Find the logic that changes the HTTP verb when following 301, 302, or 303 redirects.",
+      "targets": [
+        {
+          "path": "src/requests/sessions.py",
+          "symbol": "SessionRedirectMixin.rebuild_method",
+          "start_line": 337,
+          "end_line": 353,
+          "sha256": "0a5d5da449ce7f0af3ccf6e4bbe7a67a935e37846dff4ff9f08cb6c7e2464e6f"
+        }
+      ]
+    },
+    {
+      "id": "requests-05",
+      "repository": "requests",
+      "query": "Locate where environment proxy settings and certificate bundle variables are merged with session options.",
+      "targets": [
+        {
+          "path": "src/requests/sessions.py",
+          "symbol": "Session.merge_environment_settings",
+          "start_line": 757,
+          "end_line": 779,
+          "sha256": "0a5d5da449ce7f0af3ccf6e4bbe7a67a935e37846dff4ff9f08cb6c7e2464e6f"
+        }
+      ]
+    },
+    {
+      "id": "requests-06",
+      "repository": "requests",
+      "query": "Find where a 401 digest challenge causes the original request to be copied and sent again with authentication.",
+      "targets": [
+        {
+          "path": "src/requests/auth.py",
+          "symbol": "HTTPDigestAuth.handle_401",
+          "start_line": 250,
+          "end_line": 283,
+          "sha256": "905ef9b6a9cb72d67d31ffe19bd4d9223e1c4169cde6ec51cfca16b31e70991d"
+        }
+      ]
+    },
+    {
+      "id": "requests-07",
+      "repository": "requests",
+      "query": "Locate the helper that fills a cookie container from a mapping while optionally preserving existing names.",
+      "targets": [
+        {
+          "path": "src/requests/cookies.py",
+          "symbol": "cookiejar_from_dict",
+          "start_line": 530,
+          "end_line": 539,
+          "sha256": "6cd8be8aa123e0d3d9d34fa86feac7bf392f39bccdde5129830de0ea9692dd7c"
+        }
+      ]
+    },
+    {
+      "id": "requests-08",
+      "repository": "requests",
+      "query": "Find where credentials are loaded from the users netrc file, including NETRC and home-directory lookup.",
+      "targets": [
+        {
+          "path": "src/requests/utils.py",
+          "symbol": "get_netrc_auth",
+          "start_line": 210,
+          "end_line": 248,
+          "sha256": "5aa53ceab677c2f842fad42359c8ed1ff1c4299c1607789609957a496e4311d4"
+        }
+      ]
+    },
+    {
+      "id": "requests-09",
+      "repository": "requests",
+      "query": "Find the implementation that seeks a request body back to its saved position and fails for an unrewindable stream.",
+      "targets": [
+        {
+          "path": "src/requests/utils.py",
+          "symbol": "rewind_body",
+          "start_line": 1075,
+          "end_line": 1086,
+          "sha256": "5aa53ceab677c2f842fad42359c8ed1ff1c4299c1607789609957a496e4311d4"
+        }
+      ]
+    },
+    {
+      "id": "requests-10",
+      "repository": "requests",
+      "query": "Where is a request URL validated, its international hostname encoded, and its query parameters appended?",
+      "targets": [
+        {
+          "path": "src/requests/models.py",
+          "symbol": "PreparedRequest.prepare_url",
+          "start_line": 416,
+          "end_line": 481,
+          "sha256": "32365d67893bb67c3ed67cf93ca4a18e63e6ab29342fa0dc8b09c59e06ff564e"
+        }
+      ]
+    },
+    {
+      "id": "flask-01",
+      "repository": "flask",
+      "query": "Find the code that invokes the view function selected by the matched URL rule.",
+      "targets": [
+        {
+          "path": "src/flask/app.py",
+          "symbol": "Flask.dispatch_request",
+          "start_line": 889,
+          "end_line": 902,
+          "sha256": "5c6aa0151b0b8018732280761d27eda0c4c83378630e21faadd57b73783720a7"
+        }
+      ]
+    },
+    {
+      "id": "flask-02",
+      "repository": "flask",
+      "query": "Where are view return values such as tuples, dictionaries and strings converted into a response object?",
+      "targets": [
+        {
+          "path": "src/flask/app.py",
+          "symbol": "Flask.make_response",
+          "start_line": 1186,
+          "end_line": 1269,
+          "sha256": "5c6aa0151b0b8018732280761d27eda0c4c83378630e21faadd57b73783720a7"
+        }
+      ]
+    },
+    {
+      "id": "flask-03",
+      "repository": "flask",
+      "query": "Find where coroutine view functions are adapted for synchronous request handling.",
+      "targets": [
+        {
+          "path": "src/flask/app.py",
+          "symbol": "Flask.ensure_sync",
+          "start_line": 975,
+          "end_line": 978,
+          "sha256": "5c6aa0151b0b8018732280761d27eda0c4c83378630e21faadd57b73783720a7"
+        }
+      ]
+    },
+    {
+      "id": "flask-04",
+      "repository": "flask",
+      "query": "Locate the processing that runs after-request callbacks and saves the session before returning the response.",
+      "targets": [
+        {
+          "path": "src/flask/app.py",
+          "symbol": "Flask.process_response",
+          "start_line": 1311,
+          "end_line": 1324,
+          "sha256": "5c6aa0151b0b8018732280761d27eda0c4c83378630e21faadd57b73783720a7"
+        }
+      ]
+    },
+    {
+      "id": "flask-05",
+      "repository": "flask",
+      "query": "Find where before-request handlers can short-circuit normal request dispatch by returning a value.",
+      "targets": [
+        {
+          "path": "src/flask/app.py",
+          "symbol": "Flask.preprocess_request",
+          "start_line": 1281,
+          "end_line": 1296,
+          "sha256": "5c6aa0151b0b8018732280761d27eda0c4c83378630e21faadd57b73783720a7"
+        }
+      ]
+    },
+    {
+      "id": "flask-06",
+      "repository": "flask",
+      "query": "Where is a streaming generator wrapped so the request context remains active while producing its items?",
+      "targets": [
+        {
+          "path": "src/flask/helpers.py",
+          "symbol": "stream_with_context",
+          "start_line": 104,
+          "end_line": 143,
+          "sha256": "ac96607bbfc9dbcf09d5442fe7e90d7f8a046b0df7d8f3fc3535b44112016d71"
+        }
+      ]
+    },
+    {
+      "id": "flask-07",
+      "repository": "flask",
+      "query": "Find where a categorized one-time message is stored in the session and a notification signal is emitted.",
+      "targets": [
+        {
+          "path": "src/flask/helpers.py",
+          "symbol": "flash",
+          "start_line": 340,
+          "end_line": 349,
+          "sha256": "ac96607bbfc9dbcf09d5442fe7e90d7f8a046b0df7d8f3fc3535b44112016d71"
+        }
+      ]
+    },
+    {
+      "id": "flask-08",
+      "repository": "flask",
+      "query": "Locate where stored one-time messages are popped from the session, cached for the request, and filtered by category.",
+      "targets": [
+        {
+          "path": "src/flask/helpers.py",
+          "symbol": "get_flashed_messages",
+          "start_line": 383,
+          "end_line": 391,
+          "sha256": "ac96607bbfc9dbcf09d5442fe7e90d7f8a046b0df7d8f3fc3535b44112016d71"
+        }
+      ]
+    },
+    {
+      "id": "flask-09",
+      "repository": "flask",
+      "query": "Find where the command-line startup reads dotenv files without replacing environment variables already set.",
+      "targets": [
+        {
+          "path": "src/flask/cli.py",
+          "symbol": "load_dotenv",
+          "start_line": 740,
+          "end_line": 771,
+          "sha256": "3df87bdbe07196fa07d101c20ce7351ef5c6ecaab95deb5fdf3ccdcf690d4879"
+        }
+      ]
+    },
+    {
+      "id": "flask-10",
+      "repository": "flask",
+      "query": "Locate where a signed session cookie is verified and an invalid signature produces an empty session.",
+      "targets": [
+        {
+          "path": "src/flask/sessions.py",
+          "symbol": "SecureCookieSessionInterface.open_session",
+          "start_line": 338,
+          "end_line": 349,
+          "sha256": "76ebd81a608687f1f772032ecb6a1e4a3ac2b02bcbca517808128e5e9374426b"
+        }
+      ]
+    },
+    {
+      "id": "click-01",
+      "repository": "click",
+      "query": "Find where a supplied option value is normalized and matched against the allowed choices.",
+      "targets": [
+        {
+          "path": "src/click/types.py",
+          "symbol": "Choice.convert",
+          "start_line": 344,
+          "end_line": 358,
+          "sha256": "2814d1c4ddbc711d5567999bf62257f7c3104b0fe9f521b3963a9f108f33e53c"
+        }
+      ]
+    },
+    {
+      "id": "click-02",
+      "repository": "click",
+      "query": "Locate where a filesystem argument is checked for existence, readability, writability, and allowed file or directory type.",
+      "targets": [
+        {
+          "path": "src/click/types.py",
+          "symbol": "Path.convert",
+          "start_line": 930,
+          "end_line": 995,
+          "sha256": "2814d1c4ddbc711d5567999bf62257f7c3104b0fe9f521b3963a9f108f33e53c"
+        }
+      ]
+    },
+    {
+      "id": "click-03",
+      "repository": "click",
+      "query": "Find where a date argument is parsed by trying several accepted formats and reports a failure if none match.",
+      "targets": [
+        {
+          "path": "src/click/types.py",
+          "symbol": "DateTime.convert",
+          "start_line": 448,
+          "end_line": 466,
+          "sha256": "2814d1c4ddbc711d5567999bf62257f7c3104b0fe9f521b3963a9f108f33e53c"
+        }
+      ]
+    },
+    {
+      "id": "click-04",
+      "repository": "click",
+      "query": "Where is an option value from an environment variable split and grouped for multiple arguments?",
+      "targets": [
+        {
+          "path": "src/click/core.py",
+          "symbol": "Option.value_from_envvar",
+          "start_line": 2983,
+          "end_line": 2996,
+          "sha256": "814869352f5c14119d1175dd8ac1951be791bc67f8f514f215a831ba5ab0745c"
+        }
+      ]
+    },
+    {
+      "id": "click-05",
+      "repository": "click",
+      "query": "Locate where a command group resolves a subcommand name, retries normalized names, and rejects unknown commands.",
+      "targets": [
+        {
+          "path": "src/click/core.py",
+          "symbol": "Group.resolve_command",
+          "start_line": 1867,
+          "end_line": 1889,
+          "sha256": "814869352f5c14119d1175dd8ac1951be791bc67f8f514f215a831ba5ab0745c"
+        }
+      ]
+    },
+    {
+      "id": "click-06",
+      "repository": "click",
+      "query": "Find the helper that enters a context manager and registers its cleanup with the command context.",
+      "targets": [
+        {
+          "path": "src/click/core.py",
+          "symbol": "Context.with_resource",
+          "start_line": 598,
+          "end_line": 598,
+          "sha256": "814869352f5c14119d1175dd8ac1951be791bc67f8f514f215a831ba5ab0745c"
+        }
+      ]
+    },
+    {
+      "id": "click-07",
+      "repository": "click",
+      "query": "Find where each element of a tuple argument is converted using its corresponding parameter type.",
+      "targets": [
+        {
+          "path": "src/click/types.py",
+          "symbol": "Tuple.convert",
+          "start_line": 1049,
+          "end_line": 1065,
+          "sha256": "2814d1c4ddbc711d5567999bf62257f7c3104b0fe9f521b3963a9f108f33e53c"
+        }
+      ]
+    },
+    {
+      "id": "click-08",
+      "repository": "click",
+      "query": "Locate the interactive yes-or-no question loop that retries invalid answers and can abort on rejection.",
+      "targets": [
+        {
+          "path": "src/click/termui.py",
+          "symbol": "confirm",
+          "start_line": 223,
+          "end_line": 252,
+          "sha256": "bc062b282d9aedffcd7c42210138445587dafff89be5741b4d2086b499400510"
+        }
+      ]
+    },
+    {
+      "id": "click-09",
+      "repository": "click",
+      "query": "Find the testing helper that temporarily changes the current directory and removes its temporary directory on exit.",
+      "targets": [
+        {
+          "path": "src/click/testing.py",
+          "symbol": "CliRunner.isolated_filesystem",
+          "start_line": 552,
+          "end_line": 565,
+          "sha256": "d9e2dd01a0890864e83f94f0f9737c263ac36f7c1b2487c047183777472b5b93"
+        }
+      ]
+    },
+    {
+      "id": "click-10",
+      "repository": "click",
+      "query": "Where does a lazily opened file acquire its actual stream and translate operating-system errors into a file error?",
+      "targets": [
+        {
+          "path": "src/click/utils.py",
+          "symbol": "LazyFile.open",
+          "start_line": 156,
+          "end_line": 167,
+          "sha256": "6f5326faeb040c11ed13070f96d3c89f7cd22b89f0d8a4e9e460bbfe849394ba"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "kind": "executed_oracle_demonstrations",
+  "seed": 42,
+  "limitations": "Three-file synthetic repositories; query-word searches and oracle-chosen target files and final ranges. Teaches protocol, not realistic planning.",
+  "recipe": "read-windows",
+  "read_window": {
+    "lines_before_match": 40,
+    "lines_after_match": 60
+  },
+  "functions_per_file": 2,
+  "target_position": "randomized before or after a distractor function",
+  "excluded_repositories_by_name": [
+    "click",
+    "flask",
+    "requests"
+  ],
+  "splits": {
+    "train": {
+      "trajectories": 256,
+      "action_examples": 826,
+      "unobservable_candidates_skipped": 1,
+      "source_sha256": "3eeed3185b74f934462aaccbd3c567f8db20754a1bf6f5f3686779f8b39f4338",
+      "output_sha256": "7c6315531aa37e5de59c6944a425cb9cb700474551a62a3fc51dd58134649b7b"
+    },
+    "validation": {
+      "trajectories": 32,
+      "action_examples": 104,
+      "unobservable_candidates_skipped": 0,
+      "source_sha256": "e1b934c33f12322e4a56d0d17a987966c40961b035e15939fd716b76d4e017a2",
+      "output_sha256": "ac270e077c3e65f5590c18f27a3dec1fd80c48aac6067bc81b0e05f9b2cb0bc1"
+    }
+  },
+  "repository_disjoint": true
+}
