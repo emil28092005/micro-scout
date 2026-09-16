@@ -1,0 +1,105 @@
+{
+  "scope": "Author-written own-repository integration smoke; not an independent quality benchmark",
+  "device": "cpu",
+  "queries": [
+    {
+      "query": "validate the source file hash before returning a code reference",
+      "expected_path": "src/micro_scout/scout.py",
+      "expected_file_rank_in_top_6": 4,
+      "rpc_ms": 31.78067699991516,
+      "harness_ms": 21.872625999094453,
+      "references": [
+        "src/micro_scout/data.py:102-133",
+        "tests/test_retrieval.py:242-255",
+        "src/micro_scout/download.py:41-71",
+        "src/micro_scout/scout.py:43-72",
+        "src/micro_scout/train.py:72-103",
+        "src/micro_scout/text.py:56-76"
+      ]
+    },
+    {
+      "query": "compute normalized embeddings with attention masked mean pooling",
+      "expected_path": "src/micro_scout/encoder.py",
+      "expected_file_rank_in_top_6": 1,
+      "rpc_ms": 34.01597700212733,
+      "harness_ms": 24.61087999836309,
+      "references": [
+        "src/micro_scout/encoder.py:95-103",
+        "src/micro_scout/encoder.py:105-118",
+        "tests/test_encoder.py:61-71",
+        "src/micro_scout/encoder.py:41-72",
+        "src/micro_scout/evaluate.py:90-121",
+        "src/micro_scout/lexical.py:51-65"
+      ]
+    },
+    {
+      "query": "save training checkpoint with optimizer and random generator states",
+      "expected_path": "src/micro_scout/train.py",
+      "expected_file_rank_in_top_6": 1,
+      "rpc_ms": 32.459801997902105,
+      "harness_ms": 22.04264600004535,
+      "references": [
+        "src/micro_scout/train.py:144-175",
+        "src/micro_scout/train.py:240-271",
+        "src/micro_scout/train.py:192-223",
+        "src/micro_scout/encoder.py:120-126",
+        "src/micro_scout/train.py:24-55",
+        "tests/test_encoder.py:74-121"
+      ]
+    },
+    {
+      "query": "remove docstrings and comments from Python code",
+      "expected_path": "src/micro_scout/text.py",
+      "expected_file_rank_in_top_6": 1,
+      "rpc_ms": 30.592275001254166,
+      "harness_ms": 20.372359002067242,
+      "references": [
+        "src/micro_scout/text.py:17-53",
+        "tests/test_text.py:21-30",
+        "tests/test_text.py:33-35",
+        "src/micro_scout/text.py:79-85",
+        "tests/test_text.py:7-18",
+        "src/micro_scout/encoder.py:41-72"
+      ]
+    },
+    {
+      "query": "combine lexical and neural search rankings",
+      "expected_path": "src/micro_scout/lexical.py",
+      "expected_file_rank_in_top_6": 2,
+      "rpc_ms": 34.242352998262504,
+      "harness_ms": 23.09402000173577,
+      "references": [
+        "src/micro_scout/scout.py:126-157",
+        "src/micro_scout/lexical.py:51-65",
+        "src/micro_scout/lexical.py:35-41",
+        "src/micro_scout/evaluate.py:90-121",
+        "tests/test_retrieval.py:50-53",
+        "src/micro_scout/cli.py:60-91"
+      ]
+    }
+  ],
+  "process_start_to_initialized_ms": 7326.935010001762,
+  "tools": [
+    "scout_search",
+    "scout_read",
+    "scout_status",
+    "scout_feedback"
+  ],
+  "lexical_mode_override_passed": true,
+  "metadata": {
+    "schema_version": 1,
+    "root": ".",
+    "snapshot": "e532e1cccfaf6de0f186e39768e035f0f2982121762a5fc8b6cc1c681c6f0f3d",
+    "created_at_unix": 1789522014.2341716,
+    "files": 27,
+    "symbols": 199,
+    "edges": 93,
+    "encoder_fingerprint": "2bb5197791e4a0caf85af4e92c7ad9f2394cc4c01dafa0b0b18d7e32f0fc5697",
+    "dimension": 384,
+    "reused_embeddings": 0,
+    "warnings": [],
+    "build_seconds": 13.303038476999063
+  },
+  "child_peak_rss_mib": 656.5625,
+  "all_returned_references_verified": true
+}

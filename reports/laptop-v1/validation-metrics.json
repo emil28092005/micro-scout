@@ -1,0 +1,126 @@
+{
+  "split": "validation",
+  "queries": 2000,
+  "candidates_per_query": 2000,
+  "repositories": 397,
+  "dataset_sha256": "e1b934c33f12322e4a56d0d17a987966c40961b035e15939fd716b76d4e017a2",
+  "evaluator_source_sha256": "29c942b9cbfff21ba8514511e27752527f0ec5e2cad5fbf57ec3b220fc7acd0b",
+  "fusion": {
+    "dense_weight": 0.5,
+    "per_method_limit": 100,
+    "k": 60
+  },
+  "evaluation_ids_sha256": "37d3ee7d31626ab63e5746faac6e8ff2bb117506ddd682b2a71405682196f2ef",
+  "protocol": "one labeled positive per query; all split snippets are candidates; docstrings removed",
+  "limitations": [
+    "Other semantically correct snippets may be counted as negatives",
+    "This is function retrieval, not a bug-fixing or multi-file context benchmark",
+    "No downstream Astra task-success evaluation has been run",
+    "Base-model pretraining contamination cannot be excluded"
+  ],
+  "models": {
+    "pretrained": {
+      "fingerprint": "78f9f86bd7f71186560e631f0ed43678868c5d39ec07512adc52bc9185009f82",
+      "parameters": 22713216,
+      "config": {
+        "format_version": 1,
+        "base_model": "sentence-transformers/all-MiniLM-L6-v2",
+        "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+        "max_length": 256,
+        "query_length": 96,
+        "pooling": "attention-masked-mean-l2",
+        "code_normalization": "strip-python-docstrings-comments-v1"
+      },
+      "embedding_seconds": 9.731017789999896
+    },
+    "trained": {
+      "fingerprint": "2bb5197791e4a0caf85af4e92c7ad9f2394cc4c01dafa0b0b18d7e32f0fc5697",
+      "parameters": 22713216,
+      "config": {
+        "format_version": 1,
+        "base_model": "sentence-transformers/all-MiniLM-L6-v2",
+        "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+        "max_length": 256,
+        "query_length": 96,
+        "pooling": "attention-masked-mean-l2",
+        "code_normalization": "strip-python-docstrings-comments-v1"
+      },
+      "embedding_seconds": 9.365606817002117
+    }
+  },
+  "metrics": {
+    "bm25": {
+      "mrr": 0.6081888214934283,
+      "mrr_at_10": 0.6021025793650794,
+      "recall_at_1": 0.526,
+      "recall_at_5": 0.7045,
+      "recall_at_10": 0.755,
+      "median_rank": 1.0,
+      "macro_repository_mrr": 0.6114859318187233
+    },
+    "pretrained_dense": {
+      "mrr": 0.7306130564474945,
+      "mrr_at_10": 0.7263926587301587,
+      "recall_at_1": 0.648,
+      "recall_at_5": 0.829,
+      "recall_at_10": 0.8685,
+      "median_rank": 1.0,
+      "macro_repository_mrr": 0.7451453403171922
+    },
+    "pretrained_hybrid": {
+      "mrr": 0.7231443528469972,
+      "mrr_at_10": 0.7179565476190476,
+      "recall_at_1": 0.6435,
+      "recall_at_5": 0.812,
+      "recall_at_10": 0.8645,
+      "median_rank": 1.0,
+      "macro_repository_mrr": 0.7220954273009865
+    },
+    "trained_dense": {
+      "mrr": 0.8026987712292828,
+      "mrr_at_10": 0.7997367063492063,
+      "recall_at_1": 0.7345,
+      "recall_at_5": 0.8845,
+      "recall_at_10": 0.918,
+      "median_rank": 1.0,
+      "macro_repository_mrr": 0.8070166379212605
+    },
+    "trained_hybrid": {
+      "mrr": 0.7488568869258339,
+      "mrr_at_10": 0.7437049603174603,
+      "recall_at_1": 0.675,
+      "recall_at_5": 0.8375,
+      "recall_at_10": 0.878,
+      "median_rank": 1.0,
+      "macro_repository_mrr": 0.7540302206437699
+    }
+  },
+  "trained_vs_pretrained_dense_mrr": {
+    "delta": 0.07208571478178834,
+    "ci95": [
+      0.05819084812420347,
+      0.08860171812961275
+    ],
+    "method": "paired repository-cluster bootstrap, 2000 resamples",
+    "repository_clusters": 397
+  },
+  "trained_hybrid_vs_bm25_mrr": {
+    "delta": 0.1406680654324055,
+    "ci95": [
+      0.12797679548634003,
+      0.15351894949147968
+    ],
+    "method": "paired repository-cluster bootstrap, 2000 resamples",
+    "repository_clusters": 397
+  },
+  "trained_dense_vs_bm25_mrr": {
+    "delta": 0.19450994973585453,
+    "ci95": [
+      0.1733663076176514,
+      0.21632412756364125
+    ],
+    "method": "paired repository-cluster bootstrap, 2000 resamples",
+    "repository_clusters": 397
+  },
+  "elapsed_seconds": 28.711440942999616
+}

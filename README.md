@@ -15,6 +15,12 @@ Micro-scout indexes a repository, supports neural, lexical, and hybrid search, a
 
 This is an experimental retrieval system. It does not generate patches or train online. The training run and measured results are documented separately; the earlier research roadmap is not a claim that all proposed features have been implemented.
 
+## First measured result
+
+The 22.7M-parameter model was fine-tuned locally on 30,000 filtered CodeSearchNet pairs in **5m 55s** on an RTX 3050 Laptop GPU. On 3,000 held-out function candidates, dense search achieved **70.1% recall@1 / 0.7784 MRR**, versus **58.7% / 0.6819** for the original MiniLM and **46.7% / 0.5595** for BM25. Dense search is the default, chosen on validation before the test.
+
+Warm CPU search measured **18.3 ms median / 23.8 ms p95** on this small development repository; complete MCP calls measured 30.6–34.3 ms. These results do not establish downstream task success with Astra. See the [model card and measured limitations](docs/MODEL_CARD.md) and [experiment artifacts](reports/laptop-v1/README.md). Trained weights are available locally; they are not included in Git or hosted for download yet.
+
 ## Install
 
 Python 3.11–3.13 is supported; development uses Python 3.12 and `uv`.

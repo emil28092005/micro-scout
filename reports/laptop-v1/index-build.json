@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "root": ".",
+  "snapshot": "e532e1cccfaf6de0f186e39768e035f0f2982121762a5fc8b6cc1c681c6f0f3d",
+  "created_at_unix": 1789522014.2341716,
+  "files": 27,
+  "symbols": 199,
+  "edges": 93,
+  "encoder_fingerprint": "2bb5197791e4a0caf85af4e92c7ad9f2394cc4c01dafa0b0b18d7e32f0fc5697",
+  "dimension": 384,
+  "reused_embeddings": 0,
+  "warnings": [],
+  "build_seconds": 13.303038476999063
+}

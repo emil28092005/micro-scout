@@ -1,0 +1,17 @@
+{
+  "scope": "warm complete harness search including selected-file verification",
+  "iterations": 100,
+  "query_count": 5,
+  "mode": "dense",
+  "device": "cpu",
+  "threads": 4,
+  "symbols": 199,
+  "startup_ms": 6352.995459998056,
+  "median_ms": 18.2878574996721,
+  "p95_ms": 23.77733434896072,
+  "min_ms": 14.119207000476308,
+  "max_ms": 29.591208000056213,
+  "snapshot": "e532e1cccfaf6de0f186e39768e035f0f2982121762a5fc8b6cc1c681c6f0f3d",
+  "model_fingerprint": "2bb5197791e4a0caf85af4e92c7ad9f2394cc4c01dafa0b0b18d7e32f0fc5697",
+  "note": "Five repeated development queries; not a production workload estimate"
+}

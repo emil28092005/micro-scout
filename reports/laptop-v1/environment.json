@@ -1,0 +1,25 @@
+{
+  "cpu": "Intel Core i7-12650H",
+  "logical_cpus": 16,
+  "ram_gib": 30.965343475341797,
+  "gpu": "NVIDIA GeForce RTX 3050 Laptop GPU",
+  "gpu_vram_mib": 4096,
+  "cuda_driver": "580.178.04",
+  "training_cuda_runtime": "12.6",
+  "python": "3.12.13",
+  "packages": {
+    "torch": "2.7.1",
+    "transformers": "4.57.6",
+    "numpy": "2.5.3",
+    "safetensors": "0.8.0",
+    "mcp": "1.30.0",
+    "pyarrow": "23.0.1",
+    "huggingface-hub": "0.36.2",
+    "pytest": "9.1.1",
+    "ruff": "0.16.7"
+  },
+  "lockfile": "uv.lock",
+  "teacher_api_calls": 0,
+  "training_runs": 1,
+  "evaluation_note": "One seed; repository-cluster bootstrap does not estimate training-seed variation"
+}

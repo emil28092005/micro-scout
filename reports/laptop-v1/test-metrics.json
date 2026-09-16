@@ -1,0 +1,126 @@
+{
+  "split": "test",
+  "queries": 3000,
+  "candidates_per_query": 3000,
+  "repositories": 444,
+  "dataset_sha256": "b9e150337e195838efb5fe3f4ecafd63dfa99a55cf3635764c893912f4747596",
+  "evaluator_source_sha256": "29c942b9cbfff21ba8514511e27752527f0ec5e2cad5fbf57ec3b220fc7acd0b",
+  "fusion": {
+    "dense_weight": 0.5,
+    "per_method_limit": 100,
+    "k": 60
+  },
+  "evaluation_ids_sha256": "27c4062864258ea8f93c3e35b1ef6f65038dc24d15673afc930168dec349b3ba",
+  "protocol": "one labeled positive per query; all split snippets are candidates; docstrings removed",
+  "limitations": [
+    "Other semantically correct snippets may be counted as negatives",
+    "This is function retrieval, not a bug-fixing or multi-file context benchmark",
+    "No downstream Astra task-success evaluation has been run",
+    "Base-model pretraining contamination cannot be excluded"
+  ],
+  "models": {
+    "pretrained": {
+      "fingerprint": "78f9f86bd7f71186560e631f0ed43678868c5d39ec07512adc52bc9185009f82",
+      "parameters": 22713216,
+      "config": {
+        "format_version": 1,
+        "base_model": "sentence-transformers/all-MiniLM-L6-v2",
+        "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+        "max_length": 256,
+        "query_length": 96,
+        "pooling": "attention-masked-mean-l2",
+        "code_normalization": "strip-python-docstrings-comments-v1"
+      },
+      "embedding_seconds": 14.739996934000374
+    },
+    "trained": {
+      "fingerprint": "2bb5197791e4a0caf85af4e92c7ad9f2394cc4c01dafa0b0b18d7e32f0fc5697",
+      "parameters": 22713216,
+      "config": {
+        "format_version": 1,
+        "base_model": "sentence-transformers/all-MiniLM-L6-v2",
+        "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+        "max_length": 256,
+        "query_length": 96,
+        "pooling": "attention-masked-mean-l2",
+        "code_normalization": "strip-python-docstrings-comments-v1"
+      },
+      "embedding_seconds": 14.511412101001042
+    }
+  },
+  "metrics": {
+    "bm25": {
+      "mrr": 0.559536732255293,
+      "mrr_at_10": 0.5529096560846561,
+      "recall_at_1": 0.4673333333333333,
+      "recall_at_5": 0.668,
+      "recall_at_10": 0.7263333333333334,
+      "median_rank": 2.0,
+      "macro_repository_mrr": 0.5716105643053901
+    },
+    "pretrained_dense": {
+      "mrr": 0.6819148989769989,
+      "mrr_at_10": 0.6770041005291004,
+      "recall_at_1": 0.587,
+      "recall_at_5": 0.7976666666666666,
+      "recall_at_10": 0.8523333333333334,
+      "median_rank": 1.0,
+      "macro_repository_mrr": 0.6956670635572176
+    },
+    "pretrained_hybrid": {
+      "mrr": 0.6879723629119775,
+      "mrr_at_10": 0.6825018518518519,
+      "recall_at_1": 0.5963333333333334,
+      "recall_at_5": 0.796,
+      "recall_at_10": 0.8496666666666667,
+      "median_rank": 1.0,
+      "macro_repository_mrr": 0.6997776730651677
+    },
+    "trained_dense": {
+      "mrr": 0.7784403489523588,
+      "mrr_at_10": 0.7752448412698412,
+      "recall_at_1": 0.701,
+      "recall_at_5": 0.8746666666666667,
+      "recall_at_10": 0.9156666666666666,
+      "median_rank": 1.0,
+      "macro_repository_mrr": 0.7791868690119261
+    },
+    "trained_hybrid": {
+      "mrr": 0.7220843512885813,
+      "mrr_at_10": 0.7164558201058201,
+      "recall_at_1": 0.6406666666666667,
+      "recall_at_5": 0.815,
+      "recall_at_10": 0.8663333333333333,
+      "median_rank": 1.0,
+      "macro_repository_mrr": 0.7273184680219402
+    }
+  },
+  "trained_vs_pretrained_dense_mrr": {
+    "delta": 0.09652544997535988,
+    "ci95": [
+      0.0848868558350596,
+      0.10748017710804628
+    ],
+    "method": "paired repository-cluster bootstrap, 2000 resamples",
+    "repository_clusters": 444
+  },
+  "trained_hybrid_vs_bm25_mrr": {
+    "delta": 0.16254761903328815,
+    "ci95": [
+      0.150834640125844,
+      0.1763703573684562
+    ],
+    "method": "paired repository-cluster bootstrap, 2000 resamples",
+    "repository_clusters": 444
+  },
+  "trained_dense_vs_bm25_mrr": {
+    "delta": 0.21890361669706576,
+    "ci95": [
+      0.2004503288862072,
+      0.23732116908748563
+    ],
+    "method": "paired repository-cluster bootstrap, 2000 resamples",
+    "repository_clusters": 444
+  },
+  "elapsed_seconds": 39.51678221300244
+}

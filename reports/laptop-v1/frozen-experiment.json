@@ -1,0 +1,52 @@
+{
+  "frozen_at_utc": "2026-09-16T01:26:51.217051+00:00",
+  "source_commit": "424aba1d5f50d1aa316009333a2c5cb09b6ca965",
+  "selected_checkpoint": "runs/minilm-v1/best",
+  "selected_batch_step": 1750,
+  "selection": "maximum MRR on fixed 512 validation pairs",
+  "default_retrieval_mode": "dense",
+  "default_mode_reason": "Highest full-validation MRR; fixed 50/50 hybrid underperformed dense",
+  "hybrid": {
+    "dense_weight": 0.5,
+    "per_method_limit": 100,
+    "k": 60,
+    "tuned": false
+  },
+  "training_runs": 1,
+  "seeds": [
+    17
+  ],
+  "test_evaluated_before_freeze": false,
+  "validation_sha256": "efc252634008c16dcf720033a2d5eda7c03629cd372b00960e173cbdc970de2e",
+  "model_fingerprint": "2bb5197791e4a0caf85af4e92c7ad9f2394cc4c01dafa0b0b18d7e32f0fc5697",
+  "checkpoint_files": {
+    "config.json": {
+      "sha256": "4599e8a5d74ed192b70919aa02124c2d68580070b22e89db956c0353618bccd9",
+      "bytes": 611
+    },
+    "model.safetensors": {
+      "sha256": "3141c072bf1f4d0ba9bfcf10f1c1744f3174993989c5a2728ec3e63bb86a4450",
+      "bytes": 90864192
+    },
+    "scout_config.json": {
+      "sha256": "40c2ddc9a67adb72d64e0d0d4108b64259e22deb3b3d482b9039963752590442",
+      "bytes": 289
+    },
+    "special_tokens_map.json": {
+      "sha256": "5d5b662e421ea9fac075174bb0688ee0d9431699900b90662acd44b2a350503a",
+      "bytes": 695
+    },
+    "tokenizer.json": {
+      "sha256": "851ca67100d372ca3ae031a6abd168f53489eebfd7d89523f35c5c9b4d372c3c",
+      "bytes": 711649
+    },
+    "tokenizer_config.json": {
+      "sha256": "ccb4eb21a03e1442ee5c3f85431b9c307960a04579942537d74778dc8080a48c",
+      "bytes": 1464
+    },
+    "vocab.txt": {
+      "sha256": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3",
+      "bytes": 231508
+    }
+  }
+}
