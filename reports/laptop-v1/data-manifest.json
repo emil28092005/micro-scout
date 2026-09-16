@@ -1,0 +1,58 @@
+{
+  "dataset": "code-search-net/code_search_net",
+  "revision": "bd0cf261e357a3eb5c8fba490d23ec1a1cd59555",
+  "seed": 17,
+  "selection": "seeded hash priority, maximum 200 samples per repository",
+  "normalization": "remove Python docstrings/comments; first documentation paragraph",
+  "deduplication": "repository, exact token hash, normalized token hash, exact query hash",
+  "splits": {
+    "test": {
+      "source_rows": 22176,
+      "filtered_quality": 1930,
+      "selected": 3000,
+      "repositories": 444,
+      "max_repository_examples": 200,
+      "source_sha256": "3167e79ee7f081d825bf97b96d3a6b2d96428b00f6a98125be943384d8afae5f",
+      "prepared_sha256": "b9e150337e195838efb5fe3f4ecafd63dfa99a55cf3635764c893912f4747596"
+    },
+    "validation": {
+      "source_rows": 23107,
+      "filtered_quality": 2560,
+      "overlap_query_hash": 4,
+      "overlap_structural_hash": 22,
+      "selected": 2000,
+      "repositories": 397,
+      "max_repository_examples": 65,
+      "source_sha256": "22eaacb46ed7e74d582409b85692ef63f5a43e99f9395c2eb736b5c8451422bb",
+      "prepared_sha256": "e1b934c33f12322e4a56d0d17a987966c40961b035e15939fd716b76d4e017a2"
+    },
+    "train": {
+      "source_rows": 412178,
+      "filtered_quality": 45464,
+      "overlap_structural_hash": 626,
+      "overlap_query_hash": 220,
+      "selected": 30000,
+      "repositories": 6819,
+      "max_repository_examples": 200,
+      "source_sha256": "ad9e3a4ab10c2c1d8926d2b26ca2bfcc3aadda1477ba29a933391f93806b9fed",
+      "prepared_sha256": "3eeed3185b74f934462aaccbd3c567f8db20754a1bf6f5f3686779f8b39f4338"
+    }
+  },
+  "overlap_audit": {
+    "train/validation/id": 0,
+    "train/validation/repo": 0,
+    "train/validation/code_hash": 0,
+    "train/validation/structural_hash": 0,
+    "train/validation/query_hash": 0,
+    "train/test/id": 0,
+    "train/test/repo": 0,
+    "train/test/code_hash": 0,
+    "train/test/structural_hash": 0,
+    "train/test/query_hash": 0,
+    "validation/test/id": 0,
+    "validation/test/repo": 0,
+    "validation/test/code_hash": 0,
+    "validation/test/structural_hash": 0,
+    "validation/test/query_hash": 0
+  }
+}

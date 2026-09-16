@@ -1,44 +1,98 @@
 # micro-scout
 
-A research project for a fast, local code-context scout.
+A small local code retrieval model and a tool for giving a larger coding model useful source context.
 
-The scout is designed to find useful source snippets, account for relationships between symbols, and pass context to a larger model through a small agent harness: the loop that manages the model and its tools.
+Micro-scout indexes a repository, combines lexical and neural search, and returns **verified file paths, line ranges, and bounded source snippets**. Its MCP server keeps the model in memory between requests.
 
-## Status
+## Version 0.1
 
-The research report and experiment plan are available. Implementation, trained weights, and project-specific benchmark results are not available yet.
+- A shared MiniLM encoder for English queries and source code; code vectors are computed during indexing.
+- Local contrastive fine-tuning on a filtered, repository-disjoint Python subset of CodeSearchNet.
+- BM25 and hybrid retrieval, Python AST symbols, and conservative static graph neighbors.
+- Atomic SQLite snapshots, reusable embeddings, and source-hash checks before returning code.
+- CLI and MCP tools: `scout_search`, `scout_read`, `scout_status`, and optional `scout_feedback`.
+- Reproducible training, checkpoint resume, baseline comparisons, and tests.
 
-## Documentation
+This is an experimental retrieval system. It does not generate patches or train online. The training run and measured results are documented separately; the earlier research roadmap is not a claim that all proposed features have been implemented.
 
-- [Research and development plan](docs/RESEARCH.md): related work, Graphify, architecture, data, training, evaluation, resources, and an eight-week roadmap.
-- Research date: September 16, 2026.
-- The current budget excludes calls to the teacher and main models. It covers training the scout and the supporting infrastructure.
+## Install
 
-## Proposed architecture
+Python 3.11–3.13 is supported; development uses Python 3.12 and `uv`.
 
-```text
-Repository and working-tree changes
-    → symbol graph and search indexes
-    → candidate retrieval
-    → small model for selection and action choice
-    → source snippets with verified locations
-    → larger model and solution verification
+```bash
+uv sync --extra train --extra mcp --extra dev --python 3.12
 ```
 
-Repository facts live in an external, updatable index. The model learns to select useful context and search actions for unfamiliar projects.
+The training extra installs PyTorch and can download several gigabytes of CUDA dependencies on Linux. For lexical search alone, `uv sync` is sufficient. For neural inference without data preparation, use `uv sync --extra model --extra mcp`.
 
-One proposed training setup uses GPT-5.6 Luna to generate examples for the local scout, then evaluates the scout with GPT-6 Astra as the main solver. The research report describes how to check whether the learned retrieval behavior transfers between them.
+## Search a repository
 
-## Initial experiments
+Lexical search works without weights:
 
-1. Build a minimal harness with search, symbol reading, and graph traversal.
-2. Compare conventional search, graph search, and an existing reranker on the same tasks.
-3. Measure task success, end-to-end latency, context size, and reference freshness.
-4. Evaluate a custom encoder, then reduce its size.
-5. If the benefit is confirmed, train action selection and search-budget allocation.
+```bash
+uv run --no-sync micro-scout index /path/to/repository --output .micro-scout/lexical.sqlite
+uv run --no-sync micro-scout search "read configuration from a file" \
+  --index .micro-scout/lexical.sqlite
+```
 
-## Success criterion
+After training, use the selected checkpoint:
 
-Reduce time to solution while maintaining task success on unfamiliar repositories. Evaluation covers the full agent loop, additional reads, and index updates, as well as individual model-call latency.
+```bash
+uv run --no-sync micro-scout index /path/to/repository \
+  --model runs/minilm-v1/best --output .micro-scout/index.sqlite
 
-Model sizes, latency targets, and budgets in the report are hypotheses to test. They are not measured micro-scout results.
+uv run --no-sync micro-scout search "validate the source before returning a reference" \
+  --index .micro-scout/index.sqlite --model runs/minilm-v1/best \
+  --top-k 6 --max-chars 12000
+```
+
+The default inference device is CPU. Add `--device cuda` to use the GPU. `max_chars` limits returned **source characters**, not model tokens or the complete JSON response. A one-shot CLI command includes model startup; use the MCP server to amortize that cost.
+
+Run `index` again after code changes. Unchanged code embeddings are reused when the model fingerprint matches. Restart a resident server after replacing its index. Changed files are rejected by reference validation until reindexed.
+
+## MCP integration
+
+```bash
+uv run --no-sync micro-scout serve \
+  --index .micro-scout/index.sqlite --model runs/minilm-v1/best \
+  --trace runs/session.jsonl
+```
+
+This starts a **stdio** MCP server. Configure a compatible host to launch the installed `micro-scout` executable with `serve` and **absolute paths** to the index, model, and optional trace. See [integration details](docs/USAGE.md).
+
+Feedback records usefulness judgments for later analysis. It does not modify serving weights. Query text is recorded only when an explicit trace path is supplied.
+
+## Train and evaluate
+
+```bash
+uv run --no-sync python -m micro_scout.download
+uv run --no-sync python -m micro_scout.data
+uv run --no-sync python -m micro_scout.train --config configs/laptop.json --device cuda
+uv run --no-sync python -m micro_scout.evaluate --split validation
+# Run the final test only after freezing model and retrieval settings.
+uv run --no-sync python -m micro_scout.evaluate --split test
+```
+
+See [training and evaluation](docs/TRAINING.md) and the [dataset card](docs/DATASET.md). Weights, raw data, indexes, and run logs stay outside Git. No hosted model calls are required.
+
+## Scope and limitations
+
+- The initial training task is English description-to-Python-function retrieval. Multi-file bug localization, Russian queries, and other languages need separate evaluation.
+- Non-Python files use line chunks; their parsing and retrieval quality are not equivalent to the Python path.
+- Static graph edges include containment and approximate same-module calls. This is not a complete call graph or a Graphify integration.
+- Search scores are rankings, not confidence probabilities. The larger model may need additional reads.
+- Faster retrieval and retrieval accuracy do not establish better end-to-end task success with Astra. That experiment remains to be run.
+
+## Development
+
+```bash
+uv run --no-sync ruff check src tests
+uv run --no-sync ruff format --check src tests
+uv run --no-sync pytest -q
+```
+
+Tests use temporary repositories and an offline tiny model fixture. They do not download training data or call model APIs. Neural tests require the model extra; dataset preparation tests require the train extra.
+
+## Research
+
+[Research and development plan](docs/RESEARCH.md): related work, Graphify, architecture alternatives, data, resources, and the longer-term roadmap. Research date: September 16, 2026. The research budget excludes calls to teacher and solver models. Luna-based generation is deferred from this first local experiment.

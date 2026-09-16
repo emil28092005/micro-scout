@@ -1,0 +1,12 @@
+{
+  "split": "validation",
+  "queries": 2000,
+  "candidates": 2000,
+  "method": "bm25",
+  "mrr": 0.6081888214934283,
+  "mrr_at_10": 0.6021025793650794,
+  "recall_at_1": 0.526,
+  "recall_at_5": 0.7045,
+  "recall_at_10": 0.755,
+  "median_rank": 1.0
+}

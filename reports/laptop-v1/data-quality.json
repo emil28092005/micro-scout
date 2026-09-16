@@ -1,0 +1,14 @@
+{
+  "training_examples": 30000,
+  "query_word_quantiles": [
+    5.0,
+    9.0,
+    23.0
+  ],
+  "nonempty_code_line_quantiles": [
+    4.0,
+    9.0,
+    29.0
+  ],
+  "queries_still_present_in_code": 0
+}

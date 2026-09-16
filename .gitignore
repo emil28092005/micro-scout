@@ -10,6 +10,10 @@ __pycache__/
 *.py[cod]
 .pytest_cache/
 .ruff_cache/
+.micro-scout/
+*.egg-info/
+dist/
+build/
 
 # Generated research and training artifacts
 data/

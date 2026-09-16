@@ -1,0 +1,17 @@
+{
+  "base_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+  "max_length": 256,
+  "query_length": 96,
+  "batch_size": 24,
+  "epochs": 2,
+  "learning_rate": 0.00002,
+  "weight_decay": 0.01,
+  "temperature": 0.05,
+  "warmup_ratio": 0.1,
+  "eval_every": 250,
+  "seed": 17,
+  "threads": 4,
+  "max_minutes": 100,
+  "mixed_precision": true
+}
