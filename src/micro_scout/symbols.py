@@ -167,6 +167,16 @@ def parse_source(relative: str, text: str, *, chunk_lines: int = 60) -> list[Sym
                         walk(child, prefix, parent)
 
             walk(tree)
+            # Long functions need searchable windows beyond the encoder's first
+            # 256 tokens. Keep the full symbol so callers can read its context.
+            for symbol in list(symbols):
+                if symbol.kind != "function" or symbol.end_line - symbol.start_line + 1 <= 48:
+                    continue
+                for start in range(symbol.start_line, symbol.end_line + 1, 24):
+                    end = min(start + 31, symbol.end_line)
+                    add(f"{symbol.name}::<{start}-{end}>", "fragment", start, end, symbol.id)
+                    if end == symbol.end_line:
+                        break
             covered = set()
             for symbol in symbols:
                 covered.update(range(symbol.start_line, symbol.end_line + 1))

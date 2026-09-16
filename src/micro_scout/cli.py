@@ -32,6 +32,7 @@ def main() -> None:
         if name == "benchmark":
             command.add_argument("--iterations", type=int, default=100)
             command.add_argument("--output", type=Path)
+            command.add_argument("--mode", choices=["lexical", "dense", "hybrid"], default=None)
     for command in (index_parser, *(sub.choices[n] for n in ("search", "serve", "benchmark"))):
         command.add_argument("--model", help="Local weights directory or Hugging Face model ID")
         command.add_argument("--device", default="cpu")
@@ -62,7 +63,7 @@ def main() -> None:
                     args.query,
                     top_k=args.top_k,
                     max_chars=args.max_chars,
-                    mode=args.mode or ("hybrid" if encoder else "lexical"),
+                    mode=args.mode or ("dense" if encoder else "lexical"),
                     expand=not args.no_expand,
                     language=args.language,
                     include_docs=args.include_docs,
@@ -80,7 +81,7 @@ def main() -> None:
                     "remove documentation strings from Python functions",
                     "combine lexical and neural search rankings",
                 ]
-                mode = "hybrid" if encoder else "lexical"
+                mode = args.mode or ("dense" if encoder else "lexical")
                 for query in queries:
                     scout.search(query, mode=mode)
                 times = []

@@ -61,6 +61,17 @@ class Encoder:
         self.dimension = self.model.config.hidden_size
         self.parameter_count = sum(p.numel() for p in self.model.parameters())
         signature = hashlib.sha256(json.dumps(self.config, sort_keys=True).encode())
+        # Weights alone do not identify an encoder: tokenization and model
+        # configuration can change the vectors without changing the weights.
+        tokenizer_config = json.loads(self.tokenizer.backend_tokenizer.to_str())
+        for runtime_option in ("padding", "truncation"):
+            tokenizer_config.pop(runtime_option, None)
+        model_config = self.model.config.to_dict()
+        for provenance in ("_name_or_path", "transformers_version"):
+            model_config.pop(provenance, None)
+        signature.update(json.dumps(tokenizer_config, sort_keys=True).encode())
+        signature.update(json.dumps(self.tokenizer.special_tokens_map, sort_keys=True).encode())
+        signature.update(json.dumps(model_config, sort_keys=True).encode())
         if local:
             weights = sorted(Path(model).glob("*.safetensors"))
             if not weights:

@@ -30,18 +30,21 @@ def create_server(scout: Scout):
         max_chars: int = 12_000,
         language: str | None = None,
         include_docs: bool = False,
+        mode: str | None = None,
     ) -> dict[str, Any]:
         """Find relevant code. English queries are the evaluated language. Returns verified paths,
         line ranges, bounded source text, and approximate graph neighbors. max_chars counts source
         characters, not model tokens. Markdown is excluded unless include_docs is true.
         Optional language filter examples: python, typescript, rust.
+        mode: dense (default with a model), lexical, or hybrid. Dense performed best
+        on held-out English descriptions. Try lexical for an exact identifier.
         No code is executed. No source files are changed.
         """
         return scout.search(
             query,
             top_k=top_k,
             max_chars=max_chars,
-            mode="hybrid" if scout.encoder else "lexical",
+            mode=mode or ("dense" if scout.encoder else "lexical"),
             language=language,
             include_docs=include_docs,
         )

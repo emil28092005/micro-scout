@@ -65,6 +65,8 @@ def evaluate(
         "candidates_per_query": len(rows),
         "repositories": len({r["repo"] for r in rows}),
         "dataset_sha256": dataset_hash,
+        "evaluator_source_sha256": hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+        "fusion": {"dense_weight": 0.5, "per_method_limit": 100, "k": 60},
         "evaluation_ids_sha256": hashlib.sha256(
             json.dumps([r["id"] for r in rows]).encode()
         ).hexdigest(),
@@ -114,6 +116,9 @@ def evaluate(
     )
     report["trained_hybrid_vs_bm25_mrr"] = paired_mrr_interval(
         ranks["trained_hybrid"], ranks["bm25"], [r["repo"] for r in rows]
+    )
+    report["trained_dense_vs_bm25_mrr"] = paired_mrr_interval(
+        ranks["trained_dense"], ranks["bm25"], [r["repo"] for r in rows]
     )
     report["elapsed_seconds"] = time.perf_counter() - started
     atomic_json(output / f"{split}-metrics.json", report)

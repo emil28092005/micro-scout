@@ -6,7 +6,7 @@ Version 0.1 fine-tunes `sentence-transformers/all-MiniLM-L6-v2` as a **shared bi
 
 For each batch, the query's paired function is the labeled positive. Other functions in the batch are treated as negatives. The loss averages query-to-code and code-to-query cross-entropy. A temperature scales cosine scores. The model learns ranking without generating text.
 
-At inference, the repository's vectors are already in the index. Each request encodes only its query, compares vectors, and combines rankings with BM25. This makes persistent inference practical without Ollama or vLLM.
+At inference, the repository's vectors are already in the index. Each request encodes only its query and compares vectors. Optional hybrid mode combines rankings with BM25. This makes persistent inference practical without Ollama or vLLM. Dense mode is the default because it performed best on complete validation; the fusion weights were not tuned.
 
 ## Reproduce the local run
 
@@ -73,7 +73,7 @@ OPENBLAS_NUM_THREADS=1 uv run --no-sync micro-scout benchmark \
   --output runs/minilm-v1/latency.json
 ```
 
-This measures the warm harness, including search, context assembly, and checking returned files. Startup is reported separately. Five repeated development queries are used; these are not representative production traffic. Index construction is also reported separately.
+This measures the warm harness, including search, context assembly, and checking returned files. `startup_ms` covers model/index initialization after the core imports, not the entire interpreter startup. Five repeated development queries are used; these are not representative production traffic. Index construction is also reported separately.
 
 ## What these results cannot establish
 

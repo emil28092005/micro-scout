@@ -4,6 +4,8 @@
 
 `scout_search` accepts a natural-language query, `top_k` from 1 to 50, and `max_chars` from 100 to 100,000. It returns ranked snippets and up to three graph neighbors within the shared source-character budget. Overlapping source lines are not repeated. Scores are not probabilities.
 
+With a model, the default `mode` is `dense`, selected from the complete validation results. `lexical` uses BM25, which is useful for exact identifiers, and `hybrid` combines the two rankings. Without a model the CLI and MCP server default to `lexical`. The CLI exposes the same choice as `--mode`.
+
 Markdown is excluded from search by default; set `include_docs=true` to include it. An optional `language` filter narrows candidates before rank fusion, for example to `python` or `typescript`. CLI equivalents are `--include-docs` and `--language python`.
 
 Each snippet includes an opaque symbol ID, repository-relative path, line range, source text, file SHA-256, and verification/truncation flags. The response also identifies the index snapshot and model fingerprint. Truncation occurs at line boundaries.
@@ -39,6 +41,8 @@ The server uses the official [MCP Python SDK v1 maintenance line](https://py.sdk
 ## Files and index updates
 
 Indexing honors Git's ignored-file rules when available and skips hidden directories, common dependency/build directories, symlinks, unsupported extensions, and files above 1 MB. Python symbols use AST boundaries. Other supported text/code formats use 60-line chunks. Incomplete Python falls back to chunks.
+
+Python functions longer than 48 lines also get 32-line search fragments with an 8-line overlap. The full symbol remains available through each fragment's `parent_id`. This gives the retriever access to code beyond the beginning of a long function. Neural input is still capped at 256 tokens per candidate; very long individual lines can exceed that representation budget. BM25 searches the complete candidate text.
 
 An index is one SQLite file, atomically replaced after a successful build. A model fingerprint prevents combining incompatible query and code embeddings. Reindexing with unchanged weights reuses embeddings for unchanged normalized code.
 

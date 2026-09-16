@@ -119,3 +119,18 @@ def test_training_updates_weights_and_can_resume(tiny_model, tmp_path):
     after.save(output / "last")
     with pytest.raises(ValueError, match="weights and optimizer state"):
         train(data, output, config, "cpu", output / "last")
+
+
+def test_fingerprint_detects_tokenizer_change(tiny_model):
+    original = Encoder(str(tiny_model), max_length=32, query_length=16)
+    path = tiny_model / "tokenizer.json"
+    config = json.loads(path.read_text())
+    vocab = config["model"]["vocab"]
+    vocab["read"], vocab["write"] = vocab["write"], vocab["read"]
+    path.write_text(json.dumps(config))
+    changed = Encoder(str(tiny_model), max_length=32, query_length=16)
+    assert changed.fingerprint != original.fingerprint
+    assert (
+        changed.tokenize(["read file"])["input_ids"].tolist()
+        != original.tokenize(["read file"])["input_ids"].tolist()
+    )

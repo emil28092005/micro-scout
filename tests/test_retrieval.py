@@ -263,3 +263,20 @@ def test_source_that_grows_after_indexing_is_bounded(repository, tmp_path):
     (repository / "numbers.py").write_text("x" * 1_000_001)
     with pytest.raises(ValueError, match="file-size limit"):
         scout.read(symbol.id)
+
+
+def test_long_function_tail_has_a_searchable_fragment(repository, tmp_path):
+    lines = ["def long_function():"] + [f"    value_{i} = {i}" for i in range(90)]
+    lines.append("    return unique_tail_marker")
+    (repository / "long.py").write_text("\n".join(lines) + "\n")
+    path = tmp_path / "index.sqlite"
+    build_index(repository, path)
+    scout = Scout(Index(path))
+    result = scout.search("unique_tail_marker", mode="lexical", top_k=1)
+    hit = result["results"][0]
+    assert hit["kind"] == "fragment"
+    assert "unique_tail_marker" in hit["content"]
+    assert hit["start_line"] > 48
+    parent = scout.read(hit["parent_id"])
+    assert parent["name"] == "long_function"
+    assert parent["start_line"] == 1

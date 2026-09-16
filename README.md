@@ -2,7 +2,7 @@
 
 A small local code retrieval model and a tool for giving a larger coding model useful source context.
 
-Micro-scout indexes a repository, combines lexical and neural search, and returns **verified file paths, line ranges, and bounded source snippets**. Its MCP server keeps the model in memory between requests.
+Micro-scout indexes a repository, supports neural, lexical, and hybrid search, and returns **verified file paths, line ranges, and bounded source snippets**. Its MCP server keeps the model in memory between requests.
 
 ## Version 0.1
 
