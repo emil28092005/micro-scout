@@ -119,6 +119,12 @@ def train(data: Path, output: Path, config: dict, device: str, resume: Path | No
     optimizer_steps, skipped_optimizer_steps = 0, 0
     if resume:
         state = torch.load(resume / "training_state.pt", map_location="cpu", weights_only=True)
+        weight_hashes = {
+            path.name: hashlib.sha256(path.read_bytes()).hexdigest()
+            for path in resume.glob("*.safetensors")
+        }
+        if weight_hashes != state["weights_sha256"]:
+            raise ValueError("Checkpoint weights and optimizer state do not match")
         if (
             state["config"] != config
             or state["dataset_manifest_sha256"] != manifest_hash
@@ -181,6 +187,10 @@ def train(data: Path, output: Path, config: dict, device: str, resume: Path | No
             "scaler": scaler.state_dict(),
             "torch_rng": torch.get_rng_state(),
             "cuda_rng": torch.cuda.get_rng_state_all() if use_cuda else [],
+            "weights_sha256": {
+                weight.name: hashlib.sha256(weight.read_bytes()).hexdigest()
+                for weight in path.glob("*.safetensors")
+            },
         }
         torch.save(state, path / "training_state.pt.tmp")
         os.replace(path / "training_state.pt.tmp", path / "training_state.pt")

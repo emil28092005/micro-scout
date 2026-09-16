@@ -42,7 +42,7 @@ uv run --no-sync python -m micro_scout.train \
   --output runs/minilm-v1 --resume runs/minilm-v1/last --device cuda
 ```
 
-Resume requires the same training configuration and dataset manifest. This command is intended for the project's own local optimizer states. Model weights use safetensors, and remote custom model code is disabled.
+Resume requires the same training configuration, dataset manifest, and prepared-file hashes. A weights checksum prevents resuming mismatched weights and optimizer state after an incomplete checkpoint write. This command is intended for the project's own local optimizer states. Model weights use safetensors, and remote custom model code is disabled.
 
 ## Evaluation protocol
 

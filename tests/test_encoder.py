@@ -114,3 +114,8 @@ def test_training_updates_weights_and_can_resume(tiny_model, tmp_path):
     state = torch.load(output / "last/training_state.pt", weights_only=True)
     assert state["step"] == 2
     assert json.loads((output / "result.json").read_text())["test_set_used_for_selection"] is False
+    with torch.no_grad():
+        after.model.embeddings.word_embeddings.weight.add_(0.1)
+    after.save(output / "last")
+    with pytest.raises(ValueError, match="weights and optimizer state"):
+        train(data, output, config, "cpu", output / "last")
