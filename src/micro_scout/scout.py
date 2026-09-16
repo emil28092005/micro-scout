@@ -13,7 +13,7 @@ import numpy as np
 
 from micro_scout.index import Index
 from micro_scout.lexical import BM25, reciprocal_rank_fusion, top_indices
-from micro_scout.symbols import EXTENSIONS, Symbol
+from micro_scout.symbols import EXTENSIONS, Symbol, read_source
 from micro_scout.text import digest
 
 if TYPE_CHECKING:
@@ -55,7 +55,7 @@ class Scout:
                     )
                 ):
                     raise ValueError("Source path escapes repository or uses a symlink")
-                text = path.read_text(encoding="utf-8")
+                text = read_source(path)
             except (OSError, UnicodeError) as exc:
                 raise StaleReferenceError(
                     f"Source unavailable: {symbol.path}; rebuild index"

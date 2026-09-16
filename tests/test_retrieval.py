@@ -237,3 +237,29 @@ def test_repository_cluster_bootstrap_retains_group_correlation():
     assert result["delta"] == pytest.approx(0.275)
     assert result["ci95"] == pytest.approx([-0.4, 0.5])
     assert result["repository_clusters"] == 2
+
+
+def test_file_hash_matches_raw_crlf_bytes_and_detects_line_ending_changes(repository, tmp_path):
+    import hashlib
+
+    raw = b"def crlf():\r\n    return 42\r\n"
+    source = repository / "crlf.py"
+    source.write_bytes(raw)
+    path = tmp_path / "index.sqlite"
+    build_index(repository, path)
+    scout = Scout(Index(path))
+    symbol = next(s for s in scout.index.symbols if s.name == "crlf")
+    assert scout.read(symbol.id)["file_sha256"] == hashlib.sha256(raw).hexdigest()
+    source.write_bytes(raw.replace(b"\r\n", b"\n"))
+    with pytest.raises(StaleReferenceError):
+        scout.read(symbol.id)
+
+
+def test_source_that_grows_after_indexing_is_bounded(repository, tmp_path):
+    path = tmp_path / "index.sqlite"
+    build_index(repository, path)
+    scout = Scout(Index(path))
+    symbol = next(s for s in scout.index.symbols if s.name == "add_numbers")
+    (repository / "numbers.py").write_text("x" * 1_000_001)
+    with pytest.raises(ValueError, match="file-size limit"):
+        scout.read(symbol.id)

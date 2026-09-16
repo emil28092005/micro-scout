@@ -12,7 +12,7 @@ from typing import TYPE_CHECKING
 
 import numpy as np
 
-from micro_scout.symbols import Symbol, build_edges, parse_source, source_paths
+from micro_scout.symbols import Symbol, build_edges, parse_source, read_source, source_paths
 from micro_scout.text import digest
 
 if TYPE_CHECKING:
@@ -68,8 +68,8 @@ def build_index(
     for path in source_paths(root):
         relative = path.relative_to(root).as_posix()
         try:
-            text = path.read_text(encoding="utf-8")
-        except (UnicodeError, OSError) as exc:
+            text = read_source(path)
+        except (ValueError, OSError) as exc:
             warnings.append({"path": relative, "reason": type(exc).__name__})
             continue
         files[relative] = digest(text)

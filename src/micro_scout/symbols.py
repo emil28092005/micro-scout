@@ -44,6 +44,16 @@ EXCLUDED = {
     ".mypy_cache",
     ".pytest_cache",
 }
+MAX_FILE_BYTES = 1_000_000
+
+
+def read_source(path: Path, max_bytes: int = MAX_FILE_BYTES) -> str:
+    """Read bounded UTF-8 without newline translation, so SHA-256 matches file bytes."""
+    with path.open("rb") as stream:
+        raw = stream.read(max_bytes + 1)
+    if len(raw) > max_bytes:
+        raise ValueError("Source exceeds the file-size limit")
+    return raw.decode("utf-8")
 
 
 @dataclass(frozen=True)
@@ -71,7 +81,7 @@ class Symbol:
         return asdict(self)
 
 
-def source_paths(root: Path, max_file_bytes: int = 1_000_000) -> list[Path]:
+def source_paths(root: Path, max_file_bytes: int = MAX_FILE_BYTES) -> list[Path]:
     """Honor gitignore when available; never traverse symlinks or hidden trees."""
     root = root.resolve(strict=True)
     if not root.is_dir():
