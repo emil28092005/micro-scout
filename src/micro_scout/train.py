@@ -112,9 +112,11 @@ def train(data: Path, output: Path, config: dict, device: str, resume: Path | No
     scheduler = get_linear_schedule_with_warmup(
         optimizer, int(total_steps * config["warmup_ratio"]), total_steps
     )
-    amp = device.startswith("cuda") and config.get("mixed_precision", True)
+    use_cuda = encoder.device.type == "cuda"
+    amp = use_cuda and config.get("mixed_precision", True)
     scaler = torch.amp.GradScaler("cuda", enabled=amp)
     start_epoch, start_batch, step, best = 0, 0, 0, -1.0
+    optimizer_steps, skipped_optimizer_steps = 0, 0
     if resume:
         state = torch.load(resume / "training_state.pt", map_location="cpu", weights_only=True)
         if (
@@ -133,7 +135,9 @@ def train(data: Path, output: Path, config: dict, device: str, resume: Path | No
             state["best"],
         )
         torch.set_rng_state(state["torch_rng"])
-        if amp:
+        optimizer_steps = state["optimizer_steps"]
+        skipped_optimizer_steps = state["skipped_optimizer_steps"]
+        if use_cuda:
             torch.cuda.set_rng_state_all(state["cuda_rng"])
     atomic_json(output / "run.json", run_info)
     stop_requested = False
@@ -166,6 +170,8 @@ def train(data: Path, output: Path, config: dict, device: str, resume: Path | No
             "epoch": epoch,
             "batch": batch,
             "step": step,
+            "optimizer_steps": optimizer_steps,
+            "skipped_optimizer_steps": skipped_optimizer_steps,
             "best": best,
             "config": config,
             "dataset_manifest_sha256": manifest_hash,
@@ -174,7 +180,7 @@ def train(data: Path, output: Path, config: dict, device: str, resume: Path | No
             "scheduler": scheduler.state_dict(),
             "scaler": scaler.state_dict(),
             "torch_rng": torch.get_rng_state(),
-            "cuda_rng": torch.cuda.get_rng_state_all() if amp else [],
+            "cuda_rng": torch.cuda.get_rng_state_all() if use_cuda else [],
         }
         torch.save(state, path / "training_state.pt.tmp")
         os.replace(path / "training_state.pt.tmp", path / "training_state.pt")
@@ -221,6 +227,9 @@ def train(data: Path, output: Path, config: dict, device: str, resume: Path | No
                 scaler.update()
                 if scaler.get_scale() >= scale_before:
                     scheduler.step()
+                    optimizer_steps += 1
+                else:
+                    skipped_optimizer_steps += 1
                 step += 1
                 running_loss += loss.item()
                 running_steps += 1
@@ -231,7 +240,11 @@ def train(data: Path, output: Path, config: dict, device: str, resume: Path | No
                             "epoch": epoch + 1,
                             "loss": running_loss / running_steps,
                             "learning_rate": scheduler.get_last_lr()[0],
-                            "peak_vram_mb": torch.cuda.max_memory_allocated() / 2**20 if amp else 0,
+                            "peak_vram_mb": (
+                                torch.cuda.max_memory_allocated() / 2**20 if use_cuda else 0
+                            ),
+                            "optimizer_steps": optimizer_steps,
+                            "skipped_optimizer_steps": skipped_optimizer_steps,
                         }
                     )
                     running_loss, running_steps = 0.0, 0
@@ -253,11 +266,13 @@ def train(data: Path, output: Path, config: dict, device: str, resume: Path | No
                 break
         result = {
             **run_info,
-            "optimizer_steps": step,
+            "batch_steps": step,
+            "optimizer_steps": optimizer_steps,
+            "skipped_optimizer_steps": skipped_optimizer_steps,
             "best_validation_mrr": best,
             "elapsed_seconds": time.monotonic() - started,
             "stopped_early": stop_requested,
-            "peak_vram_mb": torch.cuda.max_memory_allocated() / 2**20 if amp else 0,
+            "peak_vram_mb": torch.cuda.max_memory_allocated() / 2**20 if use_cuda else 0,
         }
         atomic_json(output / "result.json", result)
         record({"event": "complete", "best_validation_mrr": best})
