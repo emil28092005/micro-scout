@@ -1,42 +1,44 @@
 # micro-scout
 
-Исследовательский проект быстрого локального скаута контекста для программного кода.
+A research project for a fast, local code-context scout.
 
-Скаут должен находить полезные исходные фрагменты, учитывать связи между символами и передавать контекст большой модели через небольшой агентский harness — цикл управления моделью и инструментами.
+The scout is designed to find useful source snippets, account for relationships between symbols, and pass context to a larger model through a small agent harness: the loop that manages the model and its tools.
 
-## Статус
+## Status
 
-Подготовлены исследование и план экспериментов. Реализация, обученные веса и собственные результаты измерений пока отсутствуют.
+The research report and experiment plan are available. Implementation, trained weights, and project-specific benchmark results are not available yet.
 
-## Документация
+## Documentation
 
-- [Исследование и план разработки](docs/RESEARCH_RU.md): существующие решения, Graphify, архитектура, данные, обучение, оценка пользы, ресурсы и восьминедельный план.
-- Дата исследования: 16 сентября 2026 года.
-- В текущей смете исключена оплата вызовов модели-учителя и основной модели; учитываются обучение своей модели и инфраструктура.
+- [Research and development plan](docs/RESEARCH.md): related work, Graphify, architecture, data, training, evaluation, resources, and an eight-week roadmap.
+- Research date: September 16, 2026.
+- The current budget excludes calls to the teacher and main models. It covers training the scout and the supporting infrastructure.
 
-## Предлагаемая архитектура
+## Proposed architecture
 
 ```text
-Репозиторий и текущие изменения
-    → граф символов и поисковые индексы
-    → поиск кандидатов
-    → маленькая модель отбора и выбора действий
-    → исходные фрагменты с проверенными адресами
-    → большая модель и проверка решения
+Repository and working-tree changes
+    → symbol graph and search indexes
+    → candidate retrieval
+    → small model for selection and action choice
+    → source snippets with verified locations
+    → larger model and solution verification
 ```
 
-Факты о репозитории хранятся во внешнем обновляемом индексе. Модель обучается выбирать полезный контекст и действия поиска на новых проектах.
+Repository facts live in an external, updatable index. The model learns to select useful context and search actions for unfamiliar projects.
 
-## Первые эксперименты
+One proposed training setup uses GPT-5.6 Luna to generate examples for the local scout, then evaluates the scout with GPT-6 Astra as the main solver. The research report describes how to check whether the learned retrieval behavior transfers between them.
 
-1. Собрать минимальный harness с поиском, чтением символов и обходом графа.
-2. Сравнить обычный поиск, графовый поиск и готовый ранжировщик на одинаковых задачах.
-3. Измерить успешность решения, полную задержку, объём контекста и свежесть ссылок.
-4. Проверить пользу собственного encoder и затем уменьшить его размер.
-5. При подтверждённом эффекте обучать выбор действий и бюджета поиска.
+## Initial experiments
 
-## Критерий полезности
+1. Build a minimal harness with search, symbol reading, and graph traversal.
+2. Compare conventional search, graph search, and an existing reranker on the same tasks.
+3. Measure task success, end-to-end latency, context size, and reference freshness.
+4. Evaluate a custom encoder, then reduce its size.
+5. If the benefit is confirmed, train action selection and search-budget allocation.
 
-Сокращение времени решения при сохранении успешности на незнакомых репозиториях. Проверяются весь агентский цикл, дополнительные чтения и обновление индекса, а не только скорость отдельного вызова модели.
+## Success criterion
 
-Целевые размеры моделей, задержки и бюджеты в исследовании являются гипотезами для проверки, а не опубликованными результатами micro-scout.
+Reduce time to solution while maintaining task success on unfamiliar repositories. Evaluation covers the full agent loop, additional reads, and index updates, as well as individual model-call latency.
+
+Model sizes, latency targets, and budgets in the report are hypotheses to test. They are not measured micro-scout results.
